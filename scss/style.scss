@@ -597,10 +597,14 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		}
 		&:not(.plain) .card-title{ min-height: 68px;}
 		.separator{margin-top: 16px; padding-top: 24px;}
-		&.hover{
-			background: $c-azuloscuro; cursor: pointer;
-			.card-title{color: #fff;
-				a{color: #fff;}
+		&.hover{cursor: pointer;
+			&:not(.plain){transition: 0.3s; background: $c-azuloscuro;
+				*{color: #fff;
+					a{color: #fff;}
+				}
+				.label{background: #fff; color: $c-azuloscuro; transition: 0.3s;
+					&:before{border-left-color: $c-azuloscuro;  transition: 0.3s;}
+				}
 			}
 		}
 	}
@@ -615,7 +619,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 			span{font-size: 72.72%}
 		}
 		&:not(.plain) .card-title{ min-height: 102px;}
-		&.plain{padding-left: 0;
+		&.plain{padding: 12px 12px 12px 0;
 			.icon-container{width: 50px; height: 50px; margin-right: 30px; margin-bottom: 20px;}
 			.card-title{font-size: 112.5%;}
 		}
