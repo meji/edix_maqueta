@@ -592,9 +592,17 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		.icon-container{float: left; padding: 0; margin-right: 20px; width: 68px; height: 68px; 
 			img{width: 100%;}
 		}
-		.card-title{margin: 0; }
+		.card-title{margin: 0; 
+			a{color: #000;}
+		}
 		&:not(.plain) .card-title{ min-height: 68px;}
 		.separator{margin-top: 16px; padding-top: 24px;}
+		&.hover{
+			background: $c-azuloscuro; cursor: pointer;
+			.card-title{color: #fff;
+				a{color: #fff;}
+			}
+		}
 	}
 	&.plain{box-shadow: none; font-size: 116.66%; padding: 12px}
 	p.notice{font-size: 81.25%; color: #949494;}

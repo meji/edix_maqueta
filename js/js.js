@@ -199,6 +199,7 @@ $(document).ready(function() {
 	swipper_initializer_alone(viewportWidth);
 	swipper_initializer_alone_testimonial();
 	cargarProfes();
+	hoverCareers();
 });
 
 //SLIDERS funciones vistas responsive
@@ -354,5 +355,30 @@ function cargarProfes(){
 		modal.find('.job').html(job);
 		modal.find('.name').html(name);
 		modal.find('.text').html(content);
+	});
+}
+function hoverCareers(){
+		//Cargar video en los iframes- 
+ 	$('.career-card.icon-left').on('mouseenter', function (event) {
+		var card = $(this); // Button that triggered the modal
+		var image_src = $(card).find('img').attr('src');
+		var image_src_without_extension = image_src.split('.').shift();
+		console.log(image_src_without_extension);
+		card.find('img').attr('src', image_src_without_extension+'-on.svg');
+		card.addClass('hover');
+	});
+ 	//Expandimos el click al div
+	$(".career-card.icon-left").click(function() {
+	  window.location = $(this).find("a").attr("href"); 
+	  return false;
+	});
+	//Quitamos el hover
+	 $('.career-card.icon-left').on('mouseleave', function (event) {
+		var card = $(this); // Button that triggered the modal
+		var image_src = $(card).find('img').attr('src');
+		var image_src_without_extension = image_src.split('-on').shift();
+		console.log(image_src_without_extension);
+		card.find('img').attr('src', image_src_without_extension+'.svg');
+		card.removeClass('hover');
 	});
 }
