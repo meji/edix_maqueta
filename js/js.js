@@ -189,6 +189,10 @@ $(document).ready(function() {
 		var modal = $(this);
 		modal.find('.iframe').attr('src', 'https://www.youtube.com/embed/'+recipient+'?rel=0&amp;showinfo=0');
 	});
+	//stop videos on close button
+		$('#video_modal .close').click(function(){
+		$('#video_modal iframe').attr('src', '');
+	}); 
 
 	/********************************************/
 	swipper_initializer(viewportWidth);
