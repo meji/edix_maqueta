@@ -328,12 +328,12 @@ header#site-header{
 					&:last-child{margin-right: 0; }
 					a{color: #fff;
 						&:hover{position:relative;
-							&:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute; width: 100%; animation: 0.5s in-out forwards;}
+							&:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 3px; position: absolute; width: 100%; animation: 0.5s in-out forwards;}
 						}
 					}
 					&.active{position:relative;
-						a:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute;}
-						&:after{content:""; width: 0; height: 0; border-bottom: 12px solid #fff; border-right: 8px solid transparent; border-left: 8px solid transparent; position: absolute; bottom: -23px; left: 50%; margin-left: -8px;}
+						// a:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute;}
+						&:after{content:""; width: 0; height: 0; border-bottom: 12px solid #fff; border-right: 8px solid transparent; border-left: 8px solid transparent; position: absolute; bottom: -20px; left: 50%; margin-left: -8px;}
 					}
 				}
 			}
@@ -420,6 +420,9 @@ header#site-header{
 					ul{margin: -40px 0 0; padding: 0;
 						li{display: block; text-align: center; margin-bottom: 45px; font-size: 18px;
 							a{color: #fff;}
+							&.active{position:relative;
+								&:after{content:""; width: 0; height: 0; border-bottom: 12px solid #fff; border-right: 8px solid transparent; border-left: 8px solid transparent; position: absolute; bottom: -20px; left: 50%; margin-left: -8px;}
+							}
 						}		
 					}
 				}
@@ -1189,11 +1192,13 @@ form{
 			nav ul {margin: 0 -16px; padding-left: 16px; cursor: pointer; 
 				li{
 					&:not(:first-child){opacity:0; display: none; transition: 1s;}
-					&:first-child{background: url(img/select-icon.svg) no-repeat right center;}
+					&:first-child{background: url(img/unfold.svg) no-repeat right center;}
 				}
 			}
 			&.opened{
-				nav ul li{opacity: 1; display: block; transition: 1s;}
+				nav ul li{opacity: 1; display: block; transition: 1s;
+					&:first-child{background-image: url(img/fold.svg)} 
+				}
 			}
 		}
 
