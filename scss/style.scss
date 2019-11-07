@@ -121,7 +121,9 @@ hr{height: 2px; border:none; background: $c-azulform; margin: 32px auto;}
 		background: #fff; border: 2px solid $c-morado; color: $c-morado;
 		&:hover{background: $c-morado; color: #fff;}
 	}
-	&.btn-white{color: $c-morado; background: #fff;}
+	&.btn-white{color: $c-morado; background: #fff;
+		&:hover{background: $c-moradoclaro; color: #fff;}
+	}
 }
 .text-white .btn{
 	&.btn-secondary{color: #fff; background: transparent; border-color: #fff;
