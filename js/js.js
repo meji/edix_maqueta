@@ -337,7 +337,12 @@ function swipper_initializer(viewportWidth){
 		}
 	);
 	$('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
-	$('.swiper-container.swiper4321').hover(function(){swiper.stopAutoplay}, function(){swiper.startAutoplay});
+	//Anulamos el autoplay en el hover
+	$('.swiper-container.swiper4321').hover(function(){
+		swiper.autoplay.stop();
+		}, function(){
+			swiper.autoplay.start();
+		});
 	}
 }
 function cargarProfes(){
