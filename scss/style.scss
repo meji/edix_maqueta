@@ -248,7 +248,7 @@ header#site-header{
 		&:after, &:before,  div {background-color: #fff; border-radius: 3px; content: ''; display: block; height: 2px; margin: 4px 0; transition: all .2s ease-in-out; border-radius: 1px;}
 	}
 	//En scroll down
-	&.nav-down{opacity: 0; transition: 0.2s; display: none;
+	&.nav-down{opacity: 0; transition: 0.2s; display: none !important;
 		&.nav-down-fixed{opacity:1; display: block;}
 	}
 	//blanca
@@ -1125,10 +1125,12 @@ form{
 	#career-nav{background: $c-azulform;
 		ul{font-size:100%;  margin: 0; padding:0;
 			li{color: #000; font-size: 100%; padding: 24px 0; margin-right: 32px; list-style-type: none; 
-				span{color: #000; font-size: 87.50%; font-weight: normal; cursor: pointer;}
+				span{color: #000; font-size: 87.50%; font-weight: normal; cursor: pointer;
+				}
+				&.active span{font-weight: bold; position: relative;}
 			}
 		}
-		&.fixed{position: fixed; top: 0; left: 0; bottom: auto; width: 100%; z-index:3;  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
+		&.fixed{position: fixed; top: 0; left: 0; bottom: auto; width: 100%; z-index:10;  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
 			&.nav-up{top: 71px;}
 		}
 
@@ -1146,7 +1148,10 @@ form{
 		}
 		#career-nav{
 			&.fixed.nav-up{top: 84px;}
-			ul li{padding: 32px 0;} 
+			ul li{padding: 32px 0;
+				&.active span:after{content:''; width: 100%; height: 2px; background: #000; display: block; margin-top: 3px; position: absolute; width: 100%; animation: 0.5s in-out forwards;}
+
+			} 
 		}
 	}
 }
@@ -1189,15 +1194,21 @@ form{
 @include respond-below(lg){
 	#hero-career{height: auto !important; overflow: visible;
 		#career-nav {
-			nav ul {margin: 0 -16px; padding-left: 16px; cursor: pointer; 
+			nav ul {margin: 0 -16px; padding-left: 16px; cursor: pointer;
 				li{
-					&:not(:first-child){opacity:0; display: none; transition: 1s;}
-					&:first-child{background: url(img/unfold.svg) no-repeat right center;}
+					&:not(.active){opacity:0; display: none; transition: 1s;}
+					&.active { background: url(img/unfold.svg) no-repeat right center;}
 				}
+			}
+			&:not(.fixed){
+				nav ul li:first-child{opacity: 1; display: block; transition: 1s; background: url(img/unfold.svg) no-repeat right center;}
 			}
 			&.opened{
 				nav ul li{opacity: 1; display: block; transition: 1s;
-					&:first-child{background-image: url(img/fold.svg)} 
+					&.active {background:none;
+						span:after{content:''; width: 100%; height: 2px; background: #000; display: block; margin-top: 3px; position: absolute; width: 100%; animation: 0.5s in-out forwards;}
+					}
+					&:first-child{ background: url(img/fold.svg) no-repeat right center;}
 				}
 			}
 		}

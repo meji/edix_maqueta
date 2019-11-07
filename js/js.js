@@ -157,30 +157,30 @@ $(document).ready(function() {
 	
 	/********************************************/
 	//smooth_scroll
-	$('.smooth-scroll').click(function(event) {
-	// On-page links
-	  // Figure out element to scroll to
-	  var target = $(this).attr('data-href');
-	  // Does a scroll target exist?
-	  if (target.length) {
-	    // Only prevent default if animation is actually gonna happen
-	    event.preventDefault();
-	    $('html, body').animate({
-	      scrollTop: $(target).offset().top
-	    }, 1000, function() {
-	      // Callback after animation
-	      // Must change focus!
-	      var $target = $(target);
-	      $target.focus();
-	      if ($target.is(":focus")) { // Checking if the target was focused
-	        return false;
-	      } else {
-	        $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-	        $target.focus(); // Set focus again
-	      };
-	    });
-	  }
-	});
+	// $('.smooth-scroll').click(function(event) {
+	// // On-page links
+	//   // Figure out element to scroll to
+	//   var target = $(this).attr('data-href');
+	//   // Does a scroll target exist?
+	//   if (target.length) {
+	//     // Only prevent default if animation is actually gonna happen
+	//     event.preventDefault();
+	//     $('html, body').animate({
+	//       scrollTop: $(target).offset().top
+	//     }, 1000, function() {
+	//       // Callback after animation
+	//       // Must change focus!
+	//       var $target = $(target);
+	//       $target.focus();
+	//       if ($target.is(":focus")) { // Checking if the target was focused
+	//         return false;
+	//       } else {
+	//         $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+	//         $target.focus(); // Set focus again
+	//       };
+	//     });
+	//   }
+	// });
 
 	//Cargar video en los iframes
  	$('#video_modal').on('show.bs.modal', function (event) {
@@ -448,3 +448,48 @@ $('#footer .social img[src$=".svg"]').each(function(){
     }, 'xml');
 });
 
+/*Navegación de cabecera de Carrera*/
+// Cache selectors
+var lastId,
+    topMenu = $("#career-nav ul"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("span.smooth-scroll"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("data-href"));
+      if (item.length) { return item; }
+    });
+
+//Smooth scroll
+menuItems.click(function(e){
+  var href = $(this).attr("data-href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 1500);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[data-href='#"+id+"']").parent().addClass("active");
+   }                   
+});
