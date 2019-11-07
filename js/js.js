@@ -207,6 +207,10 @@ function swipper_initializer_alone_testimonial(){
 	//Sliders de 1 testimonials
 	var swiper_alone_testimonial = new Swiper('.swiper-container.swiper-alone-testimonial', {
 		slidesPerView: 1,
+		effect: 'fade',
+		fadeEffect: {
+		    crossFade: true
+		},
 		loop: true,
 		speed: 1000,
 		autoplay: {
