@@ -773,7 +773,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 ///////////TESTIMONIAL
 .testimonial-container {
 	.testimonial-slide{
-		background: $c-azuloscuro; padding: 40px; text-align: center; border-radius: 4px; 
+		background: $c-azuloscuro; padding: 40px 40px 100px; text-align: center; border-radius: 4px; 
 		.text{font-family: $font-secondary; font-style:italic;}
 		.author{font-size: 81.25%;}
 	}
@@ -786,9 +786,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 
 @include respond-above(lg){
 	.testimonial-container {
-		.testimonial_slide{ display: flex !important;
-			padding: 64px; border-radius: 8px; 
-		}
+		.testimonial-slide{ display: flex !important; padding: 64px ; border-radius: 8px;}
 		&.with-pic{
 			.testimonial-slide{text-align: left; 
 			 	img{float: left; margin-right: 40px; margin-bottom: 0;}
@@ -801,14 +799,14 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 ///////////ASIGNATURAS
 .signatures{
 	list-style-type:none; column-count: 1; column-gap:0; 
-	li{font-size: 100%; margin-bottom: 16px; 
+	li{font-size: 100%; margin-bottom: 32px; 
 		p:not(.h5){font-size: 100%;}
 		p.h5{margin-bottom: 8px;line-height: 1}
 	}
 }
 @include respond-above(lg){
 	.signatures{column-count:2; column-gap: 48px;
-		li{    -webkit-column-break-inside: avoid;  page-break-inside: avoid; break-inside: avoid-column; display:table;}
+		li{    -webkit-column-break-inside: avoid;  page-break-inside: avoid; break-inside: avoid-column; display:table; margin-bottom: 40px;}
 	}
 }
 @include respond-above(xl){
@@ -924,7 +922,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	.swiper-pagination, .swiper-pagination-alone{display:none; position: initial; text-align: center; margin-top: 16px;}
 }
 .swiper-alone-testimonial{
-	.swiper-pagination-alone-testimonial{text-align:center; top: -50px;  position: relative; z-index: 2; margin-bottom: -22px; 
+	.swiper-pagination-alone-testimonial{text-align:center; top: -80px;  position: relative; z-index: 2; margin-bottom: -22px; 
 		.swiper-pagination-bullet{border: 1px solid #fff; opacity: 1; background:transparent; width: 10px; height: 10px;
 			&.swiper-pagination-bullet-active{background: #fff; opacity: 1;}
 		}
@@ -936,9 +934,9 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	.swiper-container-ext{padding-right: 5%; 
 		.swiper-pagination, .swiper-pagination-alone{display:block; text-align: left; margin-top: 32px;}
 	}
-	.with-pic .swiper-pagination-alone-testimonial{text-align: left; padding-left: 260px;}
+	.with-pic .swiper-pagination-alone-testimonial{text-align: left; padding-left: 284px;}
 	.swiper-alone-testimonial .swiper-pagination-alone-testimonial{top: -55px;}
-	 .with-pic .swiper-alone-testimonial .swiper-pagination-alone-testimonial{top: -70px;}
+	 .with-pic .swiper-alone-testimonial .swiper-pagination-alone-testimonial{top: -60px;}
 }
 
 //////////LABELs
