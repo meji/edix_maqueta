@@ -451,7 +451,7 @@ footer#footer { margin-top: 0px;
 			&.small{font-size: 81.25%;}
 		}
 		ul.social {
-			margin-top: 24px; 
+			margin-top: 48px; 
 			li{
 				margin-right: 30px; 
 				img{max-width: 20px;}
@@ -492,6 +492,7 @@ footer#footer { margin-top: 0px;
 			p{
 				&.footer-link{margin-bottom: 0;}
 			}
+			ul.social{margin-top: 24px;}
 		}
 		#site-white-footer{
 			padding: 24px 0 72px;
