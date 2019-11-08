@@ -521,7 +521,7 @@ footer#footer { margin-top: 0px;
 	&.counter-numbers{margin-top: 32px;}
 	&.geometric-pattern-bg{background-image:url('img/geometric-pattern.svg');background-repeat:no-repeat;background-position: center right ; background-size: contain;}
 	&.map-bg{background-image:url('img/map.svg'); background-position: right center; background-repeat: no-repeat; background-size: 100%;}
-	&.triangles-bg{background-image: url(img/triangles.svg); background-repeat: no-repeat; background-position: left top; padding-top: 80px; padding-bottom: 80px;}
+	&.triangles-bg{background-image: url(img/triangles.svg); background-repeat: no-repeat; background-position: left top; padding-top: 80px; padding-bottom: 80px; background-size: auto 100%;}
 	&.triangles-right-bg{background-image: url(img/triangles-right.svg); background-repeat: no-repeat; background-position: right top; padding-top:64px; padding-bottom: 64px; background-size: auto 100%;}
 	&.pdno{padding:0 16px; margin-top: 64px;}
 }
@@ -939,10 +939,11 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 }
 
 //////////LABELs
-.label{background: $c-morado; border-right-top-radius: 4px; padding: 8px 27px; font-size: 83.33%; position: absolute; right: 0; top: 0; color: #fff; font-weight: bold; 
+.label{background: $c-morado; border-right-top-radius: 4px; padding: 4px 8px 4px 16px; font-size: 75%; position: absolute; right: 0; top: 0; color: #fff; font-weight: bold; 
 	&:before{content:''; width: 0; height: 0; border-left: 10px solid #fff; border-top: 8px solid transparent; border-bottom: 8px solid transparent; position: absolute; left: -1px; top: 50%; margin-top: -8px; }
 }
  @include respond-above(xl){
+ 	.label{padding: 8px 27px; font-size: 83.33%;}
 	.offer .label{ padding: 8px 12px;}
 }
 
