@@ -335,7 +335,7 @@ header#site-header{
 					}
 					&.active{position:relative;
 						// a:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute;}
-						&:after{content:""; width: 0; height: 0; border-bottom: 12px solid #fff; border-right: 8px solid transparent; border-left: 8px solid transparent; position: absolute; bottom: -20px; left: 50%; margin-left: -8px;}
+						&:after{content:""; width: 0; height: 0; border-bottom: 8px solid #fff; border-right: 6px solid transparent; border-left: 6px solid transparent; position: absolute; bottom: -18px; left: 50%; margin-left: -8px;}
 					}
 				}
 			}
@@ -347,7 +347,7 @@ header#site-header{
 		&.white nav ul li {
 			&.active{
 				a:after{background: #000;}
-				&:after{border-bottom: 12px solid #000;}
+				&:after{border-bottom: 8px solid #000;}
 			}
 			a:hover:after{background: #000;}
 		}
@@ -423,7 +423,7 @@ header#site-header{
 						li{display: block; text-align: center; margin-bottom: 45px; font-size: 18px;
 							a{color: #fff;}
 							&.active{position:relative;
-								&:after{content:""; width: 0; height: 0; border-bottom: 12px solid #fff; border-right: 8px solid transparent; border-left: 8px solid transparent; position: absolute; bottom: -20px; left: 50%; margin-left: -8px;}
+								&:after{content:""; width: 0; height: 0; border-bottom: 8px solid #fff; border-right: 6px solid transparent; border-left: 6px solid transparent; position: absolute; bottom: -20px; left: 50%; margin-left: -8px;}
 							}
 						}		
 					}
@@ -575,32 +575,28 @@ footer#footer { margin-top: 0px;
 
 ///////////LISTADO DE CIFRAS CON TEXTO EN CUERPO
 .number-list{
-	.col-12{margin-bottom: 40px;}
+	.col-12{margin-bottom: 40px; display: flex;}
 	p{ margin-bottom: 40px;}
-	span{display: inline-block; width: 65%; float: left;}
-	.counter{font-size: 350%;font-weight: bold; width: 35%; text-align: center;}
+	.counter{font-size: 350%;font-weight: bold; width: 30%; text-align: left; display: inline-flex; flex: 0 0 35px; margin-right: 24px;}
 	.h6{margin: 0;}
 	margin-bottom: -56px;
 }
 
+
 @include respond-above(md){
 	.number-list{
-		p{text-align: center;}
-		span{display: inline-block; float: none; width: auto;}
-	}
-}
-
-@include respond-above(lg){
-	.number-list{
-		.col-12{display: flex;}
-		.counter{font-weight: bold; width: auto; font-weight: bold; margin-right: 24px; line-height: 1; display: inline-flex; flex: 0 0 35px;}
+		.col-12{display: block;}
+		.counter{font-weight: bold; width: auto; font-weight: bold; margin-right: 24px; line-height: 1;  text-align: center; display: block; }
+		.text{text-align: center;}
 	}
 }
 @include respond-above(xl){
 	.number-list{margin-bottom: -128px; margin-top: -52px;
+		.col-12{margin-bottom: 40px; display: flex;}
 		p{text-align: left;}
 		span{display: block; width: auto;}
-		.counter{font-size: 350%;}
+		.counter{font-size: 350%;  text-align: left; display: inline-flex; flex: 0 0 35px; margin-right: 24px;}
+		.text{text-align: left;}
 	}
 }
 
