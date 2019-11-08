@@ -10084,7 +10084,7 @@ ul.logos li img {
 }
 
 /* line 845, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
-.profe-item figure:before {
+.profe-item figure:after {
   content: "";
   position: absolute;
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
@@ -10122,10 +10122,16 @@ ul.logos li img {
 
 /* line 851, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
 .profe-item figure:before {
+  content: "";
+  position: absolute;
   background: #6A00C2 url(img/plus-white.svg) no-repeat center center;
   background-size: 48px;
   opacity: 0;
   height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   cursor: pointer;
 }
 
