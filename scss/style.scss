@@ -1080,28 +1080,7 @@ form{
 	.nav-link.active, .nav-pills .show > .nav-link{background: transparent; color: #000; border-bottom: 2px solid #000; border-radius: 0;}
 }
 
-
-/** 07 HOME
-  –––––––––––––––––––––––––––––––––––––––––––––––––– **/
-.home {
-	footer#footer{margin-top: 0;}
-	.hero.hero-big .data-container{padding-top: 40vh;}
-}
-
-/**RWD home**/
-@include respond-above(md){
-	.home .hero.hero-big .data-container{background-position: left top;  background-size: 100%;}
-}
-@include respond-above(lg){
-	.home .hero.hero-big .data-container{padding-top: 35vh;}
-	.home footer#footer{margin-top: 64px;}
-}
-@include respond-above(xxl){
-	.home .hero.hero-big .data-container{ padding-top: 40vh;}
-}
-
-
-/** 08 CARRERA
+/** 07 CARRERA
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 #hero-career{
 	.hero-bg{
