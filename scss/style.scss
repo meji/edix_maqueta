@@ -644,7 +644,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		}
 	}
 	&.plain{box-shadow: none; padding: 12px}
-	p.notice{font-size: 81.25%; color: #949494;}
+	p.notice{font-size: 81.25%; color: #949494; margin-top: 8px;}
 }
 //RWD Career card
 @include respond-above(xl){

@@ -9550,6 +9550,7 @@ ul.logos li img {
 .career-card p.notice {
   font-size: 81.25%;
   color: #949494;
+  margin-top: 8px;
 }
 
 @media (min-width: 1280px) {
