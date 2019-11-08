@@ -592,7 +592,7 @@ footer#footer { margin-top: 0px;
 	}
 }
 @include respond-above(xl){
-	.number-list{margin-bottom: -128px; margin-top: -52px;
+	.number-list{margin-bottom: -88px; margin-top: -52px;
 		.col-12{margin-bottom: 40px; display: flex;}
 		p{text-align: left;}
 		span{display: block; width: auto;}
@@ -632,6 +632,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		&:not(.plain) .card-title{ min-height: 68px;}
 		.separator{margin-top: 16px; padding-top: 24px;}
 		&.hover{cursor: pointer;
+			.separator{border-color: #0D3781; transition: 0.3s;}
 			&:not(.plain){transition: 0.3s; background: $c-azuloscuro;
 				*{color: #fff;
 					a{color: #fff;}
