@@ -474,8 +474,8 @@ footer#footer { margin-top: 0px;
 @include respond-above(sm){
 	footer#footer {
 		#site-white-footer{
-			.unir-footer {width: 190px; text-align: left; float: right;
-				img{width: 100%;}
+			.unir-footer {text-align: left; float: right; margin-top: -8px; 
+				img{width: 100%; width: 190px; display: inline-block; vertical-align: middle; margin-left: 8px; position: relative; top: -5px; }
 			}
 		}
 	}
