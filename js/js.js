@@ -305,7 +305,6 @@ function swipper_initializer(viewportWidth){
 		swiper.params.slidesPerView = 4.1;
 		$('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
 	}
-	console.log (swiper.slidesPerView )
 	//Anulamos el autoplay en el hover
 	$('.swiper-container.swiper4321').hover(function(){swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
 }
@@ -349,7 +348,6 @@ function hoverCareers(){
 		var card = $(this); // Button that triggered the modal
 		var image_src = $(card).find('img').attr('src');
 		var image_src_without_extension = image_src.split('-on').shift();
-		console.log(image_src_without_extension);
 		card.find('img').attr('src', image_src_without_extension+'.svg');
 		card.removeClass('hover');
 	});
