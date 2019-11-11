@@ -72,12 +72,14 @@ hr{height: 2px; border:none; background: $c-azulform; margin: 32px auto;}
 }
 @include respond-above(lg){
 	.is-fixed{position: fixed; top: 110px;}
-	.b-radius{border-radius: 8px; }
 	.pd64{padding: 64px  !important;; }
 	.head-margin{margin-bottom: 84px;}
 	.columnado4{column-count: 4;}
 }
 
+@include respond-above(xxl){
+	.b-radius{border-radius: 8px; }
+}
 /** Gutter diferente en mobile
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 
@@ -146,7 +148,7 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 
 //*Buttons RWD*/
 @include respond-above(md){
-	.btn, #help_btn{display: inline-block; border-radius: 8px; width: auto; font-size: 87.5%;}
+	.btn, #help_btn{display: inline-block; width: auto; font-size: 87.5%;}
 	input[type="submit"]{margin-top: 0;}
 }
 @include respond-above(lg){
@@ -155,6 +157,9 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 	.link-primary-container{margin: 56px 0 0 0;}
 }
 
+@include respond-above(xxl){
+	.btn, #help_btn{border-radius: 8px;}
+}
 /** TEXTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 a{text-decoration:none; color: $c-morado; font-weight: bold; 
@@ -485,7 +490,7 @@ footer#footer { margin-top: 0px;
 }
 @include respond-above(md){
 	footer#footer #site-black-footer{
-		border-radius: 6px; 
+		border-radius: 4px; 
 	}
 }
 @include respond-above(lg){
@@ -502,7 +507,9 @@ footer#footer { margin-top: 0px;
 		}
 	}
 }
-
+@include respond-above(xxl){
+	footer#footer #site-black-footer{border-radius:8px;}
+}
 /** 05 MÓDULOS COMUNES
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 ///////////SECCIONES
@@ -619,7 +626,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 
 ///////////CAREER CARD
 .career-card{
-	padding: 24px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); border-radius: 8px; margin-bottom: 24px; 
+	padding: 24px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); border-radius: 4px; margin-bottom: 24px; 
 	.card-title{font-weight: bold;
 		span{font-weight: normal; font-size: 81.25%; display: block;}
 	}
@@ -663,7 +670,9 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		}
 	}
 }
-
+@include respond-above(xxl){
+	.career-card{border-radius: 8px;}
+}
 ///////////HERO
 .hero.hero-big{width: 100vw; height: 100vh; overflow: hidden; position:relative;
 	.hero-bg{ background: $c-morado;
@@ -754,7 +763,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	.image-text-column-module{
 		.h4{margin-top: 0; line-height: 1.4;}
 		margin-bottom: 56px; 
-		figure{margin: 0 auto 24px; position:relative; border-radius: 8px; overflow: hidden; 
+		figure{margin: 0 auto 24px; position:relative; border-radius: 4px; overflow: hidden; 
 			&:before{content: ''; position: absolute;top:0; left: 0; width: 100%; height: 100%; z-index: 1; @include gradient_foto; opacity: 0.4;}
 			figcaption{position: absolute; bottom:0; left: 0; right: 0; padding: 16px; text-align: left; color: #fff; font-weight: bold; z-index: 2; font-size: 112.5%;}
 			img{display: block; }
@@ -772,7 +781,9 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		}
 	}
 }
-
+@include respond-above(xxl){
+	#main .image-text-modules figure{border-radius: 8px;}
+}
 ///////////TESTIMONIAL
 .testimonial-container {
 	.testimonial-slide{
@@ -798,7 +809,9 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	}
 }
 
-
+@include respond-above(xxl){
+ .testimonial-container .testimonial-slide{border-radius: 8px;}
+}
 ///////////ASIGNATURAS
 .signatures{
 	list-style-type:none; column-count: 1; column-gap:0; 
@@ -843,7 +856,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 
  //////////PROFES
 .profe-item{margin-bottom: 32px; cursor: pointer;
- 	figure{position: relative; border-radius: 8px; overflow: hidden; margin-top: 0; position:relative;
+ 	figure{position: relative; border-radius: 4px; overflow: hidden; margin-top: 0; position:relative;
  		img{display: block; min-width: 100%;}
  		&:after{ content:""; position:absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%); height: 50%; width: 100%; bottom: 0; left: 0; right: 0; z-index:1;}
  		figcaption{position: absolute; bottom: 0; left: 0; right: 0; text-align: left; padding: 16px; margin: 0; color: #fff; z-index:2; 
@@ -858,6 +871,10 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
  		}
  	}
  }
+ @include respond-above(xxl){
+ 	.profe-item figure{ border-radius: 8px}
+ }
+
 /////////Trapecios
 .trapecios-bg{background-image: url(img/trapecios-up.svg); background-repeat: no-repeat; background-position: top left; background-size: 100%;
 	.text-blue{margin-top: 140px;
@@ -893,7 +910,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 //////////FAQS
 .faqs {
 	.faq-container{
-		border-radius: 6px; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); margin-bottom: 16px; padding: 0 16px;
+		border-radius: 4px; box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15); margin-bottom: 16px; padding: 0 16px;
 		.faq-title{font-weight: bold;  padding: 16px 0; background: url('img/plus-purple.svg') no-repeat right center; margin-bottom: 0; cursor: pointer;
 			&:not(.collapsed){border-bottom: 2px solid $c-azulform; background-image: url('img/minus-purple.svg')}
 		}
@@ -909,7 +926,9 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		.faq-body{padding: 20px 0; }
 	}
 }
-
+@include respond-above(xl){
+	.faqs .faq-container{border-radius: 8px;}
+}
 ////////// LAMP MODULE
 .lamp-module{
 	.h2{line-height: 1.2;}
@@ -984,7 +1003,7 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
 	//Modal profe
     .modal-md{border: none; padding: 0; background: transparent;  
     	button.close{position:absolute;opacity:0.9;z-index:100;right:25px;top:25px; color: #000; left:auto;text-shadow:none;border: none; background: transparent; width:30px; height: 30px;}
-    	.modal-content{flex-direction: column; border: none; border-radius: 8px; background: white; overflow: hidden; margin: auto;
+    	.modal-content{flex-direction: column; border: none; border-radius: 4px; background: white; overflow: hidden; margin: auto;
 	    	.image-container{width: 100%; margin:0;
 	    		img{width: 100%;}
 	    	}
@@ -1014,6 +1033,9 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
     body .modal{-webkit-overflow-scrolling: touch;
     	.flex-center{display: block;}
   	}
+}
+@include respond-above(xxl){
+	body .modal .modal-md .modal-content{border-radius: 8px;}
 }
 ////////////VIDEO PLAYER
 .video-container{min-height: 184px; background-size: cover; background-repeat: no-repeat; background-position: center; position:relative;
@@ -1072,7 +1094,7 @@ form{
 @include respond-above(xl){
 	form{
 		.form-control {border-radius: 6px;}
-		p.notice{border-radius: 6px;}
+		p.notice{border-radius: 8px;}
 		.form-control:focus::placeholder{font-size: 64.25%; line-height: 1; position: relative; top: -10px;}
 	}
 }
