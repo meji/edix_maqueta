@@ -141,7 +141,11 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 .link-primary{font-weight: bold; font-size: 87.50%;}
 .link-primary-container{margin: 24px 0 0 0;}
 .shoot-link, .shoot-link-blank{cursor: pointer;}
-.purple-bg .link-primary:hover{text-decoration: underline; color: #fff;}
+.purple-bg .link-primary:hover{color: #fff;
+	&:hover{position:relative;
+		&:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 3px; position: absolute; width: 100%; animation: 0.5s in-out forwards;}
+	}
+}
 
 //*Buttons RWD*/
 @include respond-above(md){
