@@ -458,14 +458,14 @@ $(window).scroll(function(){
 });
 /********************************************/
 //False links
-$('.false-link-blank').click(function(){
+$('.shoot-link-blank').click(function(){
 	let pageurl = this.dataset.href;
 	window.open(
 		pageurl,
 		'_blank' // <- This is what makes it open in a new window.
 	);
 })
-$('.false-link').click(function(){
+$('.shoot-link').click(function(){
 	let pageurl = this.dataset.href;
   	location.href=pageurl;
 })
