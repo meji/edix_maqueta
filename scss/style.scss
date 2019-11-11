@@ -75,9 +75,6 @@ hr{height: 2px; border:none; background: $c-azulform; margin: 32px auto;}
 	.pd64{padding: 64px  !important;; }
 	.head-margin{margin-bottom: 84px;}
 	.columnado4{column-count: 4;}
-}
-
-@include respond-above(xxl){
 	.b-radius{border-radius: 8px; }
 }
 /** Gutter diferente en mobile
@@ -157,9 +154,6 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 	.link-primary-container{margin: 56px 0 0 0;}
 }
 
-@include respond-above(xxl){
-	.btn, #help_btn{border-radius: 8px;}
-}
 /** TEXTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 a{text-decoration:none; color: $c-morado; font-weight: bold; 
@@ -495,7 +489,7 @@ footer#footer { margin-top: 0px;
 }
 @include respond-above(lg){
 	footer#footer {margin-top: 64px; 
-		#site-black-footer{padding: 64px 40px;
+		#site-black-footer{padding: 64px 40px; border-radius: 8px; 
 			.col-lg-4{padding-right:40px;}
 			p{
 				&.footer-link{margin-bottom: 0;}
@@ -507,9 +501,7 @@ footer#footer { margin-top: 0px;
 		}
 	}
 }
-@include respond-above(xxl){
-	footer#footer #site-black-footer{border-radius:8px;}
-}
+
 /** 05 MÓDULOS COMUNES
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 ///////////SECCIONES
@@ -670,7 +662,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		}
 	}
 }
-@include respond-above(xxl){
+@include respond-above(lg){
 	.career-card{border-radius: 8px;}
 }
 ///////////HERO
@@ -775,15 +767,15 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		margin-bottom: -56px; 
 		.image-text-column-module{
 			margin-bottom: 96px;
-			figure figcaption{padding:33px; font-size: 150%; font-weight: bold;
-				.p{margin: 0; font-weight: bold; }
+			figure {border-radius: 8px;
+				figcaption{padding:33px; font-size: 150%; font-weight: bold;
+					.p{margin: 0; font-weight: bold; }
+				}
 			}
 		}
 	}
 }
-@include respond-above(xxl){
-	#main .image-text-modules figure{border-radius: 8px;}
-}
+
 ///////////TESTIMONIAL
 .testimonial-container {
 	.testimonial-slide{
@@ -809,9 +801,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	}
 }
 
-@include respond-above(xxl){
- .testimonial-container .testimonial-slide{border-radius: 8px;}
-}
+
 ///////////ASIGNATURAS
 .signatures{
 	list-style-type:none; column-count: 1; column-gap:0; 
@@ -871,7 +861,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
  		}
  	}
  }
- @include respond-above(xxl){
+ @include respond-above(lg){
  	.profe-item figure{ border-radius: 8px}
  }
 
@@ -921,14 +911,12 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 
 @include respond-above(lg){
 	.faqs .faq-container{
-		margin-bottom: 24px; padding: 0 40px;
+		margin-bottom: 24px; padding: 0 40px; border-radius: 8px; 
 		.faq-title{padding: 20px 0; font-size: 150%;}
 		.faq-body{padding: 20px 0; }
 	}
 }
-@include respond-above(xl){
-	.faqs .faq-container{border-radius: 8px;}
-}
+
 ////////// LAMP MODULE
 .lamp-module{
 	.h2{line-height: 1.2;}
@@ -1032,11 +1020,10 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
 @include respond-below(lg){
     body .modal{-webkit-overflow-scrolling: touch;
     	.flex-center{display: block;}
+    	.modal-md .modal-content{border-radius: 8px;}
   	}
 }
-@include respond-above(xxl){
-	body .modal .modal-md .modal-content{border-radius: 8px;}
-}
+
 ////////////VIDEO PLAYER
 .video-container{min-height: 184px; background-size: cover; background-repeat: no-repeat; background-position: center; position:relative;
 	.video-button{min-height: 184px; display: block; position: absolute;top: 0; left: 0; width: 100%; height: 100%; background: url(img/video-player.svg) no-repeat center center; background-size: 48px; cursor: pointer; z-index:10;}
