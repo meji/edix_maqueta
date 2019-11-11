@@ -204,7 +204,7 @@ $(document).ready(function() {
 
 	/********************************************/
 	//WOW
-	$('section div').addClass('wow fadeInUp')
+	$('section div:not(".data-container")').addClass('wow fadeInUp')
     var wow = new WOW({
     	mobile: false
     })
