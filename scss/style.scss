@@ -142,9 +142,11 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 .link-primary{font-weight: bold; font-size: 87.50%;}
 .link-primary-container{margin: 24px 0 0 0;}
 .shoot-link, .shoot-link-blank{cursor: pointer;}
+.purple-bg .link-primary:hover{text-decoration: underline; color: #fff;}
+
 //*Buttons RWD*/
 @include respond-above(md){
-	.btn, #help_btn{display: inline-block; border-radius: 6px; width: auto; font-size: 87.5%;}
+	.btn, #help_btn{display: inline-block; border-radius: 8px; width: auto; font-size: 87.5%;}
 	input[type="submit"]{margin-top: 0;}
 }
 @include respond-above(lg){
