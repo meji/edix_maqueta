@@ -204,7 +204,7 @@ $(document).ready(function() {
 
 	/********************************************/
 	//WOW
-	$('section div').addClass('wow fadeInUpBig')
+	$('section div').addClass('wow fadeInUp')
     var wow = new WOW({
     	mobile: false
     })
@@ -335,8 +335,7 @@ function hoverCareers(){
  	$('.career-card.icon-left').on('mouseenter', function (event) {
 		var card = $(this); // Button that triggered the modal
 		var image_src = $(card).find('img').attr('src');
-		var image_src_without_extension = image_src.split('.').shift();
-		console.log(image_src_without_extension);
+		var image_src_without_extension = image_src.split('.svg').shift();
 		card.find('img').attr('src', image_src_without_extension+'-on.svg');
 		card.addClass('hover');
 	});
