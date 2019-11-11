@@ -141,6 +141,7 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 }
 .link-primary{font-weight: bold; font-size: 87.50%;}
 .link-primary-container{margin: 24px 0 0 0;}
+.false-link, .false-link-blank{cursor: pointer;}
 //*Buttons RWD*/
 @include respond-above(md){
 	.btn, #help_btn{display: inline-block; border-radius: 6px; width: auto; font-size: 87.5%;}
@@ -673,7 +674,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 			small{font-size: 26.66%; display: block; margin-bottom: 8px; font-weight: normal;}
 		}
 		.h2 small{font-size: 44.435%;}
-		p{line-height: 1.2;}
+		p, .p{line-height: 1.2;}
 		.unir{margin-top: 12px; font-size: 75%;
 			img{width: 160px; display: block;}
 		}
@@ -696,7 +697,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 @include respond-above(md){
 	.hero.hero-big .data-container{background-position: left 102px;  background-size: 100%;
 		.h1{font-size: 375%; margin-bottom: 32px; }
-		p{font-size: 125%; margin-bottom: 32px;}
+		p, .p{font-size: 125%; margin-bottom: 32px;}
 	}
 }
 @include respond-above(lg){

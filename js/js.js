@@ -121,6 +121,7 @@ $(document).ready(function() {
 	$(window).resize(function () {
 		restHeight = $(window).height() - navbarHeight;
 		viewportWidth = $(window).width();
+		swipper_initializer(viewportWidth);
 		// swipper_initializer(viewportWidth);
 		// swipper_initializer_alone(viewportWidth);
 		$('#hero-career').css('height',  restHeight+'px');
@@ -200,6 +201,14 @@ $(document).ready(function() {
 	swipper_initializer_alone_testimonial();
 	cargarProfes();
 	hoverCareers();
+
+	/********************************************/
+	//WOW
+	$('section div').addClass('wow fadeInUpBig')
+    var wow = new WOW({
+    	mobile: false
+    })
+    wow.init();
 });
 
 //SLIDERS funciones vistas responsive
@@ -269,81 +278,36 @@ function swipper_initializer_alone(viewportWidth){
 }
 function swipper_initializer(viewportWidth){
 	//Slider de 4 - 3 - 2 - 1
+	var swiper = new Swiper('.swiper-container.swiper4321', {
+		slidesPerView: 1.1,
+		speed: 1000,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+      	spaceBetween: 20,
+		pagination: {
+  			el: '.swiper-pagination',
+		 	clickable: true
+    	}
+   	});
 	if (viewportWidth<=468) {
-		var swiper = new Swiper('.swiper-container.swiper4321', {
-			slidesPerView: 1.1,
-			speed: 1000,
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-	      	spaceBetween: 20,
-			pagination: {
-      			el: '.swiper-pagination',
-			 	clickable: true
-	    	}
-	   	}
-	);
+		swiper.params.slidesPerView = 1.1;
 	   	// $('.swiper-container.swiper4321').css('margin', '0 -10% 0 0');
 	} else 	if (viewportWidth>= 468 && viewportWidth<1024) {
-		var swiper = new Swiper('.swiper-container.swiper4321', {
-			slidesPerView: 2,
-			speed: 1000,
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-	      	spaceBetween: 20,
-			pagination: {
-      			el: '.swiper-pagination',
-			 	clickable: true
-    		}
-	    }
-	);
+		swiper.params.slidesPerView = 2.1;
 	$('.swiper-container.swiper4321').css('margin', '0 -10% 0 0');
 	}else 	if (viewportWidth>= 1024 && viewportWidth<=1400) {
-		var swiper = new Swiper('.swiper-container.swiper4321', {
-			slidesPerView: 3,
-			loop: true,
-			speed:1000,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-	      	spaceBetween: 20,
-			pagination: {
-      			el: '.swiper-pagination',
-			 	clickable: true
-    		}
-	    }
-	);
+		swiper.params.slidesPerView = 3.1;
 	    $('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
 	} else {
-		var swiper = new Swiper('.swiper-container.swiper4321', {
-			slidesPerView: 4,
-			loop: true,
-			speed:1000,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: true,
-			},
-	  		spaceBetween: 20,
-			pagination: {
-      			el: '.swiper-pagination',
-			 	clickable: true
-    		}
-		}
-	);
-	$('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
-	//Anulamos el autoplay en el hover
-	$('.swiper-container.swiper4321').hover(function(){
-		swiper.autoplay.stop();
-		}, function(){
-			swiper.autoplay.start();
-		});
+		swiper.params.slidesPerView = 4.1;
+		$('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
 	}
+	console.log (swiper.slidesPerView )
+	//Anulamos el autoplay en el hover
+	$('.swiper-container.swiper4321').hover(function(){swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
 }
 function cargarProfes(){
 		//Cargar video en los iframes- 
@@ -447,7 +411,7 @@ $('#footer .social img[src$=".svg"]').each(function(){
 
     }, 'xml');
 });
-
+/********************************************/
 /*Navegación de cabecera de Carrera*/
 // Cache selectors
 var lastId,
@@ -460,7 +424,7 @@ var lastId,
       var item = $($(this).attr("data-href"));
       if (item.length) { return item; }
     });
-
+/********************************************/
 //Smooth scroll
 menuItems.click(function(e){
   var href = $(this).attr("data-href"),
@@ -470,7 +434,7 @@ menuItems.click(function(e){
   }, 1500);
   e.preventDefault();
 });
-
+/********************************************/
 // Bind to scroll
 $(window).scroll(function(){
    // Get container scroll position
@@ -493,3 +457,16 @@ $(window).scroll(function(){
          .end().filter("[data-href='#"+id+"']").parent().addClass("active");
    }                   
 });
+/********************************************/
+//False links
+$('.false-link-blank').click(function(){
+	let pageurl = this.dataset.href;
+	window.open(
+		pageurl,
+		'_blank' // <- This is what makes it open in a new window.
+	);
+})
+$('.false-link').click(function(){
+	let pageurl = this.dataset.href;
+  	location.href=pageurl;
+})
