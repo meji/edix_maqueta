@@ -817,7 +817,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	list-style-type:none; column-count: 1; column-gap:0; 
 	li{font-size: 100%; margin-bottom: 32px; 
 		p:not(.h5){font-size: 100%;}
-		p.h5{margin-bottom: 8px;line-height: 1}
+		.h5{margin-bottom: 8px;line-height: 1}
 	}
 }
 @include respond-above(lg){
