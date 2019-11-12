@@ -254,7 +254,7 @@ function swipper_initializer_alone(viewportWidth){
 	   		}
 	   		
 		);
-		// $('.swiper-container.swiper-alone').css('margin', '0 -10% 0 0');
+		$('.swiper-container.swiper-alone').css('margin', '0 -10% 0 0');
 	}else{
 		var swiper_alone = new Swiper('.swiper-container.swiper-alone', {
 			slidesPerView: 1.1,
