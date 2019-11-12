@@ -1107,9 +1107,9 @@ form{
 	}
 	.data-container{ padding: 0; height: auto; position:relative; background-image: none;
 		.counter-numbers{font-size: 100%;}
-		.data-container-mobile{padding-top: 20vh; height:  calc(100vh - 71px);  padding: 0 16px; margin:0 -16px; background: url(img/purple-triangle.svg) no-repeat left top; align-self: center !important; justify-content: center !important;background-size: cover;
-			.career-icon{display: block; width: 72px; height: 72px; margin: 0 24px 0 0; line-height: 72px; vertical-align: middle; display: inline-block; vertical-align: top; 
-				 img{max-width: 72px; max-height: 72px;}
+		.data-container-mobile{height:  calc(100vh - 71px);  padding: 0 16px; margin:0 -16px; padding-bottom: 100px; background: url(img/purple-triangle.svg) no-repeat left top; align-self: center !important; justify-content: center !important;background-size: cover;
+			.career-icon{display: block; width: 56px; height: 56px; margin: 0 24px 0 0; line-height: 72px; vertical-align: middle; display: inline-block; vertical-align: top; 
+				 img{max-width: 56px; max-height: 56px;}
 			}
 			.h2{display: inline-block;}
 		}
@@ -1142,7 +1142,11 @@ form{
 @include respond-above(md){
 	#hero-career{
 		.data-container{
-			.data-container-mobile{padding: 204px; margin: 0 -204px;}
+			.data-container-mobile{padding: 204px; margin: 0 -204px;
+				.career-icon{width: 72px; height: 72px;
+					img{max-width: 72px; max-height: 72px;}
+				}
+			}
 		}
 		#career-nav{
 			&.fixed.nav-up{top: 84px;}

@@ -462,3 +462,6 @@ $('.shoot-link').click(function(){
 	let pageurl = this.dataset.href;
   	location.href=pageurl;
 })
+/*******/
+//Quitamos contenedores dechecks de cf7
+$('.wpcf7-form input[type="checkbox"]').unwrap().unwrap().unwrap();
