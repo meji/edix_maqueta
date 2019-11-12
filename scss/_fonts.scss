@@ -27,7 +27,7 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("https://hello.myfonts.net/count/3a66b5");
+// @import url("https://hello.myfonts.net/count/3a66b5");
 
   
 // @font-face {font-family: 'Galano';
@@ -38,19 +38,40 @@
 // }
  
   
-@font-face {font-family: 'Galano';
-src: url('../fonts/3A66B5_1_0.eot');
-src: url('../fonts/3A66B5_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_1_0.woff2') format('woff2'),url('../fonts/3A66B5_1_0.woff') format('woff'),url('../fonts/3A66B5_1_0.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
+// @font-face {font-family: 'Galano';
+// src: url('../fonts/3A66B5_1_0.eot');
+// src: url('../fonts/3A66B5_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_1_0.woff2') format('woff2'),url('../fonts/3A66B5_1_0.woff') format('woff'),url('../fonts/3A66B5_1_0.ttf') format('truetype');
+// font-weight: normal;
+// font-style: normal;
+// }
  
   
-@font-face {font-family: 'Galano';
-src: url('../fonts/3A66B5_2_0.eot');
-src: url('../fonts/3A66B5_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_2_0.woff2') format('woff2'),url('../fonts/3A66B5_2_0.woff') format('woff'),url('../fonts/3A66B5_2_0.ttf') format('truetype');
-font-weight: bold;
-font-style: normal;
+// @font-face {font-family: 'Galano';
+// src: url('../fonts/3A66B5_2_0.eot');
+// src: url('../fonts/3A66B5_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A66B5_2_0.woff2') format('woff2'),url('../fonts/3A66B5_2_0.woff') format('woff'),url('../fonts/3A66B5_2_0.ttf') format('truetype');
+// font-weight: bold;
+// font-style: normal;
+// }
+
+@font-face {
+    font-family: 'Galano';
+    src: url('../fonts/rene_bieder_-_galano_grotesque_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/rene_bieder_-_galano_grotesque_semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Galano';
+    src: url('../fonts/rene_bieder_-_galano_grotesque-webfont.woff2') format('woff2'),
+         url('../fonts/rene_bieder_-_galano_grotesque-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant:600&display=swap');

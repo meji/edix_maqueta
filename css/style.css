@@ -5,7 +5,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://hello.myfonts.net/count/3a66b5");
 @import url("https://fonts.googleapis.com/css?family=Cormorant:600&display=swap");
 /* line 8, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/bootstrap/_bootstrap-grid.scss */
 html {
@@ -6859,17 +6858,15 @@ textarea.form-control {
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
   font-family: 'Galano';
-  src: url("../fonts/3A66B5_1_0.eot");
-  src: url("../fonts/3A66B5_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/3A66B5_1_0.woff2") format("woff2"), url("../fonts/3A66B5_1_0.woff") format("woff"), url("../fonts/3A66B5_1_0.ttf") format("truetype");
-  font-weight: normal;
+  src: url("../fonts/rene_bieder_-_galano_grotesque_semibold-webfont.woff2") format("woff2"), url("../fonts/rene_bieder_-_galano_grotesque_semibold-webfont.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Galano';
-  src: url("../fonts/3A66B5_2_0.eot");
-  src: url("../fonts/3A66B5_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/3A66B5_2_0.woff2") format("woff2"), url("../fonts/3A66B5_2_0.woff") format("woff"), url("../fonts/3A66B5_2_0.ttf") format("truetype");
-  font-weight: bold;
+  src: url("../fonts/rene_bieder_-_galano_grotesque-webfont.woff2") format("woff2"), url("../fonts/rene_bieder_-_galano_grotesque-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -8831,7 +8828,7 @@ header#site-header.simple img.unir {
   /* line 397, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   header#site-header nav ul li {
     margin-right: 40px;
-    vertical-align: middle;
+    vertical-align: top;
   }
   /* line 399, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   header#site-header img.unir {
@@ -11132,6 +11129,7 @@ form input.form-control.error::placeholder {
     position: absolute;
     width: 100%;
     animation: 0.5s in-out forwards;
+    bottom: -3px;
   }
   /* line 1150, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   #hero-career #career-nav ul li span:hover {

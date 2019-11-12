@@ -302,19 +302,6 @@ function swipper_initializer(viewportWidth){
 		   	},
 		}
    	});
-	// if (viewportWidth<=468) {
-	// 	swiper.params.slidesPerView = 1.1;
-	//    	// $('.swiper-container.swiper4321').css('margin', '0 -10% 0 0');
-	// } else 	if (viewportWidth>= 468 && viewportWidth<1024) {
-	// 	swiper.params.slidesPerView = 2.1;
-	// $('.swiper-container.swiper4321').css('margin', '0 -10% 0 0');
-	// }else 	if (viewportWidth>= 1024 && viewportWidth<=1400) {
-	// 	swiper.params.slidesPerView = 3.1;
-	//     $('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
-	// } else {
-	// 	swiper.params.slidesPerView = 4.1;
-	// 	$('.swiper-container.swiper4321').css('margin', '0 -5% 0 0');
-	// }
 	//Anulamos el autoplay en el hover
 	$('.swiper-container.swiper4321').hover(function(){swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
 }
