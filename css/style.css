@@ -10204,6 +10204,7 @@ ul.logos li img {
   position: absolute;
   top: 50%;
   left: 50%;
+  bottom: auto;
   margin: -24px 0 -0 -24px;
   z-index: 2;
 }
