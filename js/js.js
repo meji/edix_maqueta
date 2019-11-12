@@ -121,7 +121,6 @@ $(document).ready(function() {
 	$(window).resize(function () {
 		restHeight = $(window).height() - navbarHeight;
 		viewportWidth = $(window).width();
-		swipper_initializer(viewportWidth);
 		// swipper_initializer(viewportWidth);
 		// swipper_initializer_alone(viewportWidth);
 		$('#hero-career').css('height',  restHeight+'px');
@@ -258,7 +257,7 @@ function swipper_initializer_alone(viewportWidth){
 		// $('.swiper-container.swiper-alone').css('margin', '0 -10% 0 0');
 	}else{
 		var swiper_alone = new Swiper('.swiper-container.swiper-alone', {
-			slidesPerView: 1,
+			slidesPerView: 1.1,
 			loop: true,
 			speed: 1000,
 			autoplay: {
@@ -421,7 +420,6 @@ var lastId,
       var item = $($(this).attr("data-href"));
       if (item.length) { return item; }
     });
-/********************************************/
 //Smooth scroll
 menuItems.click(function(e){
   var href = $(this).attr("data-href"),
@@ -431,7 +429,6 @@ menuItems.click(function(e){
   }, 1500);
   e.preventDefault();
 });
-/********************************************/
 // Bind to scroll
 $(window).scroll(function(){
    // Get container scroll position
