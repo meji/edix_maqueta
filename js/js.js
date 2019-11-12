@@ -45,14 +45,15 @@ $(document).ready(function() {
 	}, 250);
 	//Función para controlar cabeceras
 	function hasScrolled() {
-	    var st = $(this).scrollTop();
-	    if (st > navbarHeight) {
+	    var st = $(window).scrollTop();
+	    if (st > (navbarHeight + navbarHeight)) {
 	    	$('header#site-header.closed').addClass('small');
 	    	$('.small img.unir').attr('src', 'images/logo_unir.svg');
 	    	$('.small.transparent #logo img').attr('src', 'images/logo_edix.svg');
 	    	$('header#site-header.closed').addClass('white')
 	    	$('#help_btn.white').removeClass('white');
-	    }else{
+	    	$(window).scrollTop();
+	    }else if (st < (navbarHeight + navbarHeight)){
 	    	$('#help_btn').addClass('white');
 	    	$('header#site-header.closed').removeClass('small').removeClass('nav-up');
 	    	$('.home header#site-header.closed').removeClass('small').removeClass('white');
@@ -60,6 +61,7 @@ $(document).ready(function() {
 	    	$('.home img.unir').attr('src', 'images/logo_unir_b.svg');
 	    	$('.transparent img.unir').attr('src', 'images/logo_unir_b.svg');
 	    	$('.transparent #logo img').attr('src', 'images/logo_edix_b.svg');
+	    	$(window).scrollTop();
 	    }
 	    $('header#site-header.origin-white.opened').removeClass('white');
 	    $('header#site-header.origin-white.closed').addClass('white');
