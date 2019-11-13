@@ -330,7 +330,8 @@ function cargarProfes(){
 }
 function hoverCareers(){
 		//Cargar video en los iframes- 
-	var supportsTouch = (if ("ontouchstart" in document.documentElement || navigator.msMaxTouchPoints) ? true : false;
+	var supportsTouch = ("ontouchstart" in document.documentElement || navigator.msMaxTouchPoints) ? true : false;
+	console.log(supportsTouch);
 	if (supportsTouch == false){
 	 	$('.career-card.icon-left').on('mouseenter', function (event) {
 			var card = $(this); // Button that triggered the modal
