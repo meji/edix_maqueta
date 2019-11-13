@@ -151,9 +151,9 @@ $(document).ready(function() {
 
 	/********************************************/
 	//Control de click menu carrera mobile
-	$('#career-nav').on({
+	$('#career-nav ul').on({
 		click:function(){
-			$(this).toggleClass('opened')
+			$(this).parent().parent().toggleClass('opened')
 		}
 	});
 	
