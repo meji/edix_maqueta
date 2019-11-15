@@ -331,7 +331,6 @@ function cargarProfes(){
 function hoverCareers(){
 		//Cargar video en los iframes- 
 	var supportsTouch = ("ontouchstart" in document.documentElement || navigator.msMaxTouchPoints) ? true : false;
-	console.log(supportsTouch);
 	if (supportsTouch == false){
 	 	$('.career-card.icon-left').on('mouseenter', function (event) {
 			var card = $(this); // Button that triggered the modal
@@ -473,3 +472,9 @@ $('.shoot-link').click(function(){
 /*******/
 //Quitamos contenedores dechecks de cf7
 $('.wpcf7-form input[type="checkbox"]').unwrap().unwrap().unwrap();
+// $('.form-control').after(function(){
+// 	return '<span class="placeholder">'+$(this).attr('placeholder')+'</span>'
+// });
+
+
+
