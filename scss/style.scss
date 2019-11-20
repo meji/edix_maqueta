@@ -139,6 +139,7 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 	}
 	&:hover{background: #fff; color: $c-morado; transition: 0.3s}
 }
+.button-container{margin:0;}
 .link-primary{font-weight: bold; font-size: 87.50%;}
 .link-primary-container{margin: 24px 0 0 0;}
 .shoot-link, .shoot-link-blank{cursor: pointer;}
@@ -152,6 +153,7 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; }
 @include respond-above(md){
 	.btn, #help_btn{display: inline-block; width: auto; font-size: 87.5%;}
 	input[type="submit"]{margin-top: 0;}
+	.home .button-container #help_btn.white{position: relative; bottom: auto; right: auto; }
 }
 @include respond-above(lg){
 	.btn, #help_btn{padding: 12px 52px; line-height:1;}
@@ -696,7 +698,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 @supports ( object-fit: cover ) {
 	.hero.hero-big .hero-bg img{object-fit:cover; max-width:none; width:100%; height: 100%;}
 }
-.home .hero.hero-big .hero-bg:after{height: 50%;background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%);}
+.home .hero.hero-big .hero-bg:after{height: 100%;background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%);}
 // @media screen and (orientation:landscape){
 // 	.hero.hero-big{
 // 		.hero-bg{ min-height: 100%; 
