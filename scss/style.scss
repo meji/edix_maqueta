@@ -134,7 +134,7 @@ hr{height: 2px; border:none; background: $c-azulform; margin: 32px auto;}
 input[type="submit"]{font-size: 100%; margin-top: 32px; }
 
 #help_btn{margin: 0 auto; background: $c-morado; color: #ffffff; position: fixed; bottom: 16px; width: calc(100% - 32px); right: 16px; z-index: 10; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-	&.white{background: #fff; color: $c-morado;
+	&:not(.double).white{background: #fff; color: $c-morado;
 		&:hover{color: #fff; background: $c-morado; transition: 0.3s;}
 	}
 	&:hover{background: #fff; color: $c-morado; transition: 0.3s}
@@ -378,7 +378,7 @@ header#site-header{
 		img.unir{display: inline-block; width: 182px; float: right; margin: 40px 0 0 0;}
 		&.simple img.unir{display: inline-block; width: 182px; float: right; margin: 40px 0 0 0;}
 		&.small{
-			img.unir{width: 120px; margin-top: 29px}
+			img.unir{width: 150px; margin-top: 24px}
 		}
 
 	}
@@ -401,7 +401,7 @@ header#site-header{
 		&.white{padding-bottom: 59px;}
 		&.simple img.unir{display: inline-block; width: 182px; float: right; margin: 64px 0 0 0;}
 		&.small{
-			img.unir{width: 147px; margin: 26px 0 /*160px*/ 0 0}
+			img.unir{width: 161px; margin: 21px 0 /*160px*/ 0 0}
 		}
 	}
 	.home header#site-header:not(.small):not(.opened) {
@@ -743,7 +743,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		img{margin-bottom: 0;margin-right: -12px;}
 	}
 }
-@include respond-above(xl){
+@include respond-above(xl){ 
 	.at-border-right{right: -96px;}
 }
 @include respond-above(xxl){
@@ -762,7 +762,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	.image-text-column-module{
 		.h4{margin-top: 0; line-height: 1.4;}
 		margin-bottom: 56px; 
-		figure{margin: 0 auto 24px; position:relative; border-radius: 4px; overflow: hidden; 
+		figure{margin: 0 auto 24px; position:relative; overflow: hidden; 
 			&:before{content: ''; position: absolute;top:0; left: 0; width: 100%; height: 100%; z-index: 1; @include gradient_foto; opacity: 0.4;}
 			figcaption{position: absolute; bottom:0; left: 0; right: 0; padding: 16px; text-align: left; color: #fff; font-weight: bold; z-index: 2; font-size: 112.5%;}
 			img{display: block; }
@@ -774,7 +774,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		margin-bottom: -56px; 
 		.image-text-column-module{
 			margin-bottom: 96px;
-			figure {border-radius: 8px;
+			figure {
 				figcaption{padding:33px; font-size: 150%; font-weight: bold;
 					.p{margin: 0; font-weight: bold; }
 				}
@@ -1003,7 +1003,7 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
 	    		img{width: 100%;}
 	    	}
 	    	.content{padding: 16px; display: inline-block;
-	    		.text{overflow-y: scroll !important; height: 150px; margin-bottom: 56px;}
+	    		.text{overflow-y: scroll !important; height: 190px; margin-bottom: 56px;}
 	    		.linkedin img{width: 25px;}
 	    	}
 	    }
@@ -1087,6 +1087,10 @@ form{
 	input.form-control.error{border-color: $c-rojoform; color:  $c-rojoform;
 		&::placeholder{color: $c-rojoform;}
 	}
+}
+
+.blue-bg form{
+	.check-button__control{border-color:  $c-azuloscuroclaro; background-color: $c-azuloscuro; margin-bottom: 0;}
 }
 @include respond-above(xl){
 	form{
@@ -1184,9 +1188,11 @@ form{
 		}
 		#career-nav{position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2; 
 			li{display: inline-block; }
-			#help_btn{position: initial; float: right; margin-top: 24px;
-				&.white{background: $c-morado; color: #fff;}
-				&.double{padding-top:7px; padding-bottom:7px;padding-right:7px;  display: inline-block;
+			#help_btn{position: initial; float: right; margin-top: 24px; 
+				&.white{background: $c-morado; color: #fff;
+					&:hover{color: $c-morado; background: #fff;}
+				}
+				&.double{padding:7px 7px 7px 24px;  display: inline-block;
 					span{ margin-left: 24px; background: $c-moradoclaro; color: #fff; display: inline-block;  margin-top: 0px;}
 				}
 			}
