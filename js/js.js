@@ -332,22 +332,21 @@ function hoverCareers(){
 		//Cargar video en los iframes- 
 	var supportsTouch = ("ontouchstart" in document.documentElement || navigator.msMaxTouchPoints) ? true : false;
 	if (supportsTouch == false){
-	 	$('.career-card.icon-left').on('mouseenter', function (event) {
+	 	$('.career-card.icon-left:not(.plain)').on('mouseenter', function (event) {
 			var card = $(this); // Button that triggered the modal
 			var image_src = $(card).find('img').attr('src');
+			console.log(image_src); 
 			var image_src_without_extension = image_src.split('.svg').shift();
 			card.find('img').attr('src', image_src_without_extension+'-on.svg');
 			card.addClass('hover');
 		});
- 	}
- 	//Expandimos el click al div
-	$(".career-card.icon-left").click(function() {
-	  window.location = $(this).find("a").attr("href"); 
-	  return false;
-	});
-	//Quitamos el hover
-	if (supportsTouch == false){
-		$('.career-card.icon-left').on('mouseleave', function (event) {
+	 	//Expandimos el click al div
+		$(".career-card.icon-left:not(.plain)").click(function() {
+		  window.location = $(this).find("a").attr("href"); 
+		  return false;
+		});
+		//Quitamos el hover
+		$('.career-card.icon-left:not(.plain)').on('mouseleave', function (event) {
 			var card = $(this); // Button that triggered the modal
 			var image_src = $(card).find('img').attr('src');
 			var image_src_without_extension = image_src.split('-on').shift();
@@ -358,9 +357,9 @@ function hoverCareers(){
 }
 
 /*
- * Replace all SVG images with inline SVG
+ * Replace  SVG images with inline SVG
  */
-$('#footer .social img[src$=".svg"]').each(function(){
+$('#footer .social img[src$=".svg"], .career-card.icon-left.plain .icon-container img').each(function(){
     var $img = $(this);
     var imgID = $img.attr('id');
     var imgClass = $img.attr('class');
