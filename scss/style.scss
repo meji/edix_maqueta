@@ -733,6 +733,23 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	}
 }
 
+
+////Ajuste home
+
+@media (orientation:landscape) and (max-height:774px) and(min-width: 1700px){
+	#hero-home .data-container{padding-top: 310px;}
+}
+@media (orientation:landscape) and (max-height:774px) and(min-width: 1440px){
+	#hero-home .data-container{padding-top: 228px;}
+}
+@media (orientation:landscape) and (max-height:774px) and(min-width: 1024px){
+	#hero-home .data-container{padding-top: 180px;}
+}
+@media (orientation:landscape) and (max-height:774px) and(min-width: 768px){
+	#hero-home .data-container{padding-top: 157px;}
+}
+
+
 ///////////FOTOS PEGADAS AL BORDER DERECHO
 .at-border-right{text-align: right; 
 	img{margin-bottom: 32px; }
@@ -1209,6 +1226,7 @@ form{
 	}
 }
 
+
 @include respond-above(xxl){
 	#hero-career #career-nav.fixed.nav-up{top: 87px}
 }
@@ -1238,6 +1256,8 @@ form{
 
 	}
 }
+
+
 
 
 /** 09 ANIMACIONES
