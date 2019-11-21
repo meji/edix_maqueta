@@ -973,6 +973,10 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
  	.offer .label{ padding: 8px 27px;}
 }
 
+.career-card .label{background-color: $c-moradoclaro;
+	&.no-plazas{background: $c-azuloscuro;}
+}
+
 //////////COUNTER NUMBERS
 #wrapper .counter-numbers{ font-size: 130%; 
 	.definition{font-size: 75%; font-weight: bold; margin-bottom: 4px;}
