@@ -606,8 +606,8 @@ footer#footer { margin-top: 0px;
 		.col-12{margin-bottom: 40px; display: flex;}
 		p{text-align: left;}
 		span{display: block; width: auto;}
-		.counter{font-size: 350%;  text-align: left; display: inline-flex; flex: 0 0 35px; margin-right: 24px;}
-		.text{text-align: left;}
+		.counter{font-size: 350%;  text-align: left; display: inline-flex; flex: 0 0 35px; margin-right: 12px;}
+		.text{text-align: left; padding-right: 16px;}
 	}
 }
 
@@ -634,7 +634,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 	}
 	.icon-container{padding: 0 0 0 24px; width: 104px; height: 84px; display: flex; align-items: center; justify-content: center; float: right;
 	}
-	&.icon-left{overflow: hidden; position:relative;
+	&.icon-left{overflow: hidden; position:relative; transition: 0.3s;
 		.icon-container{float: left; padding: 0; margin-right: 20px; width: 68px; height: 68px; 
 			img{width: 100%;}
 		}
@@ -642,7 +642,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 			a{color: #000;}
 		}
 		&:not(.plain) .card-title{ min-height: 68px;}
-		.separator{margin-top: 16px; padding-top: 24px;}
+		.separator{margin-top: 16px; padding-top: 24px; transition: 0.3s;} 
 		&.hover, &:hover{cursor: pointer;
 			.separator{border-color: #0D3781; transition: 0.3s;}
 			&.plain {
@@ -1222,8 +1222,8 @@ form{
 				&.white{background: $c-morado; color: #fff;
 					&:hover{color: $c-morado; background: #fff;}
 				}
-				&.double{padding:7px 7px 7px 24px;  display: inline-block;
-					span{ margin-left: 24px; background: $c-moradoclaro; color: #fff; display: inline-block;  margin-top: 0px;}
+				&.double{padding:7px 7px 7px 32px;  display: inline-block;
+					span{ margin-left: 32px; background: $c-moradoclaro; color: #fff; display: inline-block;  margin-top: 0px;}
 				}
 			}
 		}

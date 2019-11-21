@@ -12022,11 +12022,12 @@ footer#footer #site-white-footer .unir-footer img {
     text-align: left;
     display: inline-flex;
     flex: 0 0 35px;
-    margin-right: 24px;
+    margin-right: 12px;
   }
   /* line 610, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   .number-list .text {
     text-align: left;
+    padding-right: 16px;
   }
 }
 
@@ -12111,6 +12112,7 @@ ul.logos li img {
 .career-card.icon-left {
   overflow: hidden;
   position: relative;
+  transition: 0.3s;
 }
 
 /* line 638, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
@@ -12146,6 +12148,7 @@ ul.logos li img {
 .career-card.icon-left .separator {
   margin-top: 16px;
   padding-top: 24px;
+  transition: 0.3s;
 }
 
 /* line 646, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
@@ -13910,12 +13913,12 @@ form input.form-control.error::placeholder {
   }
   /* line 1225, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   #hero-career #career-nav #help_btn.double {
-    padding: 7px 7px 7px 24px;
+    padding: 7px 7px 7px 32px;
     display: inline-block;
   }
   /* line 1226, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   #hero-career #career-nav #help_btn.double span {
-    margin-left: 24px;
+    margin-left: 32px;
     background: #A049F8;
     color: #fff;
     display: inline-block;
