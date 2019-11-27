@@ -475,5 +475,9 @@ $('.wpcf7-form input[type="checkbox"]').unwrap().unwrap().unwrap();
 // 	return '<span class="placeholder">'+$(this).attr('placeholder')+'</span>'
 // });
 
-
+/*******/
+//Mostramos caja legal
+$('.display-legal-text').click(function(){
+	$('.legal-text').fadeIn().css('visibility', 'visible');
+});
 
