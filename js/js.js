@@ -240,47 +240,33 @@ function swipper_initializer_alone(viewportWidth){
 	//Sliders de 1
 	
 	if (viewportWidth<=468) {
-		var swiper_alone = new Swiper('.swiper-container.swiper-alone', {
-			slidesPerView: 1.1,
-			loop: true,
-			speed: 1000,
-			autoplay: {
-					delay: 5000,
-					disableOnInteraction: false,
-				},
-	      	spaceBetween: 20,
-			pagination: {
-	      			el: '.swiper-pagination-alone',
-				 	clickable: true
-	    		}
-	   		}
-	   		
-		);
 		$('.swiper-container.swiper-alone').css('margin', '0 -10% 0 0');
-	}else{
-		var swiper_alone = new Swiper('.swiper-container.swiper-alone', {
-			slidesPerView: 1.01,
-			loop: true,
-			speed: 1000,
-			autoplay: {
-					delay: 5000,
-					disableOnInteraction: false,
-				},
-	      	spaceBetween: 20,
-			pagination: {
-	      			el: '.swiper-pagination-alone',
-				 	clickable: true
-	    		}
-	   		}
-	   		
-		);
-		$('.swiper-container.swiper-alone').css('margin', '0 -5% 0 0');
 	}
+	var swiper_alone = new Swiper('.swiper-container.swiper-alone', {
+		slidesPerView: 1,
+		loop: true,
+		speed: 1000,
+		autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+      	spaceBetween: 20,
+    	navigation: {
+		 	nextEl: '.swiper-button-next-alone',
+    		prevEl: '.swiper-button-prev-alone'
+    	},
+   		breakpoints: {
+		   	468:{
+		   		slidesPerView: 1.1
+		   	},
+		}
+   		
+	});
 }
 function swipper_initializer(viewportWidth){
 	//Slider de 4 - 3 - 2 - 1
 	var swiper = new Swiper('.swiper-container.swiper4321', {
-		slidesPerView: 4.1,
+		slidesPerView: 4,
 		speed: 1000,
 		loop: true,
 		autoplay: {
@@ -288,16 +274,16 @@ function swipper_initializer(viewportWidth){
 			disableOnInteraction: false,
 		},
       	spaceBetween: 20,
-		pagination: {
-  			el: '.swiper-pagination',
-		 	clickable: true
+		navigation: {
+		 	nextEl: '.swiper-button-next-4',
+    		prevEl: '.swiper-button-prev-4'
     	},
     	breakpoints: {
 		    1400: {
-		        slidesPerView: 3.1
+		        slidesPerView: 3
 		   	},
 		   	1024:{
-		   		slidesPerView: 2.1
+		   		slidesPerView: 2
 		   	},
 		   	468:{
 		   		slidesPerView: 1.1
