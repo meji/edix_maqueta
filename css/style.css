@@ -12014,8 +12014,7 @@ footer#footer #site-white-footer .unir-footer img {
 @media (min-width: 1280px) {
   /* line 615, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   .number-list {
-    margin-bottom: -88px;
-    margin-top: -52px;
+    /*margin-bottom: -88px; margin-top: -52px;*/
   }
   /* line 616, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
   .number-list .col-12 {
@@ -13817,7 +13816,7 @@ form .legal-text {
   left: 0;
   bottom: auto;
   width: 100%;
-  z-index: 10;
+  z-index: 1001;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 

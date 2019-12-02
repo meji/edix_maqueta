@@ -612,7 +612,7 @@ footer#footer { margin-top: 0px;
 	}
 }
 @include respond-above(xl){
-	.number-list{margin-bottom: -88px; margin-top: -52px;
+	.number-list{/*margin-bottom: -88px; margin-top: -52px;*/
 		.col-12{margin-bottom: 40px; display: flex;}
 		p{text-align: left;}
 		span{display: block; width: auto;}
@@ -1188,7 +1188,7 @@ form{
 				&.active span{font-weight: bold; position: relative;}
 			}
 		}
-		&.fixed{position: fixed; top: 0; left: 0; bottom: auto; width: 100%; z-index:10;  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
+		&.fixed{position: fixed; top: 0; left: 0; bottom: auto; width: 100%; z-index:1001;  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
 			&.nav-up{top: 71px;}
 		}
 
