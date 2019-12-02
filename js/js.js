@@ -296,14 +296,14 @@ function swipper_initializer(viewportWidth){
 function cargarProfes(){
 		//Cargar video en los iframes- 
  	$('#modal-profe').on('show.bs.modal', function (event) {
-		var button = $(event.relatedTarget); // Button that triggered the modal
-		var image_src = $(button).find('img').attr('src');
-		var image_mobile = $(button).data('src_mobile');
-		var job = button.data('job'); // Extract info from data-* attributes
-		var name = button.data('name');
-		var content = button.data('content');
-		var linkedin = button.data('linkedin')
-		var modal = $(this);
+		let button = $(event.relatedTarget); // Button that triggered the modal
+		let image_src = $(button).find('img').attr('src');
+		let image_mobile = $(button).data('src_mobile');
+		let job = button.data('job'); // Extract info from data-* attributes
+		let name = button.data('name');
+		let content = button.data('content');
+		let linkedin = button.data('linkedin');
+		let modal = $(this);
 		modal.find('.image').attr('src', image_src);
 		modal.find('.image').attr('alt', name);
 		modal.find('.image').attr('title', name);
@@ -312,6 +312,11 @@ function cargarProfes(){
 		modal.find('.job').html(job);
 		modal.find('.name').html(name);
 		modal.find('.text').html(content);
+		if (linkedin.length<=0){
+			modal.find('.linkedin').hide();
+		}else{
+			modal.find('.linkedin').show();
+		}
 	});
 }
 function hoverCareers(){
