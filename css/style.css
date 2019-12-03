@@ -12165,6 +12165,11 @@ ul.logos li img {
   transition: 0.3s;
 }
 
+/* line 656, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
+.career-card.icon-left.hover, .career-card.icon-left:hover {
+  cursor: pointer;
+}
+
 /* line 657, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
 .career-card.icon-left.hover .separator, .career-card.icon-left:hover .separator {
   border-color: #0D3781;

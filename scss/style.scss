@@ -653,7 +653,7 @@ ul.logos{margin-top: 72px; margin-left: -20px; margin-bottom: -40px;
 		}
 		&:not(.plain) .card-title{ min-height: 68px;}
 		.separator{margin-top: 16px; padding-top: 24px; transition: 0.3s;} 
-		&.hover, &:hover{
+		&.hover, &:hover{cursor: pointer;
 			.separator{border-color: #0D3781; transition: 0.3s;}
 			 &.plain {
 			 	&:hover{cursor: default;
