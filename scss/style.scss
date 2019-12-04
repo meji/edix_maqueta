@@ -1144,7 +1144,9 @@ form{
 	input.form-control.error{border-color: $c-rojoform; color:  $c-rojoform;
 		&::placeholder{color: $c-rojoform;}
 	}
-	.legal-text{font-size: 81%; height: 100px; overflow: scroll; border: 1px solid rgba(255,255,255,0.2); padding: 10px; display: none;  margin-bottom: 16px;}
+	.legal-text{font-size: 81%; height: 100px; overflow: scroll; border: 1px solid rgba(255,255,255,0.2); padding: 10px; display: none;  margin-bottom: 16px;
+		&.grey-border{border: 1px solid #eee; margin-bottom: 32px;}
+	}
 }
 
 .blue-bg form{
