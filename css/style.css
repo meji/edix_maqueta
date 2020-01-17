@@ -12303,7 +12303,7 @@ ul.logos li img {
 }
 
 /* line 659, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/style.scss */
-.career-card.icon-left .icon-container img {
+.career-card.icon-left .icon-container svg, .career-card.icon-left .icon-container img {
   width: 100%;
 }
 
