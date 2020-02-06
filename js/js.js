@@ -472,3 +472,8 @@ $('.display-legal-text').click(function(){
 	$('.legal-text').fadeIn().css('visibility', 'visible');
 });
 
+//Expandimos el click al div en post
+$(".post-module").click(function() {
+	window.location = $(this).find("a").attr("href");
+	return false;
+});

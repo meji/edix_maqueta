@@ -1149,7 +1149,7 @@ form{
 		&:checked+.check-button__control{background: #fff;}
 		&:checked+.check-button__control:after { content: ""; display: block; position: absolute; top: 4px; left: 4px; width: 12px; height: 12px; background: url('img/check.svg') no-repeat center center; background-size: 100%;}
 	}
-	p.notice{text-align: 100%; width: 100%; padding: 16px 64px; text-align: center; font-size: 87.5% ; border-radius: 4px;
+	p.notice{ width: 100%; padding: 16px 64px; text-align: center; font-size: 87.5% ; border-radius: 4px;
 		&.blue{background: $c-azulclaro;}
 		&.red{background: $c-rojoform url(img/error-icon.svg) no-repeat 22px center; color: #fff; text-align: left; padding-left: 78px; margin-top: 36px;}
 	}
@@ -1191,6 +1191,7 @@ form{
 			} 
 		}
 	}
+	&:hover{cursor:pointer}
 }
 
 @include respond-above(lg){
@@ -1354,7 +1355,7 @@ form{
     width: 0;
   }
   100% {
-    width: 100;
+    width: 100%;
   }
 }
 
