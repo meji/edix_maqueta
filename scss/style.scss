@@ -1382,3 +1382,12 @@ form{
 		section{border-radius: 0 !important;}
 	}
 }
+
+/** COOKIES
+----------------------------------------------------- */
+#consent_blackbar #truste-consent-track.trustarc-banner{background-color: rgba($c-morado, 0.7); font-family: $font-family; border-top: 1px solid rgba(255,255,255,0.3);
+#truste-consent-text, .truste-required, .truste-open{font-family: $font-family}
+	.truste-required, .truste-open{border-radius: 4px; padding: 12px 0; font-weight: bold; text-transform: none; font-size: $font-base; min-width: 160px;
+		&:hover{color: $c-morado; borer-color: $c-morado; background: #fff}
+	}
+}
