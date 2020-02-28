@@ -350,7 +350,7 @@ function hoverCareers(){
 /*
  * Replace  SVG images with inline SVG 
  */
-$('#footer .social img[src$=".svg"], .career-card.icon-left.plain .icon-container img').each(function(){
+$('#footer .social img[src$=".svg"], .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img').each(function(){
     var $img = $(this);
     var imgID = $img.attr('id');
     var imgClass = $img.attr('class');
