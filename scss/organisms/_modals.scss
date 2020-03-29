@@ -1,0 +1,68 @@
+////////////MODALES
+//Modal popup
+body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margin:0;box-sizing:border-box;z-index:1000000000;
+  //Modal video
+  .modal-lg{width:100vw;height:100vh;margin:0;background:transparent;max-width:none;max-height:none;box-sizing:border-box; position:relative;
+    button.close{position:absolute;opacity:0.9;z-index:1000;right:3px;top:3px; color: #fff; left:auto;text-shadow:none;border: none; width:30px; height: 30px; background: transparent;
+      img{width: 100%;}
+    }
+    .modal-content{height:100vh;background:rgba( $c-azuloscuro, .8 ); padding:15px;
+      iframe{box-sizing:border-box;padding:10px;background:transparent;}
+    }
+  }
+  //Modal tipo profe
+  .modal-md{border: none; padding: 0; background: transparent;
+    button.close{position:absolute;opacity:0.9;z-index:1000;right:25px;top:25px; color: #000; left:auto;text-shadow:none;border: none; background: transparent; width:30px; height: 30px; padding: 0;
+      img, svg{width: 100%;
+        *{fill: #fff}
+        &:hover *{fill: $c-moradoclaro}
+      }
+    }
+    .modal-content{flex-direction: column; border: none; border-radius: 4px; background: white; overflow: hidden; margin: auto;
+      .image-container{width: 100%; margin:0;
+        img{width: 100%;}
+      }
+      .content{padding: 16px; display: inline-block;
+        .text{overflow-y: scroll !important; height: 190px; margin-bottom: 56px; font-size: 1rem;
+          p{font-size: 1rem; }
+        }
+        .linkedin {
+          img, svg{width: 25px;
+            &:hover path{fill: $c-moradoclaro}						&:hover path{fill: $c-moradoclaro}
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-above(md){
+  body .modal{
+    .modal-md{ max-width: 90%;
+      button.close svg *{fill: $c-morado}
+      .modal-content{flex-direction: row;  width: 994px; height: 464px;
+        .image-container{width: 384px;  margin: 0; height: 464px;
+          img{max-width: none; width: auto;}
+        }
+        .content{padding: 56px; }
+      }
+
+    }
+  }
+}
+@include respond-above(xxxl){
+  body .modal{
+    .modal-md{
+      .modal-content{
+        .content .text{height: 150px;}
+        p.job{margin-bottom: 0}
+      }
+    }
+  }
+}
+@include respond-below(lg){
+  body .modal{-webkit-overflow-scrolling: touch;
+    .flex-center{display: block;}
+    .modal-md .modal-content{border-radius: 8px;}
+  }
+}

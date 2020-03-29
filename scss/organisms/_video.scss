@@ -1,0 +1,18 @@
+////////////VIDEO PLAYER
+.video-container{min-height: 184px; background-size: cover; background-repeat: no-repeat; background-position: center; position:relative;
+  .video-button{min-height: 184px; display: block; position: absolute;top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3) url(img/video-player.svg) no-repeat center center; background-size: 48px; cursor: pointer; z-index:10;
+    &:hover{opacity: 0.8;}
+  }
+}
+
+@include respond-above(md){
+  .video-container{min-height: 400px;
+    .video-button{min-height: 400px;}
+  }
+}
+@include respond-above(xl){
+  .video-container{min-height: 672px;
+    .h2{position: relative; z-index:20;}
+    .video-button{min-height: 672px; background-size: 96px;}
+  }
+}

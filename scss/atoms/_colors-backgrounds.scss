@@ -1,0 +1,27 @@
+.text-white{color: #fff;
+  a{color: #fff;
+    &:hover{color: $c-moradoclaro; transition: 0.3s;}
+  }
+}
+.text-blue{color: $c-azuloscuro;}
+.bg-blue-light{background: $c-azulform;}
+.bg-blue-dark{background: $c-azuloscuro;}
+.purple-bg{background-color: $c-morado;}
+.purple-light-bg{background-color: $c-moradoclaro;}
+.blue-bg{background-color: $c-azuloscuro;}
+.blue-light-bg{background-color: $c-azulclaro;}
+/////////Trapecios
+.trapecios-bg{background-image: url(img/trapecios-up.svg); background-repeat: no-repeat; background-position: top left; background-size: 100%;
+  .text-blue{margin-top: 140px;
+    .h2{max-width: 100%; padding-left: 15%;}
+    .super-number strong{font-size: 500%; display: block; line-height:1;}
+  }
+}
+@include respond-above(md){
+  .trapecios-bg{background-image: url(img/trapecios.svg); background-size: contain; background-position: -120% top;
+    .text-blue{margin-top: 0;}
+  }
+}
+@include respond-above(lg){
+  .trapecios-bg{ background-position: left top; }
+}
