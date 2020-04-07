@@ -161,7 +161,7 @@
     }
     #career-nav{position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2;
       li{display: inline-block; }
-      #help_btn{position: initial; float: right; margin-top: 24px;
+      #help_btn{right: 94px;  left: auto;
         &.white{background: $c-morado; color: #fff;
           &:hover{color: $c-morado; background: #fff;}
         }

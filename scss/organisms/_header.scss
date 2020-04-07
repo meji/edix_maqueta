@@ -1,119 +1,131 @@
 /** HEADERS
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 header#site-header{
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    #logo{
+      justify-self: flex-start;
+      margin-right: auto;
+    }
+  }
   position: absolute; width: 100%; top: 0; left: 0; z-index: 10;
-  .container{position: relative;}
   ul{font-size: 100%; line-height: 1;}
   #logo{display: inline-block; width: 54px;
-    img{display: block; margin: 20px auto 0; width: 100%;}
-    &:after{ transition: 0.5s; opacity:0; content:''; position: absolute; top: -300px; left:0; display: block;  height: 105px; width: 149px; z-index: -1;background:url(img/triangulo_b.svg) no-repeat left top;  background-size: 100% 100%; }
+    img{display: block; width: 100%; margin-top: -6px; }
   }
-  nav{display: none; font-weight: bold;}
-  img.unir{display:none;}
-  #nav-icon {width: 25px; display: inline-block;margin-top: 25px; float: right;
+  nav:not(.buttons){display: none; font-weight: bold;}
+  #nav-icon {width: 25px; display: inline-block;float: right; margin-left: 24px;
     &:after, &:before,  div {background-color: #fff; content: ''; display: block; height: 2px; margin: 4px 0; transition: all .2s ease-in-out; border-radius: 1px;}
   }
   //En scroll down
   &.nav-down{opacity: 0; transition: 0.2s; //display: none !important;
     &.nav-down-fixed{opacity:1; display: block;}
-    // & + section{margin-top: 165px;}
   }
   //blanca
   &.white{
     background: #fff; padding-bottom: 25px; position: relative;
-    nav ul li a{color: #000;}
+    nav:not(.buttons) ul li a{color: #000;}
     &.closed #nav-icon{
       &:after, &:before,  div {background: $c-morado;}
     }
     &.small{padding-bottom: 25px; display: block; transition: 0.3s; position: fixed; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); z-index: 1000;
-      #logo:after{top: -200px; opacity: 0; transition: 0.1s;}
+      &:after{top: -200px; opacity: 0; transition: 0.1s;}
       &.no-shadow{box-shadow: none;}
       // & + section{margin-top: 165px;}
     }
   }
-  //simple
-  &.simple{
-    img.unir{display: inline-block; width: 120px; float: right; margin: 20px 0 0 0;}
-  }
   //Ajustamos el salto
   &.nav-down, &.white.small{& + section{margin-top: 71px;}}
 }
-/*Header home*/
-.home header#site-header:not(.small):not(.opened){
-  #logo{margin-left: 30px;
-    &:after{opacity:1; top:-1px; left: 0; }
-  }
-  &.opened #logo:after{top: -200px;}
-}
+
 
 /*Header RWD*/
 @include respond-above(sm){
   header#site-header{
-    #logo{width: 62px;
-      img{  margin: 0 auto; position: relative; margin-top: 40px;}
-    }
-    #nav-icon {margin-top: 46px;}
+    padding-top: 46px;
+    #logo{width: 62px;}
     &.white{padding-bottom: 44px;}
     &.small{
-      #nav-icon{margin-top: 27px;}
-      #logo img{margin-top: 29px; width: 61px;}
+      padding-top: 26px;
+      #logo img{width: 61px;}
     }
-    &.simple{
-      img.unir{display: inline-block; width: 140px; float: right; margin: 32px 0 0 0;}
-    }
-  }
-  .home header#site-header:not(.small):not(.opened) #logo{ margin-left: 74px;
-    img{width: 116%; margin-left: -8%; max-width: none;}
-    &:after{height: 175px;  width: 249px;}
   }
 }
 @include respond-above(md){
   header#site-header{
-    #logo{
-      img{margin-top: 40px;}
-    }
-    &.white{padding-bottom: 44px;}
     &.small{
-      #logo img{margin-top: 27px; width: 69px;}
-      nav{padding-top: 34px;}
+      #logo img{width: 69px;}
       &.white{padding-bottom: 28px;}
     }
     &.nav-down, &.white.small{& + section{margin-top: 113px;}}
   }
-  .home header#site-header:not(.small):not(.opened) {
-    .container{max-width: none;}
-    #logo{margin-left: 72px;
-      &:after{ height: 157px; width: 223px;}
-    }
-    #nav-icon {margin-right: 30px;}
-
-  }
+  //.home header#site-header:not(.small):not(.opened) {
+  //  #nav-icon {margin-right: 30px;}
+  //}
 }
 @include respond-above(lg){
   header#site-header{
-    #logo{
-      img{margin-top: 43px;}
+    .container{
+      .container{max-width: none;}
     }
-    nav{display: inline-block; vertical-align: top; padding-top: 50px;font-size: 14px; float: right; margin-right:0;
-      ul {padding: 0; margin: 0;
-        li{display: inline-block; margin-right: 24px;
-          &:last-child{margin-right: 0; }
-          a{color: #fff;
-            &:hover{position:relative;
-              &:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute;  animation: 0.5s in-out forwards;}
+    nav {
+      font-size: 14px;
+      ul {
+        padding: 0;
+        margin: 0;
+        //font-size: 14px;
+        li{
+          display: inline-block;
+          margin-right: 24px;
+          a{font-weight: 600}
+        }
+      }
+      &:not(.buttons) {
+        display: block;
+        vertical-align: top;
+        justify-self: flex-end;
+        ul {
+          li {
+            a {
+              color: #fff;
+              &:hover {
+                position: relative;
+                &:after {
+                  content: '';
+                  width: 100%;
+                  height: 2px;
+                  background: #fff;
+                  display: block;
+                  margin-top: 5px;
+                  position: absolute;
+                  animation: 0.5s in-out forwards;
+                }
+              }
             }
-          }
-          &.active{position:relative;
-            // a:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute;}
-            &:after{content:""; width: 0; height: 0; border-bottom: 8px solid #fff; border-right: 6px solid transparent; border-left: 6px solid transparent; position: absolute; bottom: -18px; left: 50%; margin-left: -8px;}
+
+            &.active {
+              position: relative;
+              // a:after{content:''; width: 100%; height: 2px; background: #fff; display: block; margin-top: 5px; position: absolute;}
+              &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-bottom: 8px solid #fff;
+                border-right: 6px solid transparent;
+                border-left: 6px solid transparent;
+                position: absolute;
+                bottom: -18px;
+                left: 50%;
+                margin-left: -8px;
+              }
+            }
           }
         }
       }
     }
     #nav-icon{display: none;}
-    &.small{
-      nav{padding-top: 34px;}
-    }
     &.white nav ul li {
       &.active{
         a:after{background: #000;}
@@ -123,65 +135,179 @@ header#site-header{
     }
     &.nav-down, &.white.small{& + section{margin-top: 116px;}}
   }
-  .home header#site-header:not(.small):not(.opened){
-    nav{margin-right: 72px;}
-    #logo{margin-left: 84px;
-      &:after{width: 256px; height: 180px;}
-    }
-  }
 }
 @include respond-above(xxl){
   header#site-header{
-    #logo{width: 79px;
-      img{margin-top: 53px; }
-    }
-    nav{padding-top: 60px; float: none;  margin-left: 150px;
-      ul li{margin-right: 24px;}
-    }
+    padding-top: 53px;
+    #logo{width: 79px;}
     &.white{padding-bottom: 47px;}
-    img.unir{display: inline-block; width: 182px; float: right; margin: 40px 0 0 0;}
-    &.simple img.unir{display: inline-block; width: 182px; float: right; margin: 40px 0 0 0;}
-    &.small{
-      img.unir{width: 150px; margin-top: 24px}
-    }
     &.nav-down, &.white.small{& + section{margin-top: 136px;}}
 
-  }
-  .home header#site-header:not(.small):not(.opened){
-    #logo{margin-left: 110px;
-      &:after{height: 228px; width: 325px;}
-    }
-    img.unir{margin-right: 120px;}
   }
 }
 @include respond-above(xxxl){
   header#site-header{
-    #logo{width: 105px;
-      img{margin-top: 60px;}
+    padding-top: 60px;
+    #logo{width: 105px;}
+    nav{font-size: 18px;
+      ul li{margin-right: 32px; vertical-align: top;}
     }
-    nav{padding-top: 74px; font-size: 18px; margin-left: 154px;
-      ul li{margin-right: 40px; vertical-align: top;}
-    }
-    img.unir{display: inline-block; width: 182px; float: right; margin: 64px 0 0 0;}
     &.white{padding-bottom: 59px;}
-    &.simple img.unir{display: inline-block; width: 182px; float: right; margin: 64px 0 0 0;}
-    &.small{
-      img.unir{width: 161px; margin: 21px 0 /*160px*/ 0 0}
-    }
-  }
-  .home header#site-header:not(.small):not(.opened) {
-    #logo{margin-left: 156px;
-      &:after{height: 304px; width: 434px;}
-    }
-    img.unir{margin-right: 160px;}
   }
   &.nav-down, &.white.small{& + section{margin-top: 165px;}}
 }
 
+/*LOGO HOME*/
+//header#site-header{
+//  &:after{ transition: 0.5s; opacity:0; content:''; position: absolute; top: -300px; left:0; display: block;  height: 15.83vw; width: 22.6vw; z-index: -1;background:url(img/triangulo_b.svg) no-repeat left top;  background-size: 100% 100%; }
+//}
+.home header#site-header:not(.small):not(.opened){
+  #logo{ position: absolute; top: 0; left:0;  height: calc(24vw * 0.7); width: 24vw; z-index: 2;background:url(img/triangulo_b.svg) no-repeat left top;  background-size: 100% 100%; display: flex; align-items: center; justify-content: center;
+    img{
+      max-width: 28%;
+      margin-top: -25%;
+    }
+  }
+  //&:after{opacity:1; top:-1px; left: 0; }
+  &.opened{
+    &:after{top: -200px;}
+    #logo{background: transparent;  max-width: none;}
+  }
+}
+@include respond-below(sm) {
+  .home header#site-header:not(.small):not(.opened) {
+    #logo {
+      height: calc(30vw * 0.7);
+      width: 30vw;
+      img {
+        max-width: 38%;
+        margin-top: -24%;
+      }
+    }
+  }
+}
+
+
+//Control de color del logo a blanco con filter
+body:not(.home) header#site-header:not(.white) #logo img,  header#site-header.opened img{
+  filter: brightness(0) invert(1);
+}
+
+
+//*Botones en header*/
+header#site-header{
+  .buttons{
+    margin-left: 16px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 8px;
+        &:last-child{margin: 0}
+        .btn{
+          padding: 10px;
+          span{display: none}
+          background: transparent;
+          min-width: auto;
+          img, svg{
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            path{fill: #fff}
+          }
+          &:hover{
+            background: $c-morado;
+            color: #fff;
+            border-color: $c-morado;
+          }
+        }
+      }
+    }
+  }
+  &.white .buttons{
+    ul li .btn{
+      color: $c-morado;
+      img, svg{
+        path{fill: $c-morado;}
+      }
+      &:hover{
+        color: #fff;
+        img, svg{
+          path{fill: #fff;}
+        }
+      }
+    }
+  }
+  &.opened {
+    .container{
+      align-items:flex-start;
+    }
+    .buttons{
+      display: none;
+    }
+  }
+}
+@include respond-above(xl) {
+  header#site-header {
+    .buttons ul li {
+      .btn {
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
 /*Header mobile*/
+@include respond-below(xxl){
+  .home, body{
+    header#site-header{
+      .container{max-width: none;
+        padding: 0 32px;
+      }
+    }
+  }
+}
+@include respond-above(sm){
+  header#site-header {
+    .buttons ul li {
+      .btn {
+        padding: 8px 24px;
+        border: 1px solid #fff;
+        img, svg{ margin-right: 8px;}
+        span {
+          display: inline-block;
+        }
+      }
+    }
+    &.white{
+      .buttons ul li .btn{border-color: $c-morado}
+    }
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px){
+header#site-header {
+  .buttons ul li {
+    .btn {
+      padding: 10px;
+      border-color: transparent !important;
+      img, svg{ margin-right: 0px;}
+      span {
+        display: none;
+      }
+    }
+  }
+}
+}
 @include respond-below(lg){
   .home, body{
     header#site-header{
+      padding-top: 25px;
+      .container{padding: 0 24px;}
       &.opened{
         position: fixed; height: 100vh; background: $c-azuloscuro; transition: 0.5s;
         .container{height: 100vh;}
@@ -191,7 +317,7 @@ header#site-header{
           div {transform: scale(0);}
         }
         #logo {background: transparent; position: relative; z-index: 2;}
-        nav {display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; position: absolute; left: 0; top: 0;
+        nav:not(.buttons) {display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; position: absolute; left: 0; top: 0;
           ul{margin: -40px 0 0; padding: 0;
             li{display: block; text-align: center; margin-bottom: 45px; font-size: 18px;
               a{color: #fff;}

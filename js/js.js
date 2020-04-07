@@ -117,8 +117,8 @@ function headersControl() {
 		if (viewportWidth >= 1024) {
 			$('header#site-header').removeClass('opened');
 			$('header#site-header').addClass('closed');
-			$('.home:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
-			$('.white:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
+			// $('.home:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
+			// $('.white:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
 		}
 	});
 }
@@ -350,7 +350,7 @@ function utilUiMethods() {
 	wow.init();
 
 	//Replace  SVG images with inline SVG
-	$('#footer .social img[src$=".svg"], .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img').each(function(){
+	$('#footer .social img[src$=".svg"], .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img').each(function(){
 		const $img = $(this);
 		const imgID = $img.attr('id');
 		const imgClass = $img.attr('class');
@@ -435,16 +435,16 @@ function utilUiMethods() {
 		click:function(){
 			$('header#site-header').toggleClass('opened');
 			$('header#site-header').toggleClass('closed');
-			if($('.home #site-header:not(.white) #logo img').attr('src')=='images/logo_edix.svg'){
-				$('.home #site-header:not(.white) #logo img').attr('src', 'images/logo_edix_b.svg');
-			}else{
-				$('.home #site-header:not(.white) #logo img').attr('src', 'images/logo_edix.svg');
-			}
-			if($('.white #logo img').attr('src')=='images/logo_edix.svg'){
-				$('.white #logo img').attr('src', 'images/logo_edix_b.svg');
-			}else{
-				$('.white #logo img').attr('src', 'images/logo_edix.svg');
-			}
+			// if($('.home #site-header:not(.white) #logo img').attr('src')=='images/logo_edix.svg'){
+			// 	$('.home #site-header:not(.white) #logo img').attr('src', 'images/logo_edix_b.svg');
+			// }else{
+			// 	$('.home #site-header:not(.white) #logo img').attr('src', 'images/logo_edix.svg');
+			// }
+			// if($('.white #logo img').attr('src')=='images/logo_edix.svg'){
+			// 	$('.white #logo img').attr('src', 'images/logo_edix_b.svg');
+			// }else{
+			// 	$('.white #logo img').attr('src', 'images/logo_edix.svg');
+			// }
 		}
 	});
 }
