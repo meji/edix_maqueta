@@ -10916,6 +10916,7 @@ input[type="submit"] {
   left: 16px;
   bottom: 24px;
   width: auto;
+  right: auto;
   z-index: 10;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
@@ -11000,21 +11001,40 @@ input[type="submit"] {
     bottom: auto;
     right: auto;
   }
+  /* line 41, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  #hero-career #career-nav.fixed nav.container {
+    position: relative;
+  }
+  /* line 43, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  #hero-career #career-nav.fixed nav.container #help_btn {
+    right: 16px;
+  }
 }
 
 @media (min-width: 1024px) {
-  /* line 43, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 49, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   .btn, #help_btn {
     padding: 12px 32px;
     line-height: 1;
   }
-  /* line 44, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 50, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   .btn-container {
     margin-top: 56px;
   }
-  /* line 45, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 51, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   .link-primary-container {
     margin: 56px 0 0 0;
+  }
+  /* line 52, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  #help_btn {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 55, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  #help_btn {
+    bottom: 28px;
   }
 }
 
@@ -13512,7 +13532,7 @@ header#site-header .buttons ul li:last-child {
 
 /* line 209, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
 header#site-header .buttons ul li .btn {
-  padding: 10px;
+  padding: 0;
   background: transparent;
   min-width: auto;
 }
@@ -13624,51 +13644,68 @@ header#site-header.opened .buttons {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  /* line 310, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  header#site-header.white.small .buttons ul li .btn {
+    padding: 0;
+    border-color: transparent !important;
+  }
+  /* line 313, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  header#site-header.white.small .buttons ul li .btn img, header#site-header.white.small .buttons ul li .btn svg {
+    margin-right: 0px;
+  }
+  /* line 314, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  header#site-header.white.small .buttons ul li .btn span {
+    display: none;
+  }
+}
+
 @media (max-width: 1023px) {
-  /* line 308, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 323, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header, body header#site-header {
     padding-top: 25px;
   }
-  /* line 310, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 325, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header .container, body header#site-header .container {
     padding: 0 24px;
   }
-  /* line 311, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 326, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened, body header#site-header.opened {
     position: fixed;
     height: 100vh;
     background: #032258;
     transition: 0.5s;
+    z-index: 999999;
   }
-  /* line 313, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 328, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened .container, body header#site-header.opened .container {
     height: 100vh;
   }
-  /* line 314, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 329, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened #nav-icon, body header#site-header.opened #nav-icon {
     vertical-align: middle;
     position: relative;
     z-index: 2;
   }
-  /* line 315, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 330, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened #nav-icon:before, body header#site-header.opened #nav-icon:before {
     transform: translateY(6px) rotate(135deg);
   }
-  /* line 316, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 331, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened #nav-icon:after, body header#site-header.opened #nav-icon:after {
     transform: translateY(-6px) rotate(-135deg);
   }
-  /* line 317, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 332, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened #nav-icon div, body header#site-header.opened #nav-icon div {
     transform: scale(0);
   }
-  /* line 319, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 334, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened #logo, body header#site-header.opened #logo {
     background: transparent;
     position: relative;
     z-index: 2;
   }
-  /* line 320, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 335, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened nav:not(.buttons), body header#site-header.opened nav:not(.buttons) {
     display: flex;
     align-items: center;
@@ -13679,27 +13716,27 @@ header#site-header.opened .buttons {
     left: 0;
     top: 0;
   }
-  /* line 321, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 336, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened nav:not(.buttons) ul, body header#site-header.opened nav:not(.buttons) ul {
     margin: -40px 0 0;
     padding: 0;
   }
-  /* line 322, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 337, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened nav:not(.buttons) ul li, body header#site-header.opened nav:not(.buttons) ul li {
     display: block;
     text-align: center;
     margin-bottom: 45px;
     font-size: 18px;
   }
-  /* line 323, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 338, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened nav:not(.buttons) ul li a, body header#site-header.opened nav:not(.buttons) ul li a {
     color: #fff;
   }
-  /* line 324, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 339, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened nav:not(.buttons) ul li.active, body header#site-header.opened nav:not(.buttons) ul li.active {
     position: relative;
   }
-  /* line 325, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
+  /* line 340, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_header.scss */
   .home header#site-header.opened nav:not(.buttons) ul li.active:after, body header#site-header.opened nav:not(.buttons) ul li.active:after {
     content: "";
     width: 0;
@@ -14106,7 +14143,7 @@ header#site-header.opened .buttons {
   }
   /* line 133, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav.fixed.nav-up {
-    top: 84px;
+    top: 75px;
   }
   /* line 134, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav ul li {
@@ -14223,53 +14260,60 @@ header#site-header.opened .buttons {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   /* line 178, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  #hero-career #career-nav.fixed.nav-up {
+    top: 85px;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* line 181, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav.fixed.nav-up {
     top: 87px;
   }
 }
 
 @media (max-width: 1023px) {
-  /* line 183, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 186, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career {
     height: auto !important;
     overflow: visible;
   }
-  /* line 185, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 188, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav nav ul {
     margin: 0 -16px;
     padding-left: 16px;
     cursor: pointer;
   }
-  /* line 187, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 190, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav nav ul li:not(.active) {
     opacity: 0;
     display: none;
     transition: 1s;
   }
-  /* line 188, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 191, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav nav ul li.active {
     background: url(img/unfold.svg) no-repeat right center;
   }
-  /* line 192, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 195, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav:not(.fixed) nav ul li:first-child {
     opacity: 1;
     display: block;
     transition: 1s;
     background: url(img/unfold.svg) no-repeat right center;
   }
-  /* line 195, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 198, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav.opened nav ul li {
     opacity: 1;
     display: block;
     transition: 1s;
   }
-  /* line 196, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 199, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav.opened nav ul li.active {
     background: none;
   }
-  /* line 197, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 200, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav.opened nav ul li.active span:after {
     content: '';
     width: 100%;
@@ -14280,7 +14324,7 @@ header#site-header.opened .buttons {
     position: absolute;
     animation: 0.5s in-out forwards;
   }
-  /* line 199, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
+  /* line 202, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_heroes.scss */
   #hero-career #career-nav.opened nav ul li:first-child {
     background: url(img/fold.svg) no-repeat right center;
   }

@@ -207,7 +207,7 @@ header#site-header{
         margin-right: 8px;
         &:last-child{margin: 0}
         .btn{
-          padding: 10px;
+          padding: 0;
           span{display: none}
           background: transparent;
           min-width: auto;
@@ -290,18 +290,33 @@ header#site-header{
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 1279px){
-header#site-header {
-  .buttons ul li {
-    .btn {
-      padding: 10px;
-      border-color: transparent !important;
-      img, svg{ margin-right: 0px;}
-      span {
-        display: none;
+  header#site-header {
+    .buttons ul li {
+      .btn {
+        padding: 10px;
+        border-color: transparent !important;
+        img, svg{ margin-right: 0px;}
+        span {
+          display: none;
+        }
       }
     }
   }
 }
+
+@media screen and (max-width: 1279px){
+  header#site-header.white.small {
+    .buttons ul li {
+      .btn {
+        padding: 0;
+        border-color: transparent !important;
+        img, svg{ margin-right: 0px;}
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 }
 @include respond-below(lg){
   .home, body{
@@ -309,7 +324,7 @@ header#site-header {
       padding-top: 25px;
       .container{padding: 0 24px;}
       &.opened{
-        position: fixed; height: 100vh; background: $c-azuloscuro; transition: 0.5s;
+        position: fixed; height: 100vh; background: $c-azuloscuro; transition: 0.5s;  z-index: 999999;
         .container{height: 100vh;}
         #nav-icon{ vertical-align: middle; position:relative; z-index:2;
           &:before {transform: translateY(6px) rotate(135deg);}
