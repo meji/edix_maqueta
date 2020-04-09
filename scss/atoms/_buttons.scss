@@ -38,12 +38,6 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; -webkit-appearance: unse
   .btn, #help_btn{display: inline-block; width: auto; font-size: 0.875rem;}
   input[type="submit"]{margin-top: 0;}
   .home .button-container #help_btn.white{position: relative; bottom: auto; right: auto; }
-  #hero-career #career-nav.fixed  nav.container{
-    position: relative;
-    #help_btn {
-      right: 16px;
-    }
-  }
 }
 @include respond-above(lg){
   .btn, #help_btn{padding: 12px 32px; line-height:1;}

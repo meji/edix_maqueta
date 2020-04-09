@@ -27,3 +27,8 @@
   .columnado4{column-count: 4;}
   .b-radius{border-radius: 8px; }
 }
+
+//CHAT
+body #hubspot-messages-iframe-container{
+  z-index: 999995;
+}

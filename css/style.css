@@ -11001,38 +11001,30 @@ input[type="submit"] {
     bottom: auto;
     right: auto;
   }
-  /* line 41, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
-  #hero-career #career-nav.fixed nav.container {
-    position: relative;
-  }
-  /* line 43, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
-  #hero-career #career-nav.fixed nav.container #help_btn {
-    right: 16px;
-  }
 }
 
 @media (min-width: 1024px) {
-  /* line 49, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 43, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   .btn, #help_btn {
     padding: 12px 32px;
     line-height: 1;
   }
-  /* line 50, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 44, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   .btn-container {
     margin-top: 56px;
   }
-  /* line 51, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 45, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   .link-primary-container {
     margin: 56px 0 0 0;
   }
-  /* line 52, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 46, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   #help_btn {
     position: absolute;
   }
 }
 
 @media (min-width: 1440px) {
-  /* line 55, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 49, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
   #help_btn {
     bottom: 28px;
   }
@@ -12352,6 +12344,11 @@ ul.logos li img {
   .b-radius {
     border-radius: 8px;
   }
+}
+
+/* line 32, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_tools.scss */
+body #hubspot-messages-iframe-container {
+  z-index: 999995;
 }
 
 /* line 1, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_typos.scss */
