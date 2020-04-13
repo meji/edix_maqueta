@@ -11,7 +11,7 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
     }
   }
   //Modal tipo profe
-  .modal-md{border: none; padding: 0; background: transparent;
+  .modal-md, .modal-sm{border: none; padding: 0; background: transparent;
     button.close{position:absolute;opacity:0.9;z-index:1000;right:25px;top:25px; color: #000; left:auto;text-shadow:none;border: none; background: transparent; width:30px; height: 30px; padding: 0;
       img, svg{width: 100%;
         *{fill: #fff}
@@ -35,6 +35,12 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
     }
   }
 }
+body .modal .modal-sm{
+  button.close{
+    svg *{fill:$c-morado}
+    &:hover svg *{fill:$c-moradoclaro }
+  }
+}
 
 @include respond-above(md){
   body .modal{
@@ -48,6 +54,7 @@ body .modal{width:100vw;height:100vh;background:rgba( $c-azuloscuro, .8 ) ;margi
       }
 
     }
+    .modal-sm{max-width: 600px}
   }
 }
 @include respond-above(xxxl){

@@ -10858,6 +10858,7 @@ textarea.form-control {
   background-color: #fff;
   transition: 0.25s;
   color: #6A00C2;
+  cursor: pointer;
 }
 
 /* line 4, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_buttons.scss */
@@ -14385,14 +14386,14 @@ body .modal .modal-lg .modal-content iframe {
 }
 
 /* line 14, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md {
+body .modal .modal-md, body .modal .modal-sm {
   border: none;
   padding: 0;
   background: transparent;
 }
 
 /* line 15, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md button.close {
+body .modal .modal-md button.close, body .modal .modal-sm button.close {
   position: absolute;
   opacity: 0.9;
   z-index: 1000;
@@ -14409,22 +14410,22 @@ body .modal .modal-md button.close {
 }
 
 /* line 16, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md button.close img, body .modal .modal-md button.close svg {
+body .modal .modal-md button.close img, body .modal .modal-md button.close svg, body .modal .modal-sm button.close img, body .modal .modal-sm button.close svg {
   width: 100%;
 }
 
 /* line 17, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md button.close img *, body .modal .modal-md button.close svg * {
+body .modal .modal-md button.close img *, body .modal .modal-md button.close svg *, body .modal .modal-sm button.close img *, body .modal .modal-sm button.close svg * {
   fill: #fff;
 }
 
 /* line 18, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md button.close img:hover *, body .modal .modal-md button.close svg:hover * {
+body .modal .modal-md button.close img:hover *, body .modal .modal-md button.close svg:hover *, body .modal .modal-sm button.close img:hover *, body .modal .modal-sm button.close svg:hover * {
   fill: #A049F8;
 }
 
 /* line 21, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content {
+body .modal .modal-md .modal-content, body .modal .modal-sm .modal-content {
   flex-direction: column;
   border: none;
   border-radius: 4px;
@@ -14434,24 +14435,24 @@ body .modal .modal-md .modal-content {
 }
 
 /* line 22, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .image-container {
+body .modal .modal-md .modal-content .image-container, body .modal .modal-sm .modal-content .image-container {
   width: 100%;
   margin: 0;
 }
 
 /* line 23, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .image-container img {
+body .modal .modal-md .modal-content .image-container img, body .modal .modal-sm .modal-content .image-container img {
   width: 100%;
 }
 
 /* line 25, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .content {
+body .modal .modal-md .modal-content .content, body .modal .modal-sm .modal-content .content {
   padding: 16px;
   display: inline-block;
 }
 
 /* line 26, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .content .text {
+body .modal .modal-md .modal-content .content .text, body .modal .modal-sm .modal-content .content .text {
   overflow-y: scroll !important;
   height: 190px;
   margin-bottom: 56px;
@@ -14459,78 +14460,92 @@ body .modal .modal-md .modal-content .content .text {
 }
 
 /* line 27, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .content .text p {
+body .modal .modal-md .modal-content .content .text p, body .modal .modal-sm .modal-content .content .text p {
   font-size: 1rem;
 }
 
 /* line 30, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .content .linkedin img, body .modal .modal-md .modal-content .content .linkedin svg {
+body .modal .modal-md .modal-content .content .linkedin img, body .modal .modal-md .modal-content .content .linkedin svg, body .modal .modal-sm .modal-content .content .linkedin img, body .modal .modal-sm .modal-content .content .linkedin svg {
   width: 25px;
 }
 
 /* line 31, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .content .linkedin img:hover path, body .modal .modal-md .modal-content .content .linkedin svg:hover path {
+body .modal .modal-md .modal-content .content .linkedin img:hover path, body .modal .modal-md .modal-content .content .linkedin svg:hover path, body .modal .modal-sm .modal-content .content .linkedin img:hover path, body .modal .modal-sm .modal-content .content .linkedin svg:hover path {
   fill: #A049F8;
 }
 
 /* line 31, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
-body .modal .modal-md .modal-content .content .linkedin img:hover path, body .modal .modal-md .modal-content .content .linkedin svg:hover path {
+body .modal .modal-md .modal-content .content .linkedin img:hover path, body .modal .modal-md .modal-content .content .linkedin svg:hover path, body .modal .modal-sm .modal-content .content .linkedin img:hover path, body .modal .modal-sm .modal-content .content .linkedin svg:hover path {
+  fill: #A049F8;
+}
+
+/* line 40, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+body .modal .modal-sm button.close svg * {
+  fill: #6A00C2;
+}
+
+/* line 41, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+body .modal .modal-sm button.close:hover svg * {
   fill: #A049F8;
 }
 
 @media (min-width: 768px) {
-  /* line 41, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 47, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md {
     max-width: 90%;
   }
-  /* line 42, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 48, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md button.close svg * {
     fill: #6A00C2;
   }
-  /* line 43, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 49, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content {
     flex-direction: row;
     width: 994px;
     height: 464px;
   }
-  /* line 44, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 50, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .image-container {
     width: 384px;
     margin: 0;
     height: 464px;
   }
-  /* line 45, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 51, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .image-container img {
     max-width: none;
     width: auto;
   }
-  /* line 47, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 53, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .content {
     padding: 56px;
+  }
+  /* line 57, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  body .modal .modal-sm {
+    max-width: 600px;
   }
 }
 
 @media (min-width: 1700px) {
-  /* line 57, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 64, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .content .text {
     height: 150px;
   }
-  /* line 58, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 65, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content p.job {
     margin-bottom: 0;
   }
 }
 
 @media (max-width: 1023px) {
-  /* line 64, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 71, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal {
     -webkit-overflow-scrolling: touch;
   }
-  /* line 65, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 72, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .flex-center {
     display: block;
   }
-  /* line 66, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 73, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content {
     border-radius: 8px;
   }
