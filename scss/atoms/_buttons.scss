@@ -11,7 +11,7 @@
 }
 .text-white .btn{
   &.btn-secondary{color: #fff; background: transparent; border-color: #fff;
-    &:hover{background: $c-morado; transition: 0.3s; border-color: $c-morado; }
+    &:hover{background: $c-morado; transition: $transition; border-color: $c-morado; }
   }
 }
 
@@ -19,9 +19,9 @@ input[type="submit"]{font-size: 100%; margin-top: 32px; -webkit-appearance: unse
 
 #help_btn{margin: 0 auto; background: $c-morado; color: #ffffff; position: fixed; left: 16px;  bottom: 24px; width: auto; right: auto;  z-index: 10; box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   &:not(.double).white{background: #fff; color: $c-morado;
-    &:hover{color: #fff; background: $c-morado; transition: 0.3s;}
+    &:hover{color: #fff; background: $c-morado; transition: $transition;}
   }
-  &:hover{background: #fff; color: $c-morado; transition: 0.3s}
+  &:hover{background: #fff; color: $c-morado; transition: $transition}
 }
 .button-container{margin:0;}
 .link-primary{font-weight: bold; font-size: 87.50%;}

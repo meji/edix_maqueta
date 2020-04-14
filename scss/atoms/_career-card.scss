@@ -8,7 +8,7 @@
   }
   .icon-container{padding: 0 0 0 24px; width: 104px; height: 84px; display: flex; align-items: center; justify-content: center; float: right;
   }
-  &.icon-left{overflow: hidden; position:relative; transition: 0.3s;
+  &.icon-left{overflow: hidden; position:relative; transition: $transition;
     .icon-container{float: left; padding: 0; margin-right: 20px; width: 68px; height: 68px;
       svg, img{width: 100%;}
     }
@@ -16,25 +16,25 @@
       a{color: #000;}
     }
     &:not(.plain) .card-title{ min-height: 68px;}
-    .separator{margin-top: 24px; padding-top: 24px; transition: 0.3s; font-size: 1rem}
+    .separator{margin-top: 24px; padding-top: 24px; transition: $transition; font-size: 1rem}
     &.hover, &:hover{cursor: pointer;
-      .separator{border-color: #0D3781; transition: 0.3s;}
+      .separator{border-color: #0D3781; transition: $transition;}
       &.plain {
         &:hover{cursor: default;
           a{cursor: default;
             &:hover{cursor: default;}
           }
         }
-        // 	*[fill="#032258"]{fill: $c-morado; transition: 0.3s;}
+        // 	*[fill="#032258"]{fill: $c-morado; transition: $transition;}
 
       }
 
-      &:not(.plain){transition: 0.3s; background: $c-azuloscuro;
+      &:not(.plain){transition: $transition; background: $c-azuloscuro;
         *{color: #fff;
           a{color: #fff;}
         }
-        .label{background: #fff; color: $c-azuloscuro; transition: 0.3s;
-          &:before{border-left-color: $c-azuloscuro;  transition: 0.3s;}
+        .label{background: #fff; color: $c-azuloscuro; transition: $transition;
+          &:before{border-left-color: $c-azuloscuro;  transition: $transition;}
         }
       }
     }

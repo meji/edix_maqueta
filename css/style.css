@@ -15016,35 +15016,38 @@ body .modal .modal-sm button.close:hover svg * {
   background-size: 48px;
   cursor: pointer;
   z-index: 10;
+  transition: 0.3s;
 }
 
-/* line 4, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
+/* line 16, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
 .video-container .video-button:hover {
-  opacity: 0.8;
+  background-color: transparent;
+  z-index: 30;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  /* line 9, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
+  /* line 25, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
   .video-container {
     min-height: 400px;
   }
-  /* line 10, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
+  /* line 26, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
   .video-container .video-button {
     min-height: 400px;
   }
 }
 
 @media (min-width: 1280px) {
-  /* line 14, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
+  /* line 30, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
   .video-container {
     min-height: 672px;
   }
-  /* line 15, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
+  /* line 31, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
   .video-container .h2 {
     position: relative;
     z-index: 20;
   }
-  /* line 16, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
+  /* line 32, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_video.scss */
   .video-container .video-button {
     min-height: 672px;
     background-size: 96px;

@@ -4,7 +4,7 @@ footer#footer { margin-top: 0;
     padding: 48px 16px;	background: #000; color: #fff;
     .col-lg-4:first-child p.footer-title{margin-top: 0;}
     a{color: #fff; font-weight: bold; font-size: 87.50%;
-      &:hover{color: $c-moradoclaro; transition: 0.3s;}
+      &:hover{color: $c-moradoclaro; transition: $transition;}
     }
     p{max-width: 394px;
       &.footer-title{font-size: 131%; font-weight: bold; margin-bottom: 10px;}
@@ -17,7 +17,7 @@ footer#footer { margin-top: 0;
       li{
         margin-right: 30px;
         img{max-width: 20px;}
-        a:hover path{fill: $c-moradoclaro; transition: 0.3s;}
+        a:hover path{fill: $c-moradoclaro; transition: $transition;}
       }
     }
     &.onecol{

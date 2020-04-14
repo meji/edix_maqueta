@@ -1,7 +1,7 @@
 //Pagination
 .pagination-nav{
   width: 100%;
-  .page-link{color: $c-morado; transition: 0.3s;
+  .page-link{color: $c-morado; transition: $transition;
     &:hover{color: $c-moradoclaro; background: $c-azulform;}
   }
   .page-item.active .page-link{background: $c-morado;}

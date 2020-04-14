@@ -1,6 +1,6 @@
 .text-white{color: #fff;
   a{color: #fff;
-    &:hover{color: $c-moradoclaro; transition: 0.3s;}
+    &:hover{color: $c-moradoclaro; transition: $transition;}
   }
 }
 .text-blue{color: $c-azuloscuro;}
