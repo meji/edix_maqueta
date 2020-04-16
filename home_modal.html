@@ -330,8 +330,13 @@
         <script>
           hbspt.forms.create({
             portalId: "6185067",
-            formId: "9ab376b8-bb60-4202-8b1e-c9e12075415a"
+            formId: "69a271a5-7bad-46a9-a0ea-904419a0b110",
+            onFormReady: function($form){
+                $('input.hs-input').addClass('form-control')
+                $('input[type="submit"]').addClass('btn').removeClass('form-control');
+            }
           });
+
         </script>
     </div>
   </div>

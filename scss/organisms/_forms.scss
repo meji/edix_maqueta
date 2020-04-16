@@ -5,7 +5,7 @@ form{
     &.form-check-label{cursor: pointer;}
   }
   .form-check label{font-size: 70%;}
-  .form-control {background: $c-azulform; border: 2px solid $c-azulform; font-size: 81.25%; line-height: 1.8; padding:12px ;height: 42px; box-shadow: none; -webkit-appearance: none;
+  .form-control, input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]) {background: $c-azulform; border: 2px solid $c-azulform; font-size: 81.25%; line-height: 1.8; padding:12px ;height: 42px; box-shadow: none; -webkit-appearance: none;
     &:focus{box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border: 2px solid $c-azulform;}
     &:not(:placeholder-shown):not(select){background: #fff; font-weight: bold;}
   }
@@ -32,7 +32,7 @@ form{
   }
   p.submit{margin: 40px 0;}
   small.error{color: $c-rojoform; font-size: 64.30%}
-  input.form-control.error{border-color: $c-rojoform; color:  $c-rojoform;
+  input.form-control.error, input.error.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]){border-color: $c-rojoform; color:  $c-rojoform;
     &::placeholder{color: $c-rojoform;}
   }
   .legal-text{font-size: 81%; height: 100px; overflow: scroll; border: 1px solid rgba(255,255,255,0.2); padding: 10px; display: none;  margin-bottom: 16px;
@@ -45,8 +45,8 @@ form{
 }
 @include respond-above(xl){
   form{
-    .form-control {border-radius: 6px;}
+    .form-control, input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]) {border-radius: 6px;}
     p.notice{border-radius: 8px;}
-    .form-control:focus::placeholder{font-size: 64.25%; line-height: 1; position: relative; top: -10px;}
+    .form-control:focus::placeholder, input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]):focus::placeholder{font-size: 64.25%; line-height: 1; position: relative; top: -10px;}
   }
 }

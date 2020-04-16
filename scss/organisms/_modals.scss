@@ -73,3 +73,14 @@ body .modal .modal-sm{
     .modal-md .modal-content{border-radius: 8px;}
   }
 }
+
+.modal .hs-form{
+  text-align: right;
+  input:not([type="submit"]){text-align: left}
+  input[type="submit"]{
+    margin-top: 16px;
+  }
+}
+.modal {
+  input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]){width: 100%}
+}
