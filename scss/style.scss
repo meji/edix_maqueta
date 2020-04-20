@@ -41,6 +41,7 @@ $transition: 0.3s;
 //Atoms
 @import 'atoms/animations';
 @import 'atoms/animations.scss';
+@import 'atoms/brand-icon.scss';
 @import 'atoms/breadcrumb.scss';
 @import 'atoms/buttons.scss';
 @import 'atoms/career-card.scss';
@@ -50,6 +51,7 @@ $transition: 0.3s;
 @import 'atoms/explorer.scss';
 @import 'atoms/faqs.scss';
 @import 'atoms/general.scss';
+@import 'atoms/img-container.scss';
 @import 'atoms/invoice.scss';
 @import 'atoms/labels.scss';
 @import 'atoms/lamp-module.scss';
@@ -79,7 +81,11 @@ $transition: 0.3s;
 @import 'organisms/sections.scss';
 @import 'organisms/slider-posts.scss';
 @import 'organisms/slides.scss';
+@import 'organisms/trapecios-module.scss';
 @import 'organisms/video.scss';
+
+//Pages
+@import 'pages/error.scss';
 
 
 

@@ -1,0 +1,7 @@
+.img-container{
+  margin-bottom: 16px;
+}
+
+@include respond-above(lg){
+  margin-bottom: 0;
+}

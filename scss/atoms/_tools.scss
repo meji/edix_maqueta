@@ -19,6 +19,7 @@
 }
 @include respond-above(md){
   .pd64{padding: 24px  !important;; }
+  .text-left.text-md-right{text-align: right}
 }
 @include respond-above(lg){
   .is-fixed{position: fixed; top: 110px;}
@@ -32,3 +33,5 @@
 body #hubspot-messages-iframe-container{
   z-index: 999995;
 }
+
+.flex-center{display: flex; align-content: center; justify-content: center; flex-direction: column}

@@ -17,5 +17,5 @@
 }
 
 @include respond-below(xl){
-  .post-module .h4, .h5, .h6{font-size: 150%;}
+  .post-module .h4, .post-module  .h5, .post-module .h6{font-size: 150%;}
 }

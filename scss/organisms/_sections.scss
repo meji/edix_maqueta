@@ -16,6 +16,7 @@
   &.triangles-bg{background-image: url(img/triangles.svg); background-repeat: no-repeat; background-position: left top; padding-top: 80px; padding-bottom: 80px; background-size: auto 100%;}
   &.triangles-right-bg{background-image: url(img/triangles-right.svg); background-repeat: no-repeat; background-position: right top; padding-top:64px; padding-bottom: 64px; background-size: auto 100%;}
   &.pdno{padding:0 16px; margin-top: 64px;}
+  &.without-item-margin{margin-bottom: -16px; }
 }
 //////////Secciones extendidas**//
 
@@ -52,7 +53,7 @@
     }
     p{line-height: 1.8;}
     .margin{margin-bottom: 72px;}
-    h2.super-title, h3.super-title{margin-bottom: 32px;}
+    h2.super-title, h3.super-title, .super-title{margin-bottom: 32px;}
   }
 }
 @include respond-above(xxl){
