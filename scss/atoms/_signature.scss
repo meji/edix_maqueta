@@ -1,16 +1,45 @@
 ///////////ASIGNATURAS
+
+.with-head .signature-block-head {
+  .h3, h3 {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+}
+.signature-block:first-child{
+  .signature-block-head {
+    .h3, h3 {
+      margin-top: 0;
+    }
+  }
+}
 .signatures{
   list-style-type:none;
   li{font-size: 100%; margin-bottom: 32px;
-    p:not(.h5){font-size: 100%;}
+    p:not(.h5){font-size: 100%; margin-bottom: 0;}
     .h5{margin-bottom: 8px;line-height: 1}
     a{color: #000;
       &:hover{color: $c-morado}
     }
   }
 }
-@include respond-above(lg){
+@include respond-above(xl){
+  .section.signatures-section{
+    padding-top: 72px;
+  }
+  .with-head .signature-block-head{
+    .h3, h3{
+      margin-top: 56px;
+      margin-bottom: 0;
+    }
+    .margin{margin-bottom: 40px;}
+  }
   .signatures{
+    margin-bottom:0;
     li{margin-bottom: 40px;}
   }
+}
+
+@include respond-above(xl){
+
 }

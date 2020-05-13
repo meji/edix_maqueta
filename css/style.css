@@ -12105,40 +12105,69 @@ ul.logos li img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 2, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+/* line 4, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+.with-head .signature-block-head .h3, .with-head .signature-block-head h3 {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+/* line 11, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+.signature-block:first-child .signature-block-head .h3, .signature-block:first-child .signature-block-head h3 {
+  margin-top: 0;
+}
+
+/* line 16, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
 .signatures {
   list-style-type: none;
 }
 
-/* line 4, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+/* line 18, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
 .signatures li {
   font-size: 100%;
   margin-bottom: 32px;
 }
 
-/* line 5, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+/* line 19, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
 .signatures li p:not(.h5) {
   font-size: 100%;
+  margin-bottom: 0;
 }
 
-/* line 6, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+/* line 20, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
 .signatures li .h5 {
   margin-bottom: 8px;
   line-height: 1;
 }
 
-/* line 7, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+/* line 21, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
 .signatures li a {
   color: #000;
 }
 
-/* line 8, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+/* line 22, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
 .signatures li a:hover {
   color: #6A00C2;
 }
 
-@media (min-width: 1024px) {
-  /* line 14, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+@media (min-width: 1280px) {
+  /* line 27, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+  .section.signatures-section {
+    padding-top: 72px;
+  }
+  /* line 31, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+  .with-head .signature-block-head .h3, .with-head .signature-block-head h3 {
+    margin-top: 56px;
+    margin-bottom: 0;
+  }
+  /* line 35, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+  .with-head .signature-block-head .margin {
+    margin-bottom: 40px;
+  }
+  /* line 37, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
+  .signatures {
+    margin-bottom: 0;
+  }
+  /* line 39, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/atoms/_signature.scss */
   .signatures li {
     margin-bottom: 40px;
   }
@@ -14542,11 +14571,16 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 /* line 80, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+.modal .hs-form input[type="tel"] {
+  margin-top: 16px;
+}
+
+/* line 81, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
 .modal .hs-form input[type="submit"] {
   margin-top: 16px;
 }
 
-/* line 85, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
+/* line 86, /Volumes/GoogleDrive/Mi unidad/LABORAL/SOYMEJI/CLIENTES/EDIX/WEB/edix_maqueta/scss/organisms/_modals.scss */
 .modal input.hs-input:not([type="submit"]):not([type="checkbox"]):not([type="radiobutton"]) {
   width: 100%;
 }
