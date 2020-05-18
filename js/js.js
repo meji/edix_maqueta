@@ -330,6 +330,12 @@ function utilUiMethods() {
 	});
 	//Quitamos contenedores dechecks de cf7
 	$('.wpcf7-form input[type="checkbox"]').unwrap().unwrap().unwrap();
+
+	//Ponemos en enable el botón
+	$("#legal").on('click', (function() {
+		$(this).closest('form').find('.wpcf7-submit.btn').attr("disabled", !this.checked);
+	}));
+
 	//Mostramos caja legal
 	$('.display-legal-text').click(function () {
 		$('.legal-text').fadeIn().css('visibility', 'visible');
