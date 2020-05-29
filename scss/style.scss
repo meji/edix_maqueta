@@ -16,7 +16,6 @@
 @import 'bootstrap/pagination.scss';
 @import 'bootstrap/breadcrumb.scss';
 
-
 //Variables
 // fonts
 $font-base: 16px;
@@ -25,26 +24,26 @@ $font-secondary: 'Cormorant';
 $font-height: 1.5;
 
 //colores
-$c-morado: #6A00C2;
-$c-moradoclaro: #A049F8;
+$c-morado: #6a00c2;
+$c-moradoclaro: #a049f8;
 $c-azuloscuro: #032258;
-$c-azuloscuroclaro: #0D3781;
-$c-azulform: #E6F1F4;
-$c-azulclaro: #00CCFF;
-$c-rojoform: #F47151;
+$c-azuloscuroclaro: #0d3781;
+$c-azulform: #e6f1f4;
+$c-azulclaro: #00ccff;
+$c-rojoform: #f47151;
+$c-amarillo: #ffe24d;
 
 //Transitions
 $transition: 0.3s;
 
-
-
 //Atoms
-@import 'atoms/animations';
 @import 'atoms/animations.scss';
+@import 'atoms/blog_module.scss';
 @import 'atoms/brand-icon.scss';
 @import 'atoms/breadcrumb.scss';
 @import 'atoms/buttons.scss';
 @import 'atoms/career-card.scss';
+@import 'atoms/career-card-new.scss';
 @import 'atoms/colors-backgrounds.scss';
 @import 'atoms/cookies.scss';
 @import 'atoms/counter-numbers.scss';
@@ -56,7 +55,9 @@ $transition: 0.3s;
 @import 'atoms/labels.scss';
 @import 'atoms/lamp-module.scss';
 @import 'atoms/logo.scss';
+@import 'atoms/notice.scss';
 @import 'atoms/number-lists.scss';
+@import 'atoms/number-list-home.scss';
 @import 'atoms/offer.scss';
 @import 'atoms/paginations.scss';
 @import 'atoms/pills.scss';
@@ -86,31 +87,3 @@ $transition: 0.3s;
 
 //Pages
 @import 'pages/error.scss';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

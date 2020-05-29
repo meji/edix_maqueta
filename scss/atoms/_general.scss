@@ -1,6 +1,6 @@
 body{box-sizing: border-box;margin:0; padding: 0; background: #fff; font-family:$font-family; @include font-smoothing(antialiased); font-weight: 400; font-size: $font-base; line-height: 1.4;}
 :focus{outline: none;}
-#wrapper{margin:0; padding: 0; overflow: hidden;}
+#wrapper{margin:0; padding: 0; overflow: hidden; transition: $transition;}
 img{max-width: 100%;}
 hr{height: 2px; border:none; background: $c-azulform; margin: 32px auto;}
 /** Gutter diferente en mobile

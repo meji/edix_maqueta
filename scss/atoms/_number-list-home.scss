@@ -1,0 +1,36 @@
+.number-list-new{
+  h3, h4, h5{
+    margin:0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .counter{
+      font-weight: 600;
+      font-size: 48px;
+      margin-right: 16px;
+      line-height: 1;
+    }
+    .text{
+      font-weight: 300;
+      line-height: 1;
+      &.up{
+        align-self: flex-start;
+      }
+      &.down{
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@include respond-above(lg){
+  .number-list-new {
+    h3, h4, h5 {
+      margin: 0;
+      justify-content: center;
+      .counter {
+        font-size: 86px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.blog-module {
+  margin-bottom: 32px;
+  img {
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+  }
+  p.date {
+    font-size: 0.875rem;
+    margin-bottom: 8px;
+  }
+  .blog-title {
+    margin: 0 auto 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    a {
+      color: #000;
+      transition: $transition;
+      &:hover {
+        color: $c-morado;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blog-module {
+    margin-bottom: 0;
+  }
+}

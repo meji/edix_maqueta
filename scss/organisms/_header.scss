@@ -1,6 +1,7 @@
 /** HEADERS
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
 header#site-header{
+  transition: $transition;
   .container{
     display: flex;
     justify-content: flex-end;

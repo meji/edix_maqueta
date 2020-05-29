@@ -1,5 +1,10 @@
 ////////////VIDEO PLAYER
-.video-container{min-height: 184px; background-size: cover; background-repeat: no-repeat; background-position: center; position:relative;
+.video-container {
+  min-height: 184px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   .video-button {
     min-height: 184px;
     display: block;
@@ -21,14 +26,41 @@
   }
 }
 
-@include respond-above(md){
-  .video-container{min-height: 400px;
-    .video-button{min-height: 400px;}
+@include respond-above(md) {
+  .video-container {
+    min-height: 400px;
+    .video-button {
+      min-height: 400px;
+    }
   }
 }
-@include respond-above(xl){
-  .video-container{min-height: 672px;
-    .h2{position: relative; z-index:20;}
-    .video-button{min-height: 672px; background-size: 96px;}
+@include respond-above(xl) {
+  .video-container {
+    min-height: 672px;
+    .h2 {
+      position: relative;
+      z-index: 20;
+    }
+    .video-button {
+      min-height: 672px;
+      background-size: 96px;
+    }
+  }
+}
+
+.video-button-player {
+  cursor: pointer;
+  &:before {
+    content: '';
+    background: transparent url(img/player-icon.svg) no-repeat left center;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  &:hover {
+    text-decoration: underline;
   }
 }
