@@ -474,6 +474,12 @@ function utilUiMethods() {
     }
   })
   //Notice class to body
+  //10 segundos para mostrarlo
+  setTimeout(function () {
+    $('#notice-ext').addClass('visible')
+    $('body').addClass('with-notice')
+  }, 10000)
+  //Cuando lo mostremos metemos la clase del body
   if ($('#notice-ext.visible').length) {
     $('body').addClass('with-notice')
   }

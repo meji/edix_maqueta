@@ -47,6 +47,9 @@
       cursor: pointer;
     }
   }
+  &.turqoise {
+    background: $c-turqoise;
+  }
 }
 .text-white .btn {
   &.btn-secondary {
