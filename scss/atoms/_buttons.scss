@@ -49,6 +49,7 @@
   }
   &.turqoise {
     background: $c-turqoise;
+    border-color: $c-turqoise;
   }
 }
 .text-white .btn {
@@ -61,6 +62,10 @@
       transition: $transition;
       border-color: $c-morado;
     }
+  }
+  &.turqoise {
+    background: $c-turqoise;
+    border-color: $c-turqoise;
   }
 }
 

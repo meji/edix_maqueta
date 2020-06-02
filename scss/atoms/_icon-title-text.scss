@@ -1,0 +1,10 @@
+@include respond-below(lg) {
+  .icon-title-text-module {
+    margin-bottom: 72px;
+  }
+}
+.icon-title-text-module {
+  .icon-container {
+    margin-bottom: 16px;
+  }
+}

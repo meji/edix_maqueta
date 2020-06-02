@@ -487,4 +487,6 @@ function utilUiMethods() {
     $(this).parent('#notice-ext ').removeClass('visible')
     $('body').removeClass('with-notice')
   })
+  //Lanzamos modal de newsletter
+  $('#newsletter_modal').modal('show')
 }

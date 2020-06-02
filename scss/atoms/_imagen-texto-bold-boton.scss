@@ -1,0 +1,15 @@
+@include respond-below(lg) {
+  .imagen-texto-bold-boton {
+    > div {
+      order: 2;
+    }
+
+    > div:nth-child(2) {
+      order: 1;
+    }
+    img {
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+}
