@@ -12199,17 +12199,19 @@ body.with-notice header#site-header {
 /* line 2, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new h3,
 .number-list-new h4,
-.number-list-new h5 {
+.number-list-new h5,
+.number-list-new .h4 {
   margin: 0 0 32px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-/* line 9, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 10, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new h3 .counter,
 .number-list-new h4 .counter,
-.number-list-new h5 .counter {
+.number-list-new h5 .counter,
+.number-list-new .h4 .counter {
   font-weight: 600;
   font-size: 48px;
   margin-right: 32px;
@@ -12221,96 +12223,108 @@ body.with-notice header#site-header {
   background-size: 20px;
 }
 
-/* line 19, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 20, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new h3 .counter small,
 .number-list-new h4 .counter small,
-.number-list-new h5 .counter small {
+.number-list-new h5 .counter small,
+.number-list-new .h4 .counter small {
   position: absolute;
   top: -10px;
   font-size: 1rem;
   font-weight: normal;
 }
 
-/* line 26, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 27, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new h3 .text,
 .number-list-new h4 .text,
-.number-list-new h5 .text {
+.number-list-new h5 .text,
+.number-list-new .h4 .text {
   font-weight: 300;
   line-height: 1;
 }
 
-/* line 29, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 30, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new h3 .text.down,
 .number-list-new h4 .text.down,
-.number-list-new h5 .text.down {
+.number-list-new h5 .text.down,
+.number-list-new .h4 .text.down {
   align-self: flex-end;
 }
 
-/* line 33, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 34, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new h3 strong.text.down,
 .number-list-new h4 strong.text.down,
-.number-list-new h5 strong.text.down {
+.number-list-new h5 strong.text.down,
+.number-list-new .h4 strong.text.down {
   font-weight: 600;
   margin-left: -32px;
   margin-right: 16px;
 }
 
-/* line 43, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 45, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new .col-12:first-child h3 .counter,
 .number-list-new .col-12:first-child h4 .counter,
-.number-list-new .col-12:first-child h5 .counter {
+.number-list-new .col-12:first-child h5 .counter,
+.number-list-new .col-12:first-child .h4 .counter {
   background-image: url("img/ellipse-morada.svg");
 }
 
-/* line 52, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 55, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new .col-12:nth-child(2) h3 .counter,
 .number-list-new .col-12:nth-child(2) h4 .counter,
-.number-list-new .col-12:nth-child(2) h5 .counter {
+.number-list-new .col-12:nth-child(2) h5 .counter,
+.number-list-new .col-12:nth-child(2) .h4 .counter {
   background-image: url("img/triangulo-azul.svg");
   background-position: bottom 0 left 77%;
 }
 
-/* line 62, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+/* line 66, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
 .number-list-new .col-12:last-child h3 .counter,
 .number-list-new .col-12:last-child h4 .counter,
-.number-list-new .col-12:last-child h5 .counter {
+.number-list-new .col-12:last-child h5 .counter,
+.number-list-new .col-12:last-child .h4 .counter {
   background-image: url("img/cuadrado-morado.svg");
   background-position: top 6px left 40%;
 }
 
 @media (min-width: 1024px) {
-  /* line 72, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+  /* line 76, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
   .number-list-new h3,
   .number-list-new h4,
-  .number-list-new h5 {
+  .number-list-new h5,
+  .number-list-new .h4 {
     margin: 0;
     justify-content: center;
   }
-  /* line 77, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+  /* line 82, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
   .number-list-new h3 .counter,
   .number-list-new h4 .counter,
-  .number-list-new h5 .counter {
+  .number-list-new h5 .counter,
+  .number-list-new .h4 .counter {
     font-size: 86px;
     text-align: left;
     width: auto;
     margin-right: 16px;
   }
-  /* line 83, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+  /* line 88, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
   .number-list-new h3 strong.text.down,
   .number-list-new h4 strong.text.down,
-  .number-list-new h5 strong.text.down {
+  .number-list-new h5 strong.text.down,
+  .number-list-new .h4 strong.text.down {
     margin-left: -16px;
   }
-  /* line 91, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+  /* line 97, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
   .number-list-new .col-12:first-child h3 .counter,
   .number-list-new .col-12:first-child h4 .counter,
-  .number-list-new .col-12:first-child h5 .counter {
+  .number-list-new .col-12:first-child h5 .counter,
+  .number-list-new .col-12:first-child .h4 .counter {
     background-position: top 0 left 40%;
   }
-  /* line 100, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
+  /* line 107, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_number-list-home.scss */
   .number-list-new .col-12:last-child h3 .counter,
   .number-list-new .col-12:last-child h4 .counter,
-  .number-list-new .col-12:last-child h5 .counter {
+  .number-list-new .col-12:last-child h5 .counter,
+  .number-list-new .col-12:last-child .h4 .counter {
     background-position: top 6px right 6px;
   }
 }

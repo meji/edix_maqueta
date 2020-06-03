@@ -273,21 +273,21 @@ function hoverCareers() {
   let supportsTouch =
     'ontouchstart' in document.documentElement || navigator.msMaxTouchPoints ? true : false
   //Expandimos el click al div
-  $('.career-card.icon-left:not(.plain)').click(function () {
+  $('.career-card.icon-left:not(.plain), .career-card-new').click(function () {
     window.location = $(this).find('a').attr('href')
     return false
   })
   if (supportsTouch == false) {
-    $('.career-card.icon-left:not(.plain)').on('mouseenter', function (event) {
+    $('.career-card.icon-left:not(.plain), .career-card-new').on('mouseenter', function (event) {
       var card = $(this) // Button that triggered the modal
       var image_src = $(card).find('img').attr('src')
-      console.log(image_src)
+      // console.log(image_src)
       var image_src_without_extension = image_src.split('.svg').shift()
       card.find('img').attr('src', image_src_without_extension + '-on.svg')
       card.addClass('hover')
     })
     //Quitamos el hover
-    $('.career-card.icon-left:not(.plain)').on('mouseleave', function (event) {
+    $('.career-card.icon-left:not(.plain), .career-card-new').on('mouseleave', function (event) {
       var card = $(this) // Button that triggered the modal
       var image_src = $(card).find('img').attr('src')
       var image_src_without_extension = image_src.split('-on').shift()

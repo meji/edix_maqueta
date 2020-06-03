@@ -1,7 +1,8 @@
 .number-list-new {
   h3,
   h4,
-  h5 {
+  h5,
+  .h4 {
     margin: 0 0 32px;
     display: flex;
     align-items: center;
@@ -39,7 +40,8 @@
   .col-12:first-child {
     h3,
     h4,
-    h5 {
+    h5,
+    .h4 {
       .counter {
         background-image: url('img/ellipse-morada.svg');
       }
@@ -48,7 +50,8 @@
   .col-12:nth-child(2) {
     h3,
     h4,
-    h5 {
+    h5,
+    .h4 {
       .counter {
         background-image: url('img/triangulo-azul.svg');
         background-position: bottom 0 left 77%;
@@ -58,7 +61,8 @@
   .col-12:last-child {
     h3,
     h4,
-    h5 {
+    h5,
+    .h4 {
       .counter {
         background-image: url('img/cuadrado-morado.svg');
         background-position: top 6px left 40%;
@@ -71,7 +75,8 @@
   .number-list-new {
     h3,
     h4,
-    h5 {
+    h5,
+    .h4 {
       margin: 0;
       justify-content: center;
       .counter {
@@ -87,7 +92,8 @@
     .col-12:first-child {
       h3,
       h4,
-      h5 {
+      h5,
+      .h4 {
         .counter {
           background-position: top 0 left 40%;
         }
@@ -96,7 +102,8 @@
     .col-12:last-child {
       h3,
       h4,
-      h5 {
+      h5,
+      .h4 {
         .counter {
           background-position: top 6px right 6px;
         }
