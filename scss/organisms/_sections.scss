@@ -4,7 +4,7 @@
   .title.h2 {
     margin-top: 0;
     line-height: 1.1;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     &.margin {
       margin-bottom: 48px;
     }
@@ -148,7 +148,8 @@
     h2.super-title,
     h3.super-title,
     .super-title {
-      margin-bottom: 32px;
+      margin-bottom: 16px;
+      line-height: 1;
     }
   }
 }
