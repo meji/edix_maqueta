@@ -467,7 +467,8 @@ header#site-header {
 @media screen and (min-width: 1023px) and (max-width: 1279px) {
   header#site-header {
     .buttons ul li {
-      .btn {
+      .btn,
+      .btn.btn-cta {
         padding: 8px;
         img,
         svg {
