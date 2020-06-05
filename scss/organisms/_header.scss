@@ -337,19 +337,21 @@ header#site-header {
           margin: 0;
         }
         .btn {
-          padding: 10px;
+          padding: 8px;
           span {
             display: none;
           }
           min-width: auto;
           background: transparent;
-          border-color: #fff;
-          &.turqoise {
+          border-color: transparent;
+          &.btn-cta {
             background: $c-turqoise;
             border-color: $c-turqoise !important;
             color: #fff !important;
             &:hover {
-              border-color: $c-morado !important;
+              border-color: #039684 !important;
+              background-color: #039684 !important;
+              color: #fff !important;
             }
             svg path {
               fill: #fff !important;
@@ -365,9 +367,15 @@ header#site-header {
             }
           }
           &:hover {
-            background: $c-morado;
-            color: #fff;
-            border-color: $c-morado;
+            background: transparent;
+            color: $c-morado;
+            border-color: transparent;
+            img,
+            svg {
+              path {
+                fill: $c-morado;
+              }
+            }
           }
         }
       }
@@ -388,6 +396,15 @@ header#site-header {
         svg {
           path {
             fill: #fff;
+          }
+        }
+      }
+      &:not(.btn-cta):hover {
+        color: $c-moradoclaro;
+        img,
+        svg {
+          path {
+            fill: $c-moradoclaro;
           }
         }
       }
@@ -431,8 +448,8 @@ header#site-header {
   header#site-header {
     .buttons ul li {
       .btn {
-        padding: 8px 24px;
-        border: 1px solid #fff;
+        padding: 8px 0;
+        border: 1px solid transparent;
         img,
         svg {
           margin-right: 8px;
@@ -441,10 +458,8 @@ header#site-header {
           display: inline-block;
         }
       }
-    }
-    &.white {
-      .buttons ul li .btn {
-        border-color: $c-morado;
+      .btn.btn-cta {
+        padding: 8px 24px;
       }
     }
   }
@@ -453,7 +468,7 @@ header#site-header {
   header#site-header {
     .buttons ul li {
       .btn {
-        padding: 10px;
+        padding: 8px;
         img,
         svg {
           margin-right: 0px;
@@ -470,7 +485,6 @@ header#site-header {
   header#site-header.white.small {
     .buttons ul li {
       .btn {
-        padding: 0 10px;
         border-color: transparent !important;
         img,
         svg {
@@ -487,11 +501,13 @@ header#site-header {
   .home,
   body {
     header#site-header {
-      padding-top: 25px;
+      padding-top: 12px;
+      padding-bottom: 12px !important;
       .container {
         padding: 0 24px;
       }
       &.opened {
+        padding-top: 25px;
         position: fixed;
         height: 100vh;
         background: $c-azuloscuro;
@@ -559,17 +575,17 @@ header#site-header {
         }
       }
     }
-    header#site-header.small.white {
-      .buttons {
-        ul li .btn.turqoise {
-          background: none !important;
-          color: $c-morado;
-          border: none !important;
-          svg path {
-            fill: $c-morado !important;
-          }
-        }
-      }
-    }
+    //header#site-header.small.white {
+    //  .buttons {
+    //    ul li .btn.btn-cta {
+    //      background: none !important;
+    //      color: $c-morado;
+    //      border: none !important;
+    //      svg path {
+    //        fill: $c-morado !important;
+    //      }
+    //    }
+    //  }
+    //}
   }
 }

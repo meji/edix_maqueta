@@ -41,7 +41,7 @@ body.with-notice {
     margin-top: 64px;
     transition: $transition;
   }
-  header#site-header {
+  header#site-header:not(.not-fixed) {
     top: 64px;
     transition: $transition;
   }

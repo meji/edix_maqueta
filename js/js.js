@@ -38,8 +38,6 @@ function headersControl() {
     const st = $(window).scrollTop()
     if (st > navbarHeight + navbarHeight) {
       $('header#site-header.closed').addClass('small')
-      $('.small img.unir').attr('src', 'images/logo_unir.svg')
-      $('.small.transparent #logo img').attr('src', 'images/logo_edix.svg')
       $('header#site-header.closed').addClass('white')
       $('#help_btn.white').removeClass('white')
       $(window).scrollTop()
@@ -48,31 +46,27 @@ function headersControl() {
       $('header#site-header.closed').removeClass('small').removeClass('nav-up')
       $('.home header#site-header.closed').removeClass('small').removeClass('white')
       $('header#site-header.transparent').removeClass('small').removeClass('white')
-      $('.home img.unir').attr('src', 'images/logo_unir_b.svg')
-      $('.transparent img.unir').attr('src', 'images/logo_unir_b.svg')
-      $('.transparent #logo img').attr('src', 'images/logo_edix_b.svg')
       $(window).scrollTop()
     }
     $('header#site-header.origin-white.opened').removeClass('white')
     $('header#site-header.origin-white.closed').addClass('white')
-    $('header#site-header.origin-white.closed #logo img').attr('src', 'images/logo_edix.svg')
 
     // Make scroll more than delta
     if (Math.abs(lastScrollTop - st) <= delta) return
 
     // If scrolled down and past the navbar, add class .nav-up.
-    if (st > lastScrollTop && st > navbarHeight) {
-      // Scroll Down
-      $('header#site-header.closed:not(.nav-down-fixed)')
-        .removeClass('nav-up')
-        .addClass('nav-down')
-        .removeClass('white')
-    } else {
-      // Scroll Up
-      if (st + $(window).height() < $(document).height()) {
-        $('header#site-header.closed').removeClass('nav-down').addClass('nav-up')
-      }
-    }
+    // if (st > lastScrollTop && st > navbarHeight) {
+    //   // Scroll Down
+    //   $('header#site-header.closed:not(.nav-down-fixed)')
+    //     .removeClass('nav-up')
+    //     .addClass('nav-down')
+    //     .removeClass('white')
+    // } else {
+    //   // Scroll Up
+    //   if (st + $(window).height() < $(document).height()) {
+    //     $('header#site-header.closed').removeClass('nav-down').addClass('nav-up')
+    //   }
+    // }
     //Para elementos fixed:
     if (st > thisIsfixedHeight) {
       thisIsfixedWidth = $('.this-is-fixed').outerWidth()
@@ -474,10 +468,12 @@ function utilUiMethods() {
     }
   })
   //Notice class to body
-  //10 segundos para mostrarlo
+  //10 segundos para mostrarlo, esto solo tiene que pasar si se ejecuta el notice sino no
   setTimeout(function () {
-    $('#notice-ext').addClass('visible')
-    $('body').addClass('with-notice')
+    if ($('#notice-ext').length) {
+      $('#notice-ext').addClass('visible')
+      $('body').addClass('with-notice')
+    }
   }, 10000)
   //Cuando lo mostremos metemos la clase del body
   if ($('#notice-ext.visible').length) {
@@ -508,7 +504,7 @@ function utilUiMethods() {
         function () {
           // Callback after animation
           // Must change focus!
-          var $target = $(target)
+          let $target = $(target)
           $target.focus()
           if ($target.is(':focus')) {
             // Checking if the target was focused

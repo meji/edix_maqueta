@@ -9,13 +9,14 @@
   color: #fff;
   border: 2px solid $c-morado;
   border-color: $c-morado;
-  font-weight: bold;
+  font-weight: 600;
   min-width: 165px;
   width: 100%;
   &:hover {
-    background-color: #fff;
+    background-color: #032258;
+    border-color: #032258;
     transition: 0.25s;
-    color: $c-morado;
+    color: #fff;
     cursor: pointer;
   }
   &.btn-secondary {
@@ -47,25 +48,35 @@
       cursor: pointer;
     }
   }
-  &.turqoise {
+  &.btn-cta {
     background: $c-turqoise;
     border-color: $c-turqoise;
-  }
-}
-.text-white .btn {
-  &.btn-secondary {
-    color: #fff;
-    background: transparent;
-    border-color: #fff;
     &:hover {
-      background: $c-morado;
-      transition: $transition;
-      border-color: $c-morado;
+      background: #039684;
+      border-color: #039684;
     }
   }
-  &.turqoise {
-    background: $c-turqoise;
-    border-color: $c-turqoise;
+}
+.text-white {
+  .btn:not(.btn-cta) {
+    color: $c-morado;
+    background: white;
+    border-color: white;
+    &:hover {
+      background: $c-moradoclaro;
+      transition: $transition;
+      border-color: $c-moradoclaro;
+      color: #fff;
+    }
+  }
+  .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      background: #fff;
+      color: $c-morado;
+    }
   }
 }
 
@@ -79,6 +90,7 @@ input[type='submit'] {
 #help_btn {
   margin: 0 auto;
   background: $c-morado;
+  border-color: $c-morado;
   color: #ffffff;
   position: fixed;
   left: 16px;
@@ -100,6 +112,7 @@ input[type='submit'] {
     background: #fff;
     color: $c-morado;
     transition: $transition;
+    border-color: #fff;
   }
 }
 .button-container {
@@ -107,7 +120,7 @@ input[type='submit'] {
 }
 .link-primary {
   font-weight: bold;
-  font-size: 87.5%;
+  font-size: 0.875rem;
 }
 .link-primary-container {
   margin: 24px 0 0 0;

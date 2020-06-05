@@ -75,17 +75,10 @@
       &.purple {
         background: $c-morado;
         color: #fff;
-        &:hover {
-          background: $c-moradoclaro;
-        }
       }
       &.blue {
         background: $c-azulform;
         color: #333;
-        &:hover {
-          background: #6084c3;
-          color: #fff;
-        }
       }
       &.red {
         background: $c-rojoform;
@@ -97,6 +90,20 @@
     background: $c-azuloscuro;
     color: #fff;
     cursor: pointer;
+    .buttons span {
+      &.purple {
+        background: $c-moradoclaro;
+      }
+      &.blue {
+        background: #6084c3;
+        color: #fff;
+      }
+      &.btn.btn-white {
+        background: #fff;
+        color: $c-morado;
+        border-color: #fff;
+      }
+    }
     .card-header {
       .card-title {
         a {

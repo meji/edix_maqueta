@@ -1,3 +1,8 @@
+.imagen-texto-bold-boton {
+  .link-primary {
+    margin-left: 16px;
+  }
+}
 @include respond-below(lg) {
   .imagen-texto-bold-boton {
     > div {
@@ -10,6 +15,11 @@
     img {
       display: block;
       margin-bottom: 16px;
+    }
+    .link-primary {
+      display: block;
+      margin: 16px 0 0 0;
+      text-align: center;
     }
   }
 }
