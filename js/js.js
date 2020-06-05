@@ -475,10 +475,6 @@ function utilUiMethods() {
       $('body').addClass('with-notice')
     }
   }, 10000)
-  //Cuando lo mostremos metemos la clase del body
-  if ($('#notice-ext.visible').length) {
-    $('body').addClass('with-notice')
-  }
   $('#notice-ext .close').on('click', function () {
     $(this).parent('#notice-ext ').removeClass('visible')
     $('body').removeClass('with-notice')
