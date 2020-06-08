@@ -1,2 +1,5 @@
 Icon?
 node_modules
+/.DS_Store
+/.buildpath
+/.project
