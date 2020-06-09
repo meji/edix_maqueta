@@ -400,11 +400,11 @@ header#site-header {
         }
       }
       &:not(.btn-cta):hover {
-        color: $c-moradoclaro;
+        color: $c-azuloscuroclaro;
         img,
         svg {
           path {
-            fill: $c-moradoclaro;
+            fill: $c-azuloscuroclaro;
           }
         }
       }

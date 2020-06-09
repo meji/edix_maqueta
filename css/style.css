@@ -14232,13 +14232,13 @@ header#site-header.white .buttons ul li .btn:hover svg path {
 
 /* line 402, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_header.scss */
 header#site-header.white .buttons ul li .btn:not(.btn-cta):hover {
-  color: #a049f8;
+  color: #0d3781;
 }
 
 /* line 406, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_header.scss */
 header#site-header.white .buttons ul li .btn:not(.btn-cta):hover img path,
 header#site-header.white .buttons ul li .btn:not(.btn-cta):hover svg path {
-  fill: #a049f8;
+  fill: #0d3781;
 }
 
 /* line 414, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_header.scss */
