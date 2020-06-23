@@ -135,9 +135,6 @@ header#site-header {
       }
     }
   }
-  //.home header#site-header:not(.small):not(.opened) {
-  //  #nav-icon {margin-right: 30px;}
-  //}
 }
 @include respond-above(lg) {
   header#site-header {
@@ -276,18 +273,10 @@ header#site-header {
       padding-bottom: 59px;
     }
   }
-  &.nav-down,
-  &.white.small {
-    & + section {
-      margin-top: 165px;
-    }
-  }
 }
 
 /*LOGO HOME*/
-//header#site-header{
-//  &:after{ transition: 0.5s; opacity:0; content:''; position: absolute; top: -300px; left:0; display: block;  height: 15.83vw; width: 22.6vw; z-index: -1;background:url(img/triangulo_b.svg) no-repeat left top;  background-size: 100% 100%; }
-//}
+
 .home header#site-header:not(.small):not(.opened) {
   #logo {
     position: absolute;
@@ -306,7 +295,6 @@ header#site-header {
       margin-top: -25%;
     }
   }
-  //&:after{opacity:1; top:-1px; left: 0; }
   &.opened {
     &:after {
       top: -200px;
@@ -438,7 +426,6 @@ header#site-header {
   }
 }
 
-/*Header mobile*/
 @include respond-below(xxl) {
   .home,
   body {
@@ -478,7 +465,7 @@ header#site-header {
         padding: 8px;
         img,
         svg {
-          margin-right: 0px;
+          margin-right: 0;
         }
         span {
           display: none;
@@ -495,7 +482,7 @@ header#site-header {
         border-color: transparent !important;
         img,
         svg {
-          margin-right: 0px;
+          margin-right: 0;
         }
         span {
           display: none;
@@ -504,6 +491,8 @@ header#site-header {
     }
   }
 }
+
+/**Header Mobile**/
 @include respond-below(lg) {
   .home,
   body {
@@ -582,17 +571,5 @@ header#site-header {
         }
       }
     }
-    //header#site-header.small.white {
-    //  .buttons {
-    //    ul li .btn.btn-cta {
-    //      background: none !important;
-    //      color: $c-morado;
-    //      border: none !important;
-    //      svg path {
-    //        fill: $c-morado !important;
-    //      }
-    //    }
-    //  }
-    //}
   }
 }
