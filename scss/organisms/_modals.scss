@@ -54,6 +54,10 @@ body .modal {
     .btn {
       width: 100%;
     }
+    .grey-bg {
+      padding: 24px;
+      margin: 24px 0;
+    }
     button.close {
       position: absolute;
       opacity: 0.9;
@@ -172,6 +176,12 @@ body .modal .modal-sm {
         p.job {
           margin-bottom: 0;
         }
+      }
+    }
+    .modal-md,
+    .modal-sm {
+      p:not(.h3):not(.h4):not(.h5) {
+        font-size: 1rem;
       }
     }
   }

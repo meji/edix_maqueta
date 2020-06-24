@@ -228,7 +228,7 @@ function sliders() {
   const swiper = new Swiper('.swiper-container.swiper4321', {
     slidesPerView: 4,
     speed: 1000,
-    loop: true,
+    loop: false,
     autoplay: {
       delay: 5000,
       disableOnInteraction: true
@@ -242,13 +242,16 @@ function sliders() {
     preventClicks: false,
     breakpoints: {
       1400: {
-        slidesPerView: 3
+        slidesPerView: 3,
+        loop: true
       },
       1024: {
-        slidesPerView: 2
+        slidesPerView: 2,
+        loop: true
       },
       468: {
-        slidesPerView: 1.1
+        slidesPerView: 1.1,
+        loop: true
       }
     }
   })
@@ -527,9 +530,11 @@ function landing() {
       ($('#hero-landing .container').offset().left + $('#hero-landing .container').outerWidth()) +
       12
     const boxWidth = $('#fixed-outer-container').outerWidth() - 24
+    const boxHeight = $('#hero-form').outerHeight() + 24
     const fixtoAbsolute = $('#controller-scroll').offset().top
     const paddingTop =
       $(window).outerWidth() > 1280 ? 144 + headerHeight + 'px' : 72 + headerHeight + 'px'
+    $('#controller-scroll').css('min-height', boxHeight + 'px')
     if (window.scrollY > fixtoAbsolute - headerHeight + 20) {
       $('#hero-form').css('position', 'absolute').css('right', '12px').css('top', paddingTop)
     } else {
@@ -541,6 +546,7 @@ function landing() {
     $('#hero-form').css('width', boxWidth + 'px')
   } else {
     $('#hero-form').css('width', 'auto').css('position', 'initial')
+    $('#controller-scroll').css('min-height', 'auto')
   }
 }
 window.addEventListener('resize', landing)
