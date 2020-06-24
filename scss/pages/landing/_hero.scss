@@ -1,10 +1,3 @@
-.affix {
-  position: fixed;
-}
-.affix-bottom {
-  position: absolute;
-}
-
 #hero-landing {
   .career-icon {
     margin-right: 16px;
@@ -13,30 +6,5 @@
   }
   h1 {
     display: inline-block;
-  }
-}
-
-@include respond-above(lg) {
-  #hero-form {
-    transition: 0s;
-    max-width: 500px;
-    position: fixed;
-    background: #fff;
-    border-radius: $border-radius-lg;
-    padding: 32px;
-    box-shadow: $box-shadow;
-    z-index: 10;
-    opacity: 0;
-    p.submit {
-      margin-bottom: 0;
-      .btn {
-        width: 100%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1023px) and (max-width: 1279px) {
-  #controller-scroll {
-    margin-bottom: 144px;
   }
 }

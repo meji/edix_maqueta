@@ -1,0 +1,33 @@
+.form-landing-container {
+  background: rgba(0, 0, 0, 0.05);
+  padding-bottom: 40px;
+  #hero-form {
+    background: #fff;
+    border-radius: $border-radius-lg;
+    padding: 32px;
+  }
+}
+
+@include respond-above(lg) {
+  .form-landing-container {
+    background: transparent;
+    #hero-form {
+      max-width: 500px;
+      position: fixed;
+      box-shadow: $box-shadow;
+      z-index: 10;
+      p.submit {
+        margin-bottom: 0;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+  #controller-scroll {
+    margin-bottom: 144px;
+  }
+}

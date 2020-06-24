@@ -9,12 +9,14 @@
 }
 /** TEXTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– **/
-a {
+a,
+.link-primary {
   text-decoration: none;
   color: $c-morado;
   font-weight: bold;
   &:hover {
     color: $c-azuloscuro;
+    cursor: pointer;
   }
 }
 p.scroll {

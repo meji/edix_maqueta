@@ -353,7 +353,9 @@ function utilUiMethods() {
 
   /********************************************/
   //WOW
-  $('section div:not(".data-container"):not(#career-nav)').addClass('wow fadeInUp')
+  $(
+    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div)'
+  ).addClass('wow fadeInUp')
   const wow = new WOW({
     mobile: false
   })
@@ -519,21 +521,22 @@ function utilUiMethods() {
 const marginTop = $('#fixed-outer-container').offset().top
 function landing() {
   if ($(window).outerWidth() > 1023) {
+    const headerHeight = $('#site-header').height()
     const marginRight =
       $(window).width() -
       ($('#hero-landing .container').offset().left + $('#hero-landing .container').outerWidth()) +
       12
     const boxWidth = $('#fixed-outer-container').outerWidth() - 24
     const fixtoAbsolute = $('#controller-scroll').offset().top
-    const paddingTop = $(window).outerWidth() > 1280 ? '144px' : '72px'
-    if (window.scrollY > fixtoAbsolute) {
-      $('#hero-form').css('position', 'absolute').css('right', 0).css('top', paddingTop)
+    const paddingTop =
+      $(window).outerWidth() > 1280 ? 144 + headerHeight + 'px' : 72 + headerHeight + 'px'
+    if (window.scrollY > fixtoAbsolute - headerHeight + 20) {
+      $('#hero-form').css('position', 'absolute').css('right', '12px').css('top', paddingTop)
     } else {
       $('#hero-form')
         .css('position', 'fixed')
         .css('right', marginRight + 'px')
         .css('top', marginTop + 'px')
-        .css('opacity', 1)
     }
     $('#hero-form').css('width', boxWidth + 'px')
   } else {
