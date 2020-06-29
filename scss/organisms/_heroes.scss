@@ -317,10 +317,9 @@
     }
     #career-nav {
       &.fixed.nav-up {
-        top: 75px;
+        top: 73px;
       }
       ul li {
-        padding: 32px 0;
         &.active span:after {
           content: '';
           width: 100%;
@@ -390,8 +389,9 @@
       left: 0;
       width: 100%;
       z-index: 2;
-      li {
+      ul li {
         display: inline-block;
+        padding: 32px 0;
       }
       #help_btn {
         right: 94px;
@@ -416,18 +416,16 @@
           }
         }
       }
+      &.fixed.nav-up {
+        top: 108px;
+      }
     }
   }
 }
 
 @include respond-above(xl) {
   #hero-career #career-nav.fixed.nav-up {
-    top: 85px;
-  }
-}
-@include respond-above(xxl) {
-  #hero-career #career-nav.fixed.nav-up {
-    top: 87px;
+    top: 101px;
   }
 }
 

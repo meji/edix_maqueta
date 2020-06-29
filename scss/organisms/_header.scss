@@ -111,7 +111,7 @@ header#site-header {
       padding-bottom: 44px;
     }
     &.small {
-      padding-top: 26px;
+      padding-top: 13px;
       #logo img {
         width: 61px;
       }
@@ -233,6 +233,7 @@ header#site-header {
     }
     &.nav-down,
     &.white.small {
+      padding-top: 26px;
       & + section {
         margin-top: 116px;
       }
@@ -452,7 +453,7 @@ header#site-header {
         }
       }
       .btn.btn-cta {
-        padding: 15px 24px;
+        padding: 13px 24px;
       }
     }
   }
