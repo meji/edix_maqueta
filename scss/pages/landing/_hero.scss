@@ -9,6 +9,9 @@
   h1 {
     display: inline-block;
   }
+  .data-container {
+    background: none;
+  }
 }
 @include respond-above(md) {
   #hero-landing {

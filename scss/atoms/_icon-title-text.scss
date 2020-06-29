@@ -6,5 +6,8 @@
 .icon-title-text-module {
   .icon-container {
     margin-bottom: 16px;
+    img {
+      max-width: 140px;
+    }
   }
 }

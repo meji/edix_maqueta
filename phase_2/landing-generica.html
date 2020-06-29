@@ -673,6 +673,95 @@
             </div>
           </div>
         </div>
+      <!-- modal te ayudamos a elegir-->
+      <div
+        id="modal-elegir"
+        class="modal fade"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+          <div class="modal-content form-inside">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar" />
+            </button>
+            <div class="content">
+              <div class="head">
+                <p class="name h4 mtno">
+                  Te ayudamos a eleguir
+                </p>
+              </div>
+              <div>
+                <p>
+                  No saben que estudios realizar, pero ya saben que #TodoVaACambiar y que ya no va del rollo, primero estudio y luego trabajo.
+                </p>
+                <p>
+                  Buscan aprender un oficio que luego complementan con una formación de carrera... o no. Pero saben que empezar a trabajar es fundamental porque lo necesitan o porque así lo ven en su carrera.
+                </p>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6"><input class="form-control" name="Nombre-elegir" placeholder="nombre"/></div>
+                    <div class="form-group col-md-6"><input class="form-control" name="Apellido-elegir" placeholder="apellido"/></div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" name="Email-elegir" placeholder="email"/>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-3">
+                      <select class="form-control">
+                        <option>+34</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-9">
+                      <input type="phone" id="phone-elegir" class="form-control" placeholder="Teléfono móvil"/>
+                    </div>
+                  </div>
+                  <hr/>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <label class="custom-control-label" for="legal-check-datos-elegir">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input check-button__input"
+                          id="legal-check-datos-elegir"
+                        />
+                        <span class="check-button__control"></span>
+                        <span class="check-button__label"
+                        >He leido y acepto las condiciones de
+                              <a href="#" title="Ver las condiciones legales"
+                              >Protección de datos</a
+                              ></span
+                        >
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="custom-control-label" for="legal-check-elegir">
+                        <input
+                          type="checkbox"
+                          class="custom-control-input check-button__input"
+                          id="legal-check-elegir"
+                        />
+                        <span class="check-button__control"></span>
+                        <span class="check-button__label"
+                        >He leido y acepto las condiciones legales
+                              <a href="#" title="Ver las condiciones legales"
+                              >Términos legales</a
+                              ></span
+                        >
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" class="btn" value="Ayúdame a elegir"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     <!-- End Document
