@@ -338,7 +338,7 @@ header#site-header {
           margin: 0 0 0 16px;
         }
         .btn {
-          padding: 8px;
+          padding: 11.5px;
           span {
             display: none;
           }
@@ -441,7 +441,7 @@ header#site-header {
   header#site-header {
     .buttons ul li {
       .btn {
-        padding: 8px 0;
+        //padding: 13px 0;
         border: 1px solid transparent;
         img,
         svg {
@@ -452,7 +452,7 @@ header#site-header {
         }
       }
       .btn.btn-cta {
-        padding: 8px 24px;
+        padding: 15px 24px;
       }
     }
   }
@@ -462,7 +462,7 @@ header#site-header {
     .buttons ul li {
       .btn,
       .btn.btn-cta {
-        padding: 8px;
+        padding: 16px;
         img,
         svg {
           margin-right: 0;

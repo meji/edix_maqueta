@@ -19,6 +19,12 @@ a,
     cursor: pointer;
   }
 }
+.text-white {
+  a,
+  .link-primary {
+    color: #fff;
+  }
+}
 p.scroll {
   height: 3000px;
   background: purple;

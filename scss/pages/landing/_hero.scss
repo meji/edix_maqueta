@@ -3,8 +3,18 @@
     margin-right: 16px;
     display: inline-block;
     vertical-align: top;
+    max-width: 48px;
+    margin-top: 40px;
   }
   h1 {
     display: inline-block;
+  }
+}
+@include respond-above(md) {
+  #hero-landing {
+    .career-icon {
+      max-width: none;
+      margin-top: auto;
+    }
   }
 }

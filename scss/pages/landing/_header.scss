@@ -5,8 +5,11 @@ header#site-header.landing {
   }
   .buttons {
     li {
-      .btn span {
-        display: inline-block !important;
+      .btn {
+        //padding: 11px 8px 12px;
+        span {
+          display: inline-block !important;
+        }
       }
       .btn.double {
         display: none;
@@ -58,7 +61,6 @@ header#site-header.landing {
         margin-right: 0;
       }
       p.career-title {
-        align-self: flex-start;
         margin: 0 auto 0 0;
         line-height: 1.2;
         font-weight: 600;

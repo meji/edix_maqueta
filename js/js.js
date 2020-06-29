@@ -523,30 +523,50 @@ function utilUiMethods() {
 //method for positioning the box fixed
 const marginTop = $('#fixed-outer-container').offset().top
 function landing() {
+  const headerHeight = $('#site-header').height() //Alto del header
   if ($(window).outerWidth() > 1023) {
-    const headerHeight = $('#site-header').height()
     const marginRight =
       $(window).width() -
       ($('#hero-landing .container').offset().left + $('#hero-landing .container').outerWidth()) +
-      12
-    const boxWidth = $('#fixed-outer-container').outerWidth() - 24
-    const boxHeight = $('#hero-form').outerHeight() + 24
-    const fixtoAbsolute = $('#controller-scroll').offset().top
+      12 //Esto es el margen a la derecha del form
+    const boxWidth = $('#fixed-outer-container').outerWidth() - 24 //Ancho de la caja del form
+    const boxHeight = $('#hero-form').outerHeight() + 24 //Alto del form
+    const fixtoAbsolute = $('#controller-scroll').offset().top //Momento ne el que pasa a absolute
+    const buttonToFixed = $('#controller-scroll-out').offset().top //Alto en el que el boton pasa a fixed
     const paddingTop =
-      $(window).outerWidth() > 1280 ? 144 + headerHeight + 'px' : 72 + headerHeight + 'px'
-    $('#controller-scroll').css('min-height', boxHeight + 'px')
+      $(window).outerWidth() > 1280 ? 144 + headerHeight + 'px' : 72 + headerHeight + 'px' //Padding arriba
+
+    $('#controller-scroll').css('min-height', boxHeight + 'px') //Alto del segundo modulo para no  pisar al segundo
+
+    //Controlamos el boton fixed cuando hacemos scroll
+    if (window.scrollY > buttonToFixed - headerHeight + 20) {
+      $('.landing-counters .btn-container').addClass('fixed')
+    } else {
+      $('.landing-counters .btn-container').removeClass('fixed')
+    }
+    //Controlamos el form para que se quede fixed
     if (window.scrollY > fixtoAbsolute - headerHeight + 20) {
       $('#hero-form').css('position', 'absolute').css('right', '12px').css('top', paddingTop)
     } else {
+      //sino es fixed hasta que baje
       $('#hero-form')
         .css('position', 'fixed')
         .css('right', marginRight + 'px')
         .css('top', marginTop + 'px')
     }
+    //Width del form
     $('#hero-form').css('width', boxWidth + 'px')
   } else {
+    //Esto es cuando es mobile
+    const buttonToFixed = $('#controller-scroll').offset().top //Alto en el que el boton pasa a fixed
     $('#hero-form').css('width', 'auto').css('position', 'initial')
     $('#controller-scroll').css('min-height', 'auto')
+    //Controlamos el boton fixed cuando hacemos scroll
+    if (window.scrollY > buttonToFixed - headerHeight + 20) {
+      $('.landing-counters .btn-container').addClass('fixed')
+    } else {
+      $('.landing-counters .btn-container').removeClass('fixed')
+    }
   }
 }
 window.addEventListener('resize', landing)
