@@ -271,7 +271,7 @@ function hoverCareers() {
   let supportsTouch =
     'ontouchstart' in document.documentElement || navigator.msMaxTouchPoints ? true : false
   //Expandimos el click al div
-  $('.career-card.icon-left:not(.plain), .career-card-new').click(function () {
+  $('.career-card.icon-left:not(.plain), .career-card-new:not(.modal-link)').click(function () {
     window.location = $(this).find('a').attr('href')
     return false
   })
@@ -530,7 +530,7 @@ function landing() {
       ($('#hero-landing .container').offset().left + $('#hero-landing .container').outerWidth()) +
       12 //Esto es el margen a la derecha del form
     const boxWidth = $('#fixed-outer-container').outerWidth() - 24 //Ancho de la caja del form
-    const boxHeight = $('#hero-form').outerHeight() + 24 //Alto del form
+    const boxHeight = $('#hero-form').outerHeight() + 48 //Alto del form
     const fixtoAbsolute = $('#controller-scroll').offset().top //Momento ne el que pasa a absolute
     const buttonToFixed = $('#controller-scroll-out').offset().top //Alto en el que el boton pasa a fixed
     const paddingTop =
