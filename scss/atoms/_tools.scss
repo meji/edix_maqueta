@@ -98,3 +98,10 @@ body #hubspot-messages-iframe-container {
 .no-animation {
   animation: none !important;
 }
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+.border-radius {
+  border-radius: $border-radius-lg;
+}

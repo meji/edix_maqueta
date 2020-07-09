@@ -39,6 +39,9 @@
 
 @include respond-below(md) {
   .landing-counters {
+    &.new-hero {
+      text-align: center;
+    }
     .btn-container {
       display: block;
       margin-bottom: 32px;

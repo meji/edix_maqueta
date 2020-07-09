@@ -7,6 +7,7 @@ $(document).ready(function () {
   careerNavNavigation()
   utilUiMethods()
   landing()
+  showInfoBtn()
 })
 
 /************CONTROLES DE CABECERAS CON SCROLLS********************************/
@@ -40,10 +41,10 @@ function headersControl() {
     if (st > navbarHeight + navbarHeight) {
       $('header#site-header.closed').addClass('small')
       $('header#site-header.closed').addClass('white')
-      $('#help_btn.white').removeClass('white')
+      // $('#help_btn.white').removeClass('white')
       $(window).scrollTop()
     } else if (st < navbarHeight + navbarHeight) {
-      $('#help_btn').addClass('white')
+      // $('#help_btn').addClass('white')
       $('header#site-header.closed').removeClass('small').removeClass('nav-up')
       $('.home header#site-header.closed').removeClass('small').removeClass('white')
       $('header#site-header.transparent').removeClass('small').removeClass('white')
@@ -56,18 +57,16 @@ function headersControl() {
     if (Math.abs(lastScrollTop - st) <= delta) return
 
     // If scrolled down and past the navbar, add class .nav-up.
-    // if (st > lastScrollTop && st > navbarHeight) {
-    //   // Scroll Down
-    //   $('header#site-header.closed:not(.nav-down-fixed)')
-    //     .removeClass('nav-up')
-    //     .addClass('nav-down')
-    //     .removeClass('white')
-    // } else {
-    //   // Scroll Up
-    //   if (st + $(window).height() < $(document).height()) {
-    //     $('header#site-header.closed').removeClass('nav-down').addClass('nav-up')
-    //   }
-    // }
+    if (st > lastScrollTop && st > navbarHeight) {
+      // Scroll Down
+      $('header#site-header.closed:not(.nav-down-fixed)').removeClass('nav-up').addClass('nav-down')
+      // .removeClass('white')
+    } else {
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        $('header#site-header.closed').removeClass('nav-down').addClass('nav-up')
+      }
+    }
     //Para elementos fixed:
     if (st > thisIsfixedHeight) {
       thisIsfixedWidth = $('.this-is-fixed').outerWidth()
@@ -100,22 +99,22 @@ function headersControl() {
     lastScrollTop = st
   }
 
-  //Asignamos el alto al hero de carrera
-  $('#hero-career').css('height', restHeight + 'px')
-  //Controlamos el cambio de ancho de ventana
-  $(window).resize(function () {
-    restHeight = $(window).height() - navbarHeight
-    viewportWidth = $(window).width()
-    // swipper_initializer(viewportWidth);
-    // swipper_initializer_alone(viewportWidth);
-    $('#hero-career').css('height', restHeight + 'px')
-    if (viewportWidth >= 1024) {
-      $('header#site-header').removeClass('opened')
-      $('header#site-header').addClass('closed')
-      // $('.home:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
-      // $('.white:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
-    }
-  })
+  // //Asignamos el alto al hero de carrera
+  // $('#hero-career').css('height', restHeight + 'px')
+  // //Controlamos el cambio de ancho de ventana
+  // $(window).resize(function () {
+  //   restHeight = $(window).height() - navbarHeight
+  //   viewportWidth = $(window).width()
+  //   // swipper_initializer(viewportWidth);
+  //   // swipper_initializer_alone(viewportWidth);
+  //   $('#hero-career').css('height', restHeight + 'px')
+  //   if (viewportWidth >= 1024) {
+  //     $('header#site-header').removeClass('opened')
+  //     $('header#site-header').addClass('closed')
+  //     // $('.home:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
+  //     // $('.white:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
+  //   }
+  // })
 }
 
 //Navegación de carreras
@@ -126,7 +125,7 @@ function careerNavNavigation() {
   const topMenu = $('#career-nav ul')
   const topMenuHeight = topMenu.outerHeight() + 15
   // All list items
-  let menuItems = topMenu.find('span.smooth-scroll')
+  let menuItems = topMenu.find('span.smooths-scroll')
   // Anchors corresponding to menu items
   scrollItems = menuItems.map(function () {
     const item = $($(this).attr('data-href'))
@@ -207,7 +206,7 @@ function sliders() {
   }
   const swiper_alone = new Swiper('.swiper-container.swiper-alone', {
     slidesPerView: 1,
-    loop: true,
+    loop: false,
     speed: 1000,
     autoplay: {
       delay: 5000,
@@ -264,6 +263,37 @@ function sliders() {
       swiper.autoplay.start()
     }
   )
+  //Slider de  - 3 - 2 - 1
+  const swiper321 = new Swiper('.swiper321', {
+    slidesPerView: 3.0,
+    speed: 1000,
+    loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: true
+    },
+    spaceBetween: 24,
+    navigation: {
+      nextEl: '.swiper-button-next-3',
+      prevEl: '.swiper-button-prev-3'
+    },
+    allowTouchMove: true,
+    preventClicks: false,
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        loop: true
+      },
+      767: {
+        slidesPerView: 1.5,
+        loop: true
+      },
+      468: {
+        slidesPerView: 1.1,
+        loop: true
+      }
+    }
+  })
 }
 
 //hoverCareers
@@ -357,7 +387,7 @@ function utilUiMethods() {
   /********************************************/
   //WOW
   $(
-    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div)'
+    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div):not(.faq-body)'
   ).addClass('wow fadeInUp')
   const wow = new WOW({
     mobile: false
@@ -486,7 +516,7 @@ function utilUiMethods() {
     $('body').removeClass('with-notice')
   })
   //Lanzamos modal de newsletter
-  $('#newsletter_modal').modal('show')
+  // $('#newsletter_modal').modal('show')
 
   /********************************************/
   /*smooth_scroll*/
@@ -498,9 +528,11 @@ function utilUiMethods() {
     if (target.length) {
       // Only prevent default if animation is actually gonna happen
       event.preventDefault()
+      const pointToScroll =
+        $(target).offset().top - $('#site-header').height() - $('#career-nav').height() - 60
       $('html, body').animate(
         {
-          scrollTop: $(target).offset().top
+          scrollTop: pointToScroll
         },
         1000,
         function () {
@@ -576,3 +608,19 @@ function landing() {
 }
 window.addEventListener('resize', landing)
 window.addEventListener('scroll', landing)
+
+//En carrera calculamos cuando pasa el form para mostrar en mobile el botón fixed
+
+function showInfoBtn() {
+  let marginFormTop
+  if ($('#success-case').length > 0) {
+    marginFormTop = $('#success-case').offset().top
+  }
+  if (window.scrollY > marginFormTop) {
+    $('#help_btn').removeClass('hide')
+  } else {
+    $('#help_btn').addClass('hide')
+  }
+}
+
+$(window).scroll(showInfoBtn)

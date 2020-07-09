@@ -59,7 +59,7 @@
   }
 }
 .text-white {
-  .btn:not(.btn-cta) {
+  .btn:not(.btn-cta):not(#info-mobile-btn) {
     color: $c-morado;
     background: white;
     border-color: white;
@@ -100,6 +100,7 @@ input[type='submit'] {
   right: auto;
   z-index: 10;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  transition: $transition;
   &:not(.double).white {
     background: #fff;
     color: $c-morado;
@@ -114,6 +115,12 @@ input[type='submit'] {
     color: $c-morado;
     transition: $transition;
     border-color: #fff;
+  }
+  &.hide {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
   }
 }
 .button-container {
@@ -151,10 +158,10 @@ input[type='submit'] {
 @include respond-above(md) {
   .btn,
   #help_btn {
-    display: inline-block;
     width: auto;
     font-size: 0.875rem;
     padding: 15px 32px;
+    display: inline-block;
   }
   input[type='submit'] {
     margin-top: 0;
@@ -177,11 +184,19 @@ input[type='submit'] {
     margin: 56px 0 0 0;
   }
   #help_btn {
-    position: absolute;
+    position: initial;
+    margin: 0;
   }
 }
 @include respond-above(xxl) {
   #help_btn {
     bottom: 21px;
   }
+}
+
+#info-mobile-btn {
+  position: absolute;
+  bottom: 16px;
+  width: calc(100% - 32px);
+  left: 16px;
 }

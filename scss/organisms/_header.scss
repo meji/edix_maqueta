@@ -50,13 +50,8 @@ header#site-header {
     }
   }
   //En scroll down
-  &.nav-down {
-    opacity: 0;
-    transition: 0.2s; //display: none !important;
-    &.nav-down-fixed {
-      opacity: 1;
-      display: block;
-    }
+  &.white.small.no-shadow:not(.nav-up) {
+    box-shadow: none;
   }
   //blanca
   &.white {
@@ -84,9 +79,6 @@ header#site-header {
         top: -200px;
         opacity: 0;
         transition: 0.1s;
-      }
-      &.no-shadow {
-        box-shadow: none;
       }
       // & + section{margin-top: 165px;}
     }
@@ -454,6 +446,13 @@ header#site-header {
       }
       .btn.btn-cta {
         padding: 13px 24px;
+      }
+    }
+    &.small {
+      .buttons ul li {
+        .btn.btn-cta {
+          padding: 13px;
+        }
       }
     }
   }

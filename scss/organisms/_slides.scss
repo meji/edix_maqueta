@@ -81,3 +81,10 @@
 .swiper-button-prev.swiper-button-disabled {
   opacity: 0;
 }
+
+@include respond-below(md) {
+  .swiper-button-next-3,
+  .swiper-button-prev-3 {
+    display: none !important;
+  }
+}
