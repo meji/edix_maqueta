@@ -11411,15 +11411,16 @@ input[type='submit'] {
   margin-top: 24px;
   padding-top: 24px;
   font-size: 1rem;
+  min-height: 140px;
 }
 
-/* line 51, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 52, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 54, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 55, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons span {
   font-size: 0.8125rem;
   text-align: center;
@@ -11432,7 +11433,7 @@ input[type='submit'] {
   line-height: normal;
 }
 
-/* line 64, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 65, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons span.btn {
   width: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -11441,62 +11442,62 @@ input[type='submit'] {
   min-width: 0;
 }
 
-/* line 71, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 72, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons span.default {
   text-align: left;
   padding-left: 0;
 }
 
-/* line 75, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 76, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons span.purple {
   background: #6a00c2;
   color: #fff;
 }
 
-/* line 79, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 80, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons span.blue {
   background: #e6f1f4;
   color: #333;
 }
 
-/* line 83, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 84, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new .buttons span.red {
   background: #f47151;
   color: #fff;
 }
 
-/* line 89, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 90, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new:hover {
   background: #032258;
   color: #fff;
   cursor: pointer;
 }
 
-/* line 94, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 95, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new:hover .buttons span.purple {
   background: #a049f8;
 }
 
-/* line 97, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 98, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new:hover .buttons span.blue {
   background: #6084c3;
   color: #fff;
 }
 
-/* line 101, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 102, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new:hover .buttons span.btn.btn-white {
   background: #fff;
   color: #6a00c2;
   border-color: #fff;
 }
 
-/* line 109, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+/* line 110, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
 .career-card-new:hover .card-header .card-title a {
   color: #fff;
 }
 
 @media (min-width: 1024px) {
-  /* line 120, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
+  /* line 121, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-new.scss */
   .career-card-new .buttons span {
     padding: 12px 16px;
   }
@@ -15725,12 +15726,17 @@ body .modal .modal-sm button.close:hover svg * {
   margin-top: 56px;
 }
 
-/* line 4, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+/* line 5, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
 .slider-posts .slider .img-container {
   margin: 0 auto 24px;
 }
 
-/* line 5, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+/* line 7, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+.slider-posts .slider .img-container img {
+  border-radius: 0.25rem;
+}
+
+/* line 11, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
 .slider-posts .slider .cormorant {
   font-family: "Cormorant";
   font-style: italic;
@@ -15740,17 +15746,21 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (min-width: 1024px) {
-  /* line 10, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+  /* line 22, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
   .slider-posts .slider {
     margin-top: 48px;
   }
-  /* line 11, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+  /* line 24, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
   .slider-posts .slider .img-container {
     float: left;
     margin: 0 56px 0 0;
     margin-bottom: 0;
   }
-  /* line 12, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+  /* line 28, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
+  .slider-posts .slider .img-container img {
+    border-radius: 0.3rem;
+  }
+  /* line 32, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
   .slider-posts .slider .cormorant {
     font-family: "Cormorant";
     font-style: italic;
@@ -16180,43 +16190,74 @@ header#site-header.landing .buttons li .btn.double strong small {
   }
 }
 
-/* line 1, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
-.form-landing-container {
-  background: rgba(0, 0, 0, 0.05);
-  padding-bottom: 40px;
+/* line 2, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+#controller-scroll .col-lg-6 {
+  order: 2;
 }
 
 /* line 4, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+#controller-scroll .col-lg-6.form-landing-container {
+  order: 1;
+}
+
+/* line 9, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+.form-landing-container {
+  background: rgba(0, 0, 0, 0.05);
+  margin: -56px -3px 64px -3px;
+  width: calc(100% + 6px);
+  padding-bottom: 40px;
+}
+
+/* line 14, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
 .form-landing-container #hero-form {
   background: #fff;
   border-radius: 0.3rem;
   padding: 32px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  /* line 23, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  .form-landing-container {
+    background: transparent;
+    margin: 0;
+    width: auto;
+  }
 }
 
 @media (min-width: 1024px) {
-  /* line 12, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 32, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  #controller-scroll .col-lg-6 {
+    order: 1;
+  }
+  /* line 34, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  #controller-scroll .col-lg-6.form-landing-container {
+    order: 2;
+  }
+  /* line 39, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container {
     background: transparent;
+    margin: 0;
+    width: auto;
   }
-  /* line 14, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 43, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container #hero-form {
     max-width: 500px;
     position: fixed;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     z-index: 10;
   }
-  /* line 19, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container #hero-form p.submit {
     margin-bottom: 0;
   }
-  /* line 22, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container #hero-form p.submit .btn {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1279px) {
-  /* line 30, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 58, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   #controller-scroll {
     margin-bottom: 144px;
   }

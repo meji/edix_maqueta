@@ -567,12 +567,12 @@ function landing() {
         12 //Esto es el margen a la derecha del form
       const boxWidth = $('#fixed-outer-container').outerWidth() - 24 //Ancho de la caja del form
       const boxHeight = $('#hero-form').outerHeight() + 48 //Alto del form
-      const fixtoAbsolute = $('#controller-scroll').offset().top //Momento ne el que pasa a absolute
+      const fixtoAbsolute = $('#controller-scroll-out').offset().top - $(window).outerHeight() //Momento ne el que pasa a absolute
       const buttonToFixed = $('#controller-scroll-out').offset().top //Alto en el que el boton pasa a fixed
       const paddingTop =
         $(window).outerWidth() > 1280 ? 144 + headerHeight + 'px' : 72 + headerHeight + 'px' //Padding arriba
 
-      $('#controller-scroll').css('min-height', boxHeight + 'px') //Alto del segundo modulo para no  pisar al segundo
+      // $('#controller-scroll').css('min-height', boxHeight + 'px') //Alto del segundo modulo para no  pisar al segundo
 
       //Controlamos el boton fixed cuando hacemos scroll
       if (window.scrollY > buttonToFixed - headerHeight + 20) {
@@ -582,13 +582,18 @@ function landing() {
       }
       //Controlamos el form para que se quede fixed
       if (window.scrollY > fixtoAbsolute - headerHeight + 20) {
-        $('#hero-form').css('position', 'absolute').css('right', '12px').css('top', paddingTop)
+        $('#hero-form')
+          .css('position', 'absolute')
+          .css('right', '12px')
+          .css('top', 'auto')
+          .css('bottom', 0)
       } else {
         //sino es fixed hasta que baje
         $('#hero-form')
           .css('position', 'fixed')
           .css('right', marginRight + 'px')
           .css('top', marginTop + 'px')
+          .css('bottom', 'auto')
       }
       //Width del form
       $('#hero-form').css('width', boxWidth + 'px')

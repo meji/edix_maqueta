@@ -1,20 +1,48 @@
+#controller-scroll {
+  .col-lg-6 {
+    order: 2;
+    &.form-landing-container {
+      order: 1;
+    }
+  }
+}
 .form-landing-container {
   background: rgba(0, 0, 0, 0.05);
+  margin: -56px -3px 64px -3px;
+  width: calc(100% + 6px);
   padding-bottom: 40px;
   #hero-form {
     background: #fff;
     border-radius: $border-radius-lg;
     padding: 32px;
+    box-shadow: $box-shadow;
+  }
+}
+
+@include respond-above(md) {
+  .form-landing-container {
+    background: transparent;
+    margin: 0;
+    width: auto;
   }
 }
 
 @include respond-above(lg) {
+  #controller-scroll {
+    .col-lg-6 {
+      order: 1;
+      &.form-landing-container {
+        order: 2;
+      }
+    }
+  }
   .form-landing-container {
     background: transparent;
+    margin: 0;
+    width: auto;
     #hero-form {
       max-width: 500px;
       position: fixed;
-      box-shadow: $box-shadow;
       z-index: 10;
       p.submit {
         margin-bottom: 0;
