@@ -16188,6 +16188,10 @@ header#site-header.landing .buttons li .btn.double strong small {
     max-width: none;
     margin-top: auto;
   }
+  /* line 23, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
+  header#site-header.nav-down + section#hero-landing {
+    margin-top: 0;
+  }
 }
 
 /* line 2, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
