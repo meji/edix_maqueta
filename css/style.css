@@ -16189,7 +16189,8 @@ header#site-header.landing .buttons li .btn.double strong small {
     margin-top: auto;
   }
   /* line 23, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
-  header#site-header.nav-down + section#hero-landing {
+  header#site-header.nav-down + section#hero-landing,
+  header#site-header.white.small + section#hero-landing {
     margin-top: 0;
   }
 }
@@ -16220,8 +16221,13 @@ header#site-header.landing .buttons li .btn.double strong small {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+/* line 19, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+.form-landing-container #hero-form .h5 {
+  line-height: 1.2;
+}
+
 @media (min-width: 768px) {
-  /* line 23, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 26, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container {
     background: transparent;
     margin: 0;
@@ -16230,38 +16236,38 @@ header#site-header.landing .buttons li .btn.double strong small {
 }
 
 @media (min-width: 1024px) {
-  /* line 32, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 35, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   #controller-scroll .col-lg-6 {
     order: 1;
   }
-  /* line 34, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 37, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   #controller-scroll .col-lg-6.form-landing-container {
     order: 2;
   }
-  /* line 39, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 42, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container {
     background: transparent;
     margin: 0;
     width: auto;
   }
-  /* line 43, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 46, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container #hero-form {
     max-width: 500px;
     position: fixed;
     z-index: 10;
   }
-  /* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container #hero-form p.submit {
     margin-bottom: 0;
   }
-  /* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 53, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   .form-landing-container #hero-form p.submit .btn {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1279px) {
-  /* line 58, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
+  /* line 61, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero-form.scss */
   #controller-scroll {
     margin-bottom: 144px;
   }

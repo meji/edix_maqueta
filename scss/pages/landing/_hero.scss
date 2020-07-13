@@ -20,7 +20,8 @@
       margin-top: auto;
     }
   }
-  header#site-header.nav-down + section#hero-landing {
+  header#site-header.nav-down + section#hero-landing,
+  header#site-header.white.small + section#hero-landing {
     margin-top: 0;
   }
 }
