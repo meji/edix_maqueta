@@ -12068,7 +12068,7 @@ hr {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   /* line 2, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_icon-title-text.scss */
   .icon-title-text-module {
     margin-bottom: 72px;

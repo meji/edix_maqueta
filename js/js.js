@@ -387,7 +387,7 @@ function utilUiMethods() {
   /********************************************/
   //WOW
   $(
-    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div):not(.faq-body)'
+    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div):not(.faq-body):not(.no-animation)'
   ).addClass('wow fadeInUp')
   const wow = new WOW({
     mobile: false
