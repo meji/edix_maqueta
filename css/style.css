@@ -15205,9 +15205,11 @@ body .modal .modal-md .modal-content .content,
 body .modal .modal-sm .modal-content .content {
   padding: 16px 32px;
   display: inline-block;
+  max-height: 90vh;
+  overflow-x: auto;
 }
 
-/* line 103, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 105, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-md .modal-content .content .text,
 body .modal .modal-sm .modal-content .content .text {
   overflow-y: scroll !important;
@@ -15216,13 +15218,13 @@ body .modal .modal-sm .modal-content .content .text {
   font-size: 1rem;
 }
 
-/* line 108, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 110, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-md .modal-content .content .text p,
 body .modal .modal-sm .modal-content .content .text p {
   font-size: 1rem;
 }
 
-/* line 113, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 115, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-md .modal-content .content .linkedin img,
 body .modal .modal-md .modal-content .content .linkedin svg,
 body .modal .modal-sm .modal-content .content .linkedin img,
@@ -15230,7 +15232,7 @@ body .modal .modal-sm .modal-content .content .linkedin svg {
   width: 25px;
 }
 
-/* line 116, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 118, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-md .modal-content .content .linkedin img:hover path,
 body .modal .modal-md .modal-content .content .linkedin svg:hover path,
 body .modal .modal-sm .modal-content .content .linkedin img:hover path,
@@ -15238,7 +15240,7 @@ body .modal .modal-sm .modal-content .content .linkedin svg:hover path {
   fill: #a049f8;
 }
 
-/* line 119, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 121, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-md .modal-content .content .linkedin img:hover path,
 body .modal .modal-md .modal-content .content .linkedin svg:hover path,
 body .modal .modal-sm .modal-content .content .linkedin img:hover path,
@@ -15246,68 +15248,68 @@ body .modal .modal-sm .modal-content .content .linkedin svg:hover path {
   fill: #a049f8;
 }
 
-/* line 125, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 127, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-md .modal-content .head,
 body .modal .modal-sm .modal-content .head {
   margin-right: 16px;
 }
 
-/* line 133, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 135, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-sm button.close svg * {
   fill: #6a00c2;
 }
 
-/* line 136, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 138, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 body .modal .modal-sm button.close:hover svg * {
   fill: #a049f8;
 }
 
 @media (min-width: 768px) {
-  /* line 144, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 146, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md {
     max-width: 90%;
   }
-  /* line 146, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 148, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md button.close svg * {
     fill: #6a00c2;
   }
-  /* line 149, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 151, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content {
     flex-direction: row;
     width: 994px;
     height: 464px;
   }
-  /* line 153, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 155, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .image-container {
     width: 384px;
     margin: 0;
     height: 464px;
   }
-  /* line 157, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 159, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .image-container img {
     max-width: none;
     width: auto;
   }
-  /* line 162, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 164, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .content {
     padding: 56px;
   }
-  /* line 167, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 169, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-sm {
     max-width: 504px;
   }
 }
 
 @media (min-width: 1700px) {
-  /* line 176, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 178, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content .content .text {
     height: 150px;
   }
-  /* line 179, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 181, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content p.job {
     margin-bottom: 0;
   }
-  /* line 186, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 188, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md p:not(.h3):not(.h4):not(.h5),
   body .modal .modal-sm p:not(.h3):not(.h4):not(.h5) {
     font-size: 1rem;
@@ -15315,47 +15317,47 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (max-width: 1023px) {
-  /* line 193, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 195, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal {
     -webkit-overflow-scrolling: touch;
   }
-  /* line 195, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 197, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .flex-center {
     display: block;
   }
-  /* line 198, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+  /* line 200, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
   body .modal .modal-md .modal-content {
     border-radius: 8px;
   }
 }
 
-/* line 204, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 206, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 .modal .hs-form {
   text-align: right;
 }
 
-/* line 206, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 208, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 .modal .hs-form input:not([type='submit']) {
   text-align: left;
 }
 
-/* line 209, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 211, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 .modal .hs-form input[type='tel'] {
   margin-top: 16px;
 }
 
-/* line 212, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 214, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 .modal .hs-form input[type='submit'] {
   margin-top: 16px;
 }
 
-/* line 217, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 219, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 .modal input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
   width: 100%;
 }
 
 /*Newsletter*/
-/* line 224, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 226, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 #newsletter_modal .modal-sm .modal-content {
   padding-left: 16px;
   padding-right: 16px;
@@ -15364,27 +15366,27 @@ body .modal .modal-sm button.close:hover svg * {
   text-align: center;
 }
 
-/* line 231, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 233, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 #newsletter_modal .modal-sm .modal-content button.close svg * {
   fill: #fff;
 }
 
-/* line 234, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 236, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 #newsletter_modal .modal-sm .modal-content button.close svg:hover * {
   fill: #00c2ab;
 }
 
-/* line 238, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 240, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 #newsletter_modal .modal-sm .modal-content form {
   margin-top: 56px;
 }
 
-/* line 240, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 242, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 #newsletter_modal .modal-sm .modal-content form .check-button__label {
   text-align: left;
 }
 
-/* line 244, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
+/* line 246, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_modals.scss */
 #newsletter_modal .modal-sm .modal-content .btn.turqoise:hover {
   border-color: #00c2ab;
 }

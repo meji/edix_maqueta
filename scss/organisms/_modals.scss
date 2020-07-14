@@ -100,6 +100,8 @@ body .modal {
       .content {
         padding: 16px 32px;
         display: inline-block;
+        max-height: 90vh;
+        overflow-x: auto;
         .text {
           overflow-y: scroll !important;
           height: 190px;
