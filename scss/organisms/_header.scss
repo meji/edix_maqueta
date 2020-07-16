@@ -84,12 +84,12 @@ header#site-header {
     }
   }
   //Ajustamos el salto
-  &.nav-down,
-  &.white.small {
-    & + section {
-      margin-top: 71px;
-    }
-  }
+  //&.nav-down,
+  //&.white.small {
+  //  & + section {
+  //    margin-top: 71px;
+  //  }
+  //}
 }
 
 /*Header RWD*/
@@ -120,12 +120,12 @@ header#site-header {
         padding-bottom: 28px;
       }
     }
-    &.nav-down,
-    &.white.small {
-      & + section {
-        margin-top: 113px;
-      }
-    }
+    //&.nav-down,
+    //&.white.small {
+    //  & + section {
+    //    margin-top: 113px;
+    //  }
+    //}
   }
 }
 @include respond-above(lg) {
@@ -226,9 +226,9 @@ header#site-header {
     &.nav-down,
     &.white.small {
       padding-top: 26px;
-      & + section {
-        margin-top: 116px;
-      }
+      //& + section {
+      //  margin-top: 116px;
+      //}
     }
   }
 }
@@ -241,12 +241,12 @@ header#site-header {
     &.white {
       padding-bottom: 47px;
     }
-    &.nav-down,
-    &.white.small {
-      & + section {
-        margin-top: 136px;
-      }
-    }
+    //&.nav-down,
+    //&.white.small {
+    //  & + section {
+    //    margin-top: 136px;
+    //  }
+    //}
   }
 }
 @include respond-above(xxxl) {

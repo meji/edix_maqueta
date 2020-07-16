@@ -82,6 +82,16 @@
       background-image: url(img/purple-triangle-right.svg);
     }
   }
+  &.hero-short {
+    max-height: 450px;
+    .hero-bg {
+      max-height: 450px;
+    }
+    .data-container {
+      max-height: 450px;
+      background: transparent;
+    }
+  }
 }
 @supports (object-fit: cover) {
   .hero.hero-big .hero-bg img {
@@ -128,6 +138,15 @@
       }
       .data-container {
         max-height: 520px;
+      }
+    }
+    &.hero-short {
+      max-height: 350px;
+      .hero-bg {
+        max-height: 350px;
+      }
+      .data-container {
+        max-height: 350px;
       }
     }
   }
@@ -232,7 +251,6 @@
         min-height: 100%;
       }
     }
-
     .data-container {
       display: flex !important;
 

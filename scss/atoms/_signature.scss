@@ -28,11 +28,9 @@
       margin-bottom: 8px;
       line-height: 1;
     }
-    //a{color: #000;
-    //  &:hover{color: $c-morado}
-    //}
   }
 }
+
 @include respond-above(xl) {
   .section.signatures-section {
     padding-top: 72px;
@@ -55,5 +53,11 @@
   }
 }
 
-@include respond-above(xl) {
+//Página de asinatura
+
+.signature-themes {
+  margin-bottom: -64px;
+  .theme {
+    margin-bottom: 64px;
+  }
 }
