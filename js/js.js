@@ -528,8 +528,13 @@ function utilUiMethods() {
     if (target.length) {
       // Only prevent default if animation is actually gonna happen
       event.preventDefault()
-      const pointToScroll =
-        $(target).offset().top - $('#site-header').height() - $('#career-nav').height() - 60
+      let pointToScroll
+      if ($('#career-nav').length) {
+        pointToScroll =
+          $(target).offset().top - $('#site-header').height() - $('#career-nav').height() - 60
+      } else {
+        pointToScroll = $(target).offset().top - $('#site-header').height()
+      }
       $('html, body').animate(
         {
           scrollTop: pointToScroll
