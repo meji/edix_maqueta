@@ -14,10 +14,25 @@
   #hero-form {
     background: #fff;
     border-radius: $border-radius-lg;
-    padding: 32px;
+    padding: 16px;
     box-shadow: $box-shadow;
-    .h5 {
+    .form-group {
+      margin-bottom: 0.7rem;
+    }
+    .h5,
+    .h6 {
       line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    hr {
+      margin: 8px auto 16px;
+    }
+    .legal-text {
+      height: 50px;
+      margin-bottom: 16px;
+    }
+    p.submit {
+      margin-top: 16px;
     }
   }
 }
