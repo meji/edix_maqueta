@@ -583,7 +583,7 @@ function landing() {
         $('.landing-counters .btn-container').removeClass('fixed')
       }
       //Controlamos el form para que se quede fixed
-      if (window.scrollY + window.innerHeight - 80 > $('#controller-scroll-out').offset().top) {
+      if (window.scrollY + window.innerHeight - 260 > $('#controller-scroll-out').offset().top) {
         $('#hero-form')
           .css('position', 'absolute')
           .css('right', '12px')
