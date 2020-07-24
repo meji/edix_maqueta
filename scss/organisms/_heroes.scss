@@ -71,7 +71,8 @@
       }
     }
   }
-  &.hero-normal {
+  &.hero-normal,
+  &.hero-mobile-normal {
     max-height: 565px;
     .hero-bg {
       max-height: 565px;
@@ -82,7 +83,8 @@
       background-image: url(img/purple-triangle-right.svg);
     }
   }
-  &.hero-short {
+  &.hero-short,
+  &.hero-mobile-short {
     max-height: 450px;
     .hero-bg {
       max-height: 450px;
@@ -91,6 +93,9 @@
       max-height: 450px;
       background: transparent;
     }
+  }
+  &.transparent .data-container {
+    background: none;
   }
 }
 @supports (object-fit: cover) {
@@ -103,6 +108,16 @@
 }
 
 @include respond-above(md) {
+  .hero.hero-big {
+    &.hero-mobile-short,
+    &.hero-mobile-normal {
+      max-height: 100vh;
+      .hero-bg,
+      .data-container {
+        max-height: 100vh;
+      }
+    }
+  }
   .hero.hero-big .data-container {
     background-position: left 102px;
     background-size: 100%;
@@ -110,8 +125,8 @@
       font-size: 375%;
       margin-bottom: 32px;
     }
-    p,
-    .p {
+    p:not(.h5):not(.definition):not(.secondary),
+    .p:not(.h5):not(.definition):not(.secondary) {
       font-size: 125%;
       margin-bottom: 32px;
     }

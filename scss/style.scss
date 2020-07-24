@@ -33,13 +33,17 @@ $c-azulclaro: #00ccff;
 $c-rojoform: #f47151;
 $c-amarillo: #ffe24d;
 $c-turqoise: #00c2ab;
+$c-grey-text: #949494;
 $c-grey: rgba(0, 0, 0, 0.05);
 
 //Transitions
 $transition: 0.3s;
 
-//Atoms
-@import 'atoms/animations.scss';
+//Box-shadow
+
+$box-shadow-small: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+//Atoms @import 'atoms/animations.scss';
 @import 'atoms/blog_module.scss';
 @import 'atoms/brand-icon.scss';
 @import 'atoms/breadcrumb.scss';
@@ -66,6 +70,7 @@ $transition: 0.3s;
 @import 'atoms/notice.scss';
 @import 'atoms/number-lists.scss';
 @import 'atoms/number-list-home.scss';
+@import 'atoms/numbered-block';
 @import 'atoms/offer.scss';
 @import 'atoms/paginations.scss';
 @import 'atoms/pills.scss';
@@ -96,3 +101,4 @@ $transition: 0.3s;
 //Pages
 @import 'pages/error.scss';
 @import 'pages/landing/index';
+@import 'pages/becas/index';

@@ -105,3 +105,14 @@ body #hubspot-messages-iframe-container {
 .border-radius {
   border-radius: $border-radius-lg;
 }
+
+@include respond-above(lg) {
+  .sticky-container {
+    min-height: 100%;
+  }
+  .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+  }
+}

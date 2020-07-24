@@ -8,6 +8,9 @@ $(document).ready(function () {
   utilUiMethods()
   landing()
   showInfoBtn()
+  if ($('.sticky').length > 0) {
+    sticky()
+  }
 })
 
 /************CONTROLES DE CABECERAS CON SCROLLS********************************/
@@ -631,3 +634,11 @@ function showInfoBtn() {
 }
 
 $(window).scroll(showInfoBtn)
+function sticky() {
+  const headerHeight = $('#site-header').outerHeight() //Alto del header
+  const topStickyMargin = headerHeight + 40
+  $('.sticky')
+    .css('top', topStickyMargin + 'px')
+    .parents()
+    .css('overflow', 'visible')
+}
