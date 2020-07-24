@@ -32,3 +32,16 @@
 .grey-bg {
   background-color: $c-grey;
 }
+.blue-form-bg {
+  background-color: $c-azulform;
+}
+.newsletter-bg {
+  background-image: url(img/newsletter-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@include respond-above(lg) {
+  .newsletter-bg {
+    background-image: url(img/newsletter-bg-horizontal.png);
+  }
+}
