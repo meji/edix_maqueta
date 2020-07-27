@@ -21,6 +21,12 @@
   .last-becas {
     .last-beca {
       border-bottom: 0 none;
+      ul {
+        justify-content: flex-start;
+        li {
+          margin-right: 32px;
+        }
+      }
     }
     .col-lg-6 {
       &:nth-child(2),

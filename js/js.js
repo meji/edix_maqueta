@@ -8,8 +8,12 @@ $(document).ready(function () {
   utilUiMethods()
   landing()
   showInfoBtn()
+
   if ($('.sticky').length > 0) {
     sticky()
+  }
+  if ($('#hero-beca').length > 0) {
+    paddingHero()
   }
 })
 
@@ -634,6 +638,8 @@ function showInfoBtn() {
 }
 
 $(window).scroll(showInfoBtn)
+
+//Función para sticky en Becas u en otro contenedor sticky
 function sticky() {
   const headerHeight = $('#site-header').outerHeight() //Alto del header
   const topStickyMargin = headerHeight + 40
@@ -641,4 +647,8 @@ function sticky() {
     .css('top', topStickyMargin + 'px')
     .parents()
     .css('overflow', 'visible')
+}
+
+function paddingHero() {
+  $('#hero-beca .data-container').css('padding-top', $('#site-header').outerHeight())
 }
