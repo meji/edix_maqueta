@@ -12,7 +12,7 @@ $(document).ready(function () {
   if ($('.sticky').length > 0) {
     sticky()
   }
-  if ($('#hero-beca').length > 0) {
+  if ($('.minus').length > 0) {
     paddingHero()
   }
 })
@@ -650,5 +650,5 @@ function sticky() {
 }
 
 function paddingHero() {
-  $('#hero-beca .data-container').css('padding-top', $('#site-header').outerHeight())
+  $('.minus .data-container').css('padding-top', $('#site-header').outerHeight())
 }
