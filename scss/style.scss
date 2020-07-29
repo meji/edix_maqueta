@@ -46,7 +46,8 @@ $box-shadow-small: 0px 0px 15px rgba(0, 0, 0, 0.15);
 $border-radius: 8px;
 $border-radius-small: 4px;
 
-//Atoms @import 'atoms/animations.scss';
+//Atoms
+@import 'atoms/animations.scss';
 @import 'atoms/blog_module.scss';
 @import 'atoms/brand-icon.scss';
 @import 'atoms/breadcrumb.scss';

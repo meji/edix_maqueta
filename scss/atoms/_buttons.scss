@@ -57,7 +57,7 @@
       border-color: #039684;
     }
   }
-  &.btn.small {
+  &.btn.small:not(.btn-cta) {
     height: 40px !important;
     padding: 0 32px !important;
     display: inline-flex;

@@ -10805,6 +10805,17 @@ textarea.form-control {
   color: #6c757d;
 }
 
+/** 09 ANIMACIONES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– **/
+@keyframes in-out {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 /* line 1, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_blog_module.scss */
 .blog-module {
   margin-bottom: 32px;
@@ -10949,7 +10960,7 @@ textarea.form-control {
 }
 
 /* line 60, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
-.btn.btn.small {
+.btn.btn.small:not(.btn-cta) {
   height: 40px !important;
   padding: 0 32px !important;
   display: inline-flex;
