@@ -11002,7 +11002,7 @@ textarea.form-control {
 
 /* line 103, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
 input[type='submit'] {
-  font-size: 100%;
+  font-size: 0.8125rem;
   margin-top: 32px;
   -webkit-appearance: unset;
   appearance: unset;
@@ -11113,8 +11113,9 @@ input[type='submit'] {
   /* line 188, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   input[type='submit'] {
     margin-top: 0;
+    font-size: 0.875rem;
   }
-  /* line 191, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 192, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   .home .button-container #help_btn.white {
     position: relative;
     bottom: auto;
@@ -11123,20 +11124,20 @@ input[type='submit'] {
 }
 
 @media (min-width: 1024px) {
-  /* line 198, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 199, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   .btn,
   #help_btn {
     padding: 15px 32px;
   }
-  /* line 202, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 203, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   .btn-container {
     margin-top: 56px;
   }
-  /* line 205, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 206, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   .link-primary-container {
     margin: 56px 0 0 0;
   }
-  /* line 208, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 209, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   #help_btn {
     position: initial;
     margin: 0;
@@ -11144,13 +11145,13 @@ input[type='submit'] {
 }
 
 @media (min-width: 1440px) {
-  /* line 214, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+  /* line 215, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
   #help_btn {
     bottom: 21px;
   }
 }
 
-/* line 219, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
+/* line 220, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
 #info-mobile-btn {
   position: absolute;
   bottom: 16px;
@@ -11518,6 +11519,82 @@ input[type='submit'] {
   .career-card-new .buttons span {
     padding: 12px 16px;
   }
+}
+
+/* line 1, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next {
+  margin-bottom: 50px;
+}
+
+/* line 3, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .card-header {
+  display: flex;
+  vertical-align: middle;
+  justify-content: flex-start;
+  margin-bottom: 23px;
+}
+
+/* line 8, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .card-header .icon-container {
+  padding: 0 23px;
+}
+
+/* line 10, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .card-header .icon-container svg,
+.career-card-next .card-header .icon-container img {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 16, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .card-header .card-title {
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* line 19, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .card-header .card-title small {
+  font-size: 0.8125rem;
+  display: block;
+  font-weight: normal;
+}
+
+/* line 24, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .card-header .card-title a {
+  color: #000;
+}
+
+/* line 29, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .label-next {
+  background: #e6f1f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 40px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* line 38, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next .label-next .linkc {
+  color: #6a00c2;
+}
+
+/* line 42, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next.shoot-link:hover {
+  cursor: pointer;
+}
+
+/* line 44, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next.shoot-link:hover .label-next {
+  background: #6a00c2;
+  color: #fff;
+}
+
+/* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career-card-next.scss */
+.career-card-next.shoot-link:hover .label-next .linkc {
+  color: #fff;
 }
 
 /* line 1, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_career_nav.scss */
@@ -15906,7 +15983,7 @@ body .modal .modal-sm button.close:hover svg * {
 
 /* line 7, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
 .slider-posts .slider .img-container img {
-  border-radius: 0.25rem;
+  border-radius: 8px;
 }
 
 /* line 11, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slider-posts.scss */
@@ -16026,8 +16103,8 @@ body .modal .modal-sm button.close:hover svg * {
   }
   /* line 68, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slides.scss */
   .with-pic .swiper-pagination-alone-testimonial {
-    text-align: left;
-    padding-left: 284px;
+    text-align: right;
+    padding-right: 30px;
   }
   /* line 72, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_slides.scss */
   .swiper-alone-testimonial .swiper-pagination-alone-testimonial {

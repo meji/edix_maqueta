@@ -40,8 +40,11 @@ $c-grey: rgba(0, 0, 0, 0.05);
 $transition: 0.3s;
 
 //Box-shadow
-
 $box-shadow-small: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+//Border-radius
+$border-radius: 8px;
+$border-radius-small: 4px;
 
 //Atoms @import 'atoms/animations.scss';
 @import 'atoms/blog_module.scss';
@@ -50,6 +53,7 @@ $box-shadow-small: 0px 0px 15px rgba(0, 0, 0, 0.15);
 @import 'atoms/buttons.scss';
 @import 'atoms/career-card.scss';
 @import 'atoms/career-card-new.scss';
+@import 'atoms/career-card-next.scss';
 @import 'atoms/career_nav';
 @import 'atoms/col2-image-text';
 @import 'atoms/colors-backgrounds.scss';
