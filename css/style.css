@@ -10999,14 +10999,14 @@ textarea.form-control {
 }
 
 /* line 92, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
-.text-white .btn-secondary {
+.text-white .btn.btn-secondary:not(.btn-cta):not(#info-mobile-btn) {
   background: transparent;
   color: #fff;
   border-color: #fff;
 }
 
 /* line 96, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_buttons.scss */
-.text-white .btn-secondary:hover {
+.text-white .btn.btn-secondary:not(.btn-cta):not(#info-mobile-btn):hover {
   background: #fff;
   color: #6a00c2;
 }
