@@ -136,7 +136,7 @@ form {
     }
   }
   p.submit {
-    margin: 40px 0 0;
+    margin: 24px 0 0;
   }
   small.error {
     color: $c-rojoform;
@@ -152,7 +152,7 @@ form {
   }
   .legal-text {
     font-size: 0.61rem;
-    height: 100px;
+    height: 50px;
     overflow-y: auto;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px;
@@ -160,8 +160,10 @@ form {
     margin-bottom: 16px;
     &.grey-border {
       border: 1px solid #eee;
-      margin-bottom: 32px;
     }
+  }
+  hr {
+    margin: 8px auto 16px;
   }
   &.reduced-form {
     .form-group {
@@ -171,13 +173,6 @@ form {
     .h6 {
       line-height: 1.2;
       margin-bottom: 8px;
-    }
-    hr {
-      margin: 8px auto 16px;
-    }
-    .legal-text {
-      height: 50px;
-      margin-bottom: 16px;
     }
     p.submit {
       margin-top: 16px;

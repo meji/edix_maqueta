@@ -14177,7 +14177,7 @@ form p.notice.red {
 
 /* line 138, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form p.submit {
-  margin: 40px 0 0;
+  margin: 24px 0 0;
 }
 
 /* line 141, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
@@ -14202,7 +14202,7 @@ form input.error.hs-input:not([type='submit']):not([type='checkbox']):not([type=
 /* line 153, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form .legal-text {
   font-size: 0.61rem;
-  height: 100px;
+  height: 50px;
   overflow-y: auto;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px;
@@ -14213,38 +14213,31 @@ form .legal-text {
 /* line 161, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form .legal-text.grey-border {
   border: 1px solid #eee;
-  margin-bottom: 32px;
 }
 
-/* line 167, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+/* line 165, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+form hr {
+  margin: 8px auto 16px;
+}
+
+/* line 169, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form.reduced-form .form-group {
   margin-bottom: 0.7rem;
 }
 
-/* line 170, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+/* line 172, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form.reduced-form .h5,
 form.reduced-form .h6 {
   line-height: 1.2;
   margin-bottom: 8px;
 }
 
-/* line 175, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
-form.reduced-form hr {
-  margin: 8px auto 16px;
-}
-
-/* line 178, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
-form.reduced-form .legal-text {
-  height: 50px;
-  margin-bottom: 16px;
-}
-
-/* line 182, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+/* line 177, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form.reduced-form p.submit {
   margin-top: 16px;
 }
 
-/* line 189, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+/* line 184, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 .blue-bg form .check-button__control {
   border-color: #0d3781;
   background-color: #032258;
@@ -14252,16 +14245,16 @@ form.reduced-form p.submit {
 }
 
 @media (min-width: 1280px) {
-  /* line 197, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+  /* line 192, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
   form .form-control,
   form input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']) {
     border-radius: 6px;
   }
-  /* line 201, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+  /* line 196, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
   form p.notice {
     border-radius: 8px;
   }
-  /* line 204, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+  /* line 199, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
   form .form-control:focus::placeholder,
   form input.hs-input:not([type='submit']):not([type='checkbox']):not([type='radiobutton']):focus::placeholder {
     font-size: 64.25%;
@@ -14271,7 +14264,7 @@ form.reduced-form p.submit {
   }
 }
 
-/* line 215, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
+/* line 210, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_forms.scss */
 form.border-radius.box-shadow .btn {
   width: 100%;
 }
@@ -15970,24 +15963,29 @@ body .modal .modal-sm button.close:hover svg * {
   margin-bottom: 48px;
 }
 
-/* line 21, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 18, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+.with-head .text-bold {
+  line-height: 1.2;
+}
+
+/* line 24, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section {
   padding-top: 56px;
 }
 
-/* line 23, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 26, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.coloured {
   padding-top: 54px;
   padding-bottom: 54px;
   margin-top: 72px;
 }
 
-/* line 28, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 31, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.counter-numbers {
   margin-top: 32px;
 }
 
-/* line 31, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 34, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.geometric-pattern-bg {
   background-image: url("img/geometric-pattern.svg");
   background-repeat: no-repeat;
@@ -15995,7 +15993,7 @@ body .modal .modal-sm button.close:hover svg * {
   background-size: contain;
 }
 
-/* line 37, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 40, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.map-bg {
   background-image: url("img/map.svg");
   background-position: right center;
@@ -16003,7 +16001,7 @@ body .modal .modal-sm button.close:hover svg * {
   background-size: 100%;
 }
 
-/* line 43, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 46, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.triangles-bg {
   background-image: url(img/triangles.svg);
   background-repeat: no-repeat;
@@ -16013,7 +16011,7 @@ body .modal .modal-sm button.close:hover svg * {
   background-size: auto 100%;
 }
 
-/* line 51, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 54, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.triangles-right-bg {
   background-image: url(img/triangles-right.svg);
   background-repeat: no-repeat;
@@ -16023,13 +16021,13 @@ body .modal .modal-sm button.close:hover svg * {
   background-size: auto 100%;
 }
 
-/* line 59, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 62, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.pdno {
   padding: 0 16px;
   margin-top: 64px;
 }
 
-/* line 63, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+/* line 66, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
 .section.without-item-margin {
   margin-bottom: -16px;
 }
@@ -16037,7 +16035,7 @@ body .modal .modal-sm button.close:hover svg * {
 /*RWD Secciones*/
 /*ancho 100% en mobile*/
 @media (min-width: 768px) {
-  /* line 72, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 75, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .extended {
     margin-left: -34px;
     margin-right: -34px;
@@ -16045,56 +16043,56 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (min-width: 1024px) {
-  /* line 78, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 81, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .section {
     padding-top: 74px;
   }
-  /* line 80, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 83, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .section.coloured {
     margin-top: 144px;
     padding-top: 64px;
     padding-bottom: 64px;
   }
-  /* line 85, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 88, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .section.counter-numbers {
     margin-top: 72px;
   }
-  /* line 88, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 91, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .section.pdno {
     padding: 0;
     margin-top: 144px;
   }
-  /* line 92, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 95, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .section.map-bg {
     background-size: initial;
   }
-  /* line 96, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 99, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .extended {
     margin-left: -42px;
     margin-right: -42px;
   }
-  /* line 101, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 104, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head .super-title {
     font-size: 110%;
   }
-  /* line 104, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 107, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head h2.super-title,
   .with-head h3.super-title {
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 16px;
   }
-  /* line 112, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 115, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head.col2-image-text p,
   .with-head.col2-image-text .p, .with-head.col2-text p,
   .with-head.col2-text .p {
     padding-right: 32px;
   }
-  /* line 117, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 120, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head.col2-image-text.reverse img {
     padding-right: 32px;
   }
-  /* line 121, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 124, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .image-text-column-module p,
   .image-text-column-module .p {
     padding-right: 32px;
@@ -16102,29 +16100,29 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (min-width: 1280px) {
-  /* line 128, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 131, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .section {
     padding-top: 144px;
   }
-  /* line 131, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 134, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .extended {
     margin-left: -50px;
     margin-right: -50px;
   }
-  /* line 138, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 141, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head .title.margin,
   .with-head .title.h2.margin {
     margin-bottom: 72px;
   }
-  /* line 142, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 145, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head p {
     line-height: 1.8;
   }
-  /* line 145, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 148, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head .margin {
     margin-bottom: 72px;
   }
-  /* line 148, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 151, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head h2.super-title,
   .with-head h3.super-title,
   .with-head .super-title {
@@ -16135,12 +16133,12 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (min-width: 1440px) {
-  /* line 158, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 161, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .extended {
     margin-left: -64px;
     margin-right: -64px;
   }
-  /* line 162, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 165, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .image-text-column-module p,
   .image-text-column-module .p {
     line-height: 1.8;
@@ -16148,19 +16146,19 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (min-width: 1700px) {
-  /* line 169, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 172, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .with-head .super-title {
     font-size: 1.68rem;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 175, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 178, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .extended {
     margin-left: -16px;
     margin-right: -16px;
   }
-  /* line 178, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
+  /* line 181, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_sections.scss */
   .extended.b-radius {
     border-radius: 0;
   }
