@@ -13,6 +13,9 @@
       .btn-container-promo {
         margin: 56px 0 0;
       }
+      .upper-zone {
+        margin-bottom: -16px;
+      }
     }
     .img-container {
       img {
@@ -81,6 +84,14 @@
       }
     }
   }
+  .col-lg-8,
+  .col-lg-4 {
+    .promo-module {
+      .data {
+        padding: 32px;
+      }
+    }
+  }
   .col-lg-8 .promo-module.promo-layout-pic-next {
     .img-container {
       height: 300px;
@@ -95,13 +106,6 @@
     .img-container {
       display: none;
     }
-  }
-
-  .col-lg-8 .promo-module .data {
-    padding: 56px;
-  }
-  .col-lg-4 .promo-module .data {
-    padding: 32px;
   }
 }
 
@@ -144,9 +148,11 @@
 
 @include respond-above(xxl) {
   .promo-row {
-    .promo-module {
-      .data {
-        padding: 64px;
+    div:not(.col-lg-8):not(.col-lg-6):not(.col-lg-4) {
+      .promo-module {
+        .data {
+          padding: 64px;
+        }
       }
     }
   }

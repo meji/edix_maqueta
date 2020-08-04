@@ -15728,7 +15728,12 @@ body .modal .modal-sm button.close:hover svg * {
   margin: 56px 0 0;
 }
 
-/* line 18, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 16, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+.promo-row .promo-module .data .upper-zone {
+  margin-bottom: -16px;
+}
+
+/* line 21, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module .img-container img {
   width: 100%;
   height: 100%;
@@ -15736,7 +15741,7 @@ body .modal .modal-sm button.close:hover svg * {
   display: block;
 }
 
-/* line 26, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 29, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-bg .img-container {
   border-radius: 8px;
   overflow: hidden;
@@ -15749,133 +15754,129 @@ body .modal .modal-sm button.close:hover svg * {
   background: #000;
 }
 
-/* line 36, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 39, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-bg .img-container img {
   opacity: 0.85;
 }
 
-/* line 40, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 43, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-bg.purple-bg {
   border-radius: 8px;
 }
 
-/* line 44, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-pic-next {
   display: flex;
   flex-direction: column;
 }
 
-/* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-pic-next .img-container {
   flex: 1;
   order: 1;
   margin: 0;
 }
 
-/* line 52, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 55, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-pic-next .data {
   order: 2;
   flex: 1;
   background: #e6f1f4;
 }
 
-/* line 56, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 59, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-pic-next .data .align-self-center {
   align-self: center;
   margin: auto;
 }
 
-/* line 59, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 62, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-pic-next .data .align-self-center :last-child {
   margin-bottom: 0;
 }
 
-/* line 64, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 67, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .promo-module.promo-layout-pic-next.purple-bg .data {
   background: #6a00c2;
 }
 
-/* line 73, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 76, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .col-lg-8 .promo-module.promo-layout-pic-next,
 .promo-row .col-lg-6 .promo-module.promo-layout-pic-next,
 .promo-row .col-lg-4 .promo-module.promo-layout-pic-next {
   flex-direction: column;
 }
 
-/* line 75, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 78, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .col-lg-8 .promo-module.promo-layout-pic-next .img-container,
 .promo-row .col-lg-6 .promo-module.promo-layout-pic-next .img-container,
 .promo-row .col-lg-4 .promo-module.promo-layout-pic-next .img-container {
   order: 1;
 }
 
-/* line 78, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+/* line 81, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
 .promo-row .col-lg-8 .promo-module.promo-layout-pic-next .data,
 .promo-row .col-lg-6 .promo-module.promo-layout-pic-next .data,
 .promo-row .col-lg-4 .promo-module.promo-layout-pic-next .data {
   order: 2;
 }
 
-/* line 85, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
-.promo-row .col-lg-8 .promo-module.promo-layout-pic-next .img-container {
-  height: 300px;
-}
-
 /* line 90, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
-.promo-row .col-lg-6 .promo-module.promo-layout-pic-next .img-container {
-  height: 200px;
-}
-
-/* line 95, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
-.promo-row .col-lg-4 .promo-module.promo-layout-pic-next .img-container {
-  display: none;
-}
-
-/* line 100, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
-.promo-row .col-lg-8 .promo-module .data {
-  padding: 56px;
-}
-
-/* line 103, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+.promo-row .col-lg-8 .promo-module .data,
 .promo-row .col-lg-4 .promo-module .data {
   padding: 32px;
 }
 
+/* line 96, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+.promo-row .col-lg-8 .promo-module.promo-layout-pic-next .img-container {
+  height: 300px;
+}
+
+/* line 101, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+.promo-row .col-lg-6 .promo-module.promo-layout-pic-next .img-container {
+  height: 200px;
+}
+
+/* line 106, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+.promo-row .col-lg-4 .promo-module.promo-layout-pic-next .img-container {
+  display: none;
+}
+
 @media (min-width: 768px) {
-  /* line 110, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 114, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .promo-module {
     margin-bottom: 64px;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 117, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 121, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .promo-module {
     margin-bottom: 0;
   }
-  /* line 119, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 123, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .promo-module .data {
     padding: 56px;
   }
-  /* line 122, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 126, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .promo-module.promo-layout-pic-next {
     flex-direction: row;
   }
-  /* line 124, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 128, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .promo-module.promo-layout-pic-next .img-container {
     order: 2;
   }
-  /* line 127, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 131, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .promo-module.promo-layout-pic-next .data {
     order: 1;
   }
-  /* line 135, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 139, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .col-lg-8 .promo-module,
   .promo-row .col-lg-6 .promo-module,
   .promo-row .col-lg-4 .promo-module {
     height: 100%;
   }
-  /* line 137, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  /* line 141, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
   .promo-row .col-lg-8 .promo-module .data,
   .promo-row .col-lg-6 .promo-module .data,
   .promo-row .col-lg-4 .promo-module .data {
@@ -15884,8 +15885,8 @@ body .modal .modal-sm button.close:hover svg * {
 }
 
 @media (min-width: 1440px) {
-  /* line 148, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
-  .promo-row .promo-module .data {
+  /* line 153, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_promo-module.scss */
+  .promo-row div:not(.col-lg-8):not(.col-lg-6):not(.col-lg-4) .promo-module .data {
     padding: 64px;
   }
 }
