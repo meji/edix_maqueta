@@ -13392,6 +13392,12 @@ body #hubspot-messages-iframe-container {
   }
 }
 
+/* line 120, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
+img.rounded {
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
 /* line 1, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_typos.scss */
 .text-center {
   text-align: center;
