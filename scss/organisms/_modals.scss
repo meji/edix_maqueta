@@ -97,6 +97,9 @@ body .modal {
           width: 100%;
         }
       }
+      .modal-image {
+        margin: 32px 0;
+      }
       .content {
         padding: 16px 32px;
         display: inline-block;
@@ -129,8 +132,23 @@ body .modal {
       }
     }
   }
+  .content {
+    .footer {
+      margin-top: 32px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .btn {
+        width: auto;
+        margin-right: 32px;
+      }
+    }
+  }
 }
 body .modal .modal-sm {
+  .footer {
+    justify-content: space-between;
+  }
   button.close {
     svg * {
       fill: $c-morado;
@@ -140,7 +158,11 @@ body .modal .modal-sm {
     }
   }
 }
-
+@include respond-above(sm) {
+  body .modal .modal-sm {
+    max-width: 504px;
+  }
+}
 @include respond-above(md) {
   body .modal {
     .modal-md {
@@ -152,6 +174,7 @@ body .modal .modal-sm {
         flex-direction: row;
         width: 994px;
         height: 464px;
+        align-items: center;
         .image-container {
           width: 384px;
           margin: 0;
@@ -161,6 +184,9 @@ body .modal .modal-sm {
             width: auto;
           }
         }
+        .modal-image {
+          margin: 8px 0;
+        }
         .content {
           padding: 56px;
         }
@@ -168,6 +194,7 @@ body .modal .modal-sm {
     }
     .modal-sm {
       max-width: 504px;
+      min-width: 0;
     }
   }
 }
