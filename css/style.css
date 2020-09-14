@@ -13379,20 +13379,29 @@ body #hubspot-messages-iframe-container {
   border-radius: 0.3rem;
 }
 
+/* line 109, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
+form.sticky {
+  margin-bottom: 64px;
+}
+
 @media (min-width: 1024px) {
-  /* line 110, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
+  /* line 114, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
   .sticky-container {
     min-height: 100%;
   }
-  /* line 113, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
+  /* line 117, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
   .sticky {
     position: sticky;
     position: -webkit-sticky;
     top: 100px;
   }
+  /* line 122, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
+  form.sticky {
+    margin-bottom: 0;
+  }
 }
 
-/* line 120, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
+/* line 127, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_tools.scss */
 img.rounded {
   border-radius: 0.3rem;
   overflow: hidden;

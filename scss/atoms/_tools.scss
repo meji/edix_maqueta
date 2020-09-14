@@ -106,6 +106,10 @@ body #hubspot-messages-iframe-container {
   border-radius: $border-radius-lg;
 }
 
+form.sticky {
+  margin-bottom: 64px;
+}
+
 @include respond-above(lg) {
   .sticky-container {
     min-height: 100%;
@@ -114,6 +118,9 @@ body #hubspot-messages-iframe-container {
     position: sticky;
     position: -webkit-sticky;
     top: 100px;
+  }
+  form.sticky {
+    margin-bottom: 0;
   }
 }
 

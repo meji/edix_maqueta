@@ -498,16 +498,6 @@ function utilUiMethods() {
     click: function () {
       $('header#site-header').toggleClass('opened')
       $('header#site-header').toggleClass('closed')
-      // if($('.home #site-header:not(.white) #logo img').attr('src')=='images/logo_edix.svg'){
-      // 	$('.home #site-header:not(.white) #logo img').attr('src', 'images/logo_edix_b.svg');
-      // }else{
-      // 	$('.home #site-header:not(.white) #logo img').attr('src', 'images/logo_edix.svg');
-      // }
-      // if($('.white #logo img').attr('src')=='images/logo_edix.svg'){
-      // 	$('.white #logo img').attr('src', 'images/logo_edix_b.svg');
-      // }else{
-      // 	$('.white #logo img').attr('src', 'images/logo_edix.svg');
-      // }
     }
   })
   //Notice class to body
