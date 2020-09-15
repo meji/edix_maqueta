@@ -13,6 +13,12 @@
     background: none;
   }
 }
+
+#hero-landing.hero.hero-big .hero-bg:after {
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.3;
+}
+
 @include respond-above(md) {
   #hero-landing {
     .career-icon {

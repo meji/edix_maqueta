@@ -16755,13 +16755,19 @@ header#site-header.landing .buttons li .btn.double strong small {
   background: none;
 }
 
+/* line 17, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
+#hero-landing.hero.hero-big .hero-bg:after {
+  background: black;
+  opacity: 0.3;
+}
+
 @media (min-width: 768px) {
-  /* line 18, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
+  /* line 24, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
   #hero-landing .career-icon {
     max-width: none;
     margin-top: auto;
   }
-  /* line 23, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
+  /* line 29, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
   header#site-header.nav-down + section#hero-landing,
   header#site-header.white.small + section#hero-landing {
     margin-top: 0;
