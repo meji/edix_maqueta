@@ -16758,7 +16758,7 @@ header#site-header.landing .buttons li .btn.double strong small {
 /* line 17, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_hero.scss */
 #hero-landing.hero.hero-big .hero-bg:after {
   background: black;
-  opacity: 0.3;
+  opacity: 0.35;
 }
 
 @media (min-width: 768px) {
