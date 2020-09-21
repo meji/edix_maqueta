@@ -1,0 +1,75 @@
+//La base es el promo module del matrix
+
+.blog-module {
+  margin-bottom: 24px;
+  position: relative;
+
+  .title {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .date {
+    margin-bottom: 0;
+    color: $c-grey-text;
+  }
+  .img-container {
+    margin: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    &.rounded {
+      border-radius: $border-radius-lg;
+      overflow: hidden;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  &.overlay {
+    padding-top: 130px;
+    .img-container {
+      border-radius: $border-radius;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #000;
+      img {
+        opacity: 0.85;
+      }
+    }
+    .data .date {
+      color: white;
+    }
+  }
+  &.contained {
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    .data {
+      padding: 24px;
+    }
+  }
+  &.normal-module {
+    p.date {
+      margin: 8px 0;
+    }
+    &.small {
+      margin-top: 48px;
+      p.date {
+        margin-top: 0;
+      }
+    }
+  }
+}
+@include respond-above(md) {
+  .col-12 .blog-module.contained .data {
+    padding: 64px;
+  }
+}

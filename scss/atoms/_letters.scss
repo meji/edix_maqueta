@@ -1,0 +1,22 @@
+.letter-container {
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letter {
+  max-width: 100%;
+  &:hover {
+    fill: #fff;
+    .hover-purple {
+      fill: $c-morado;
+    }
+  }
+}
+
+@include respond-above(lg) {
+  .letter {
+    max-width: none;
+    padding: 8px 32px;
+  }
+}

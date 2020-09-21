@@ -149,7 +149,7 @@
 @include respond-above(xxl) {
   .promo-row {
     div:not(.col-lg-8):not(.col-lg-6):not(.col-lg-4) {
-      .promo-module {
+      .promo-module:not(.blog-highlight) {
         .data {
           padding: 64px;
         }

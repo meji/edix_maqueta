@@ -8,6 +8,7 @@ $(document).ready(function () {
   utilUiMethods()
   landing()
   showInfoBtn()
+  blogThemesNavigation()
 
   if ($('.sticky').length > 0) {
     sticky()
@@ -21,7 +22,7 @@ $(document).ready(function () {
 // Hide header on scroll down, elemento fixed y medidas del hero en carrera / header fixed carrera
 function headersControl() {
   let didScroll
-  let lastScrollTop = 0
+  let lastScrollTop
   const delta = 5
   const navbarHeight = $('header#site-header.closed').outerHeight()
   if (typeof $('#career-nav').offset() !== 'undefined') {
@@ -44,14 +45,11 @@ function headersControl() {
 
   //Función para controlar scroll
   function hasScrolled() {
-    const st = $(window).scrollTop()
+    let st = $(window).scrollTop()
     if (st > navbarHeight + navbarHeight) {
-      $('header#site-header.closed').addClass('small')
-      $('header#site-header.closed').addClass('white')
-      // $('#help_btn.white').removeClass('white')
+      $('header#site-header.closed').addClass('small').addClass('white')
       $(window).scrollTop()
     } else if (st < navbarHeight + navbarHeight) {
-      // $('#help_btn').addClass('white')
       $('header#site-header.closed').removeClass('small').removeClass('nav-up')
       $('.home header#site-header.closed').removeClass('small').removeClass('white')
       $('header#site-header.transparent').removeClass('small').removeClass('white')
@@ -103,25 +101,30 @@ function headersControl() {
       }
     }
 
+    //Cabecera de blog
+    if (typeof $('#blog-menu').offset() !== 'undefined') {
+      const navbarBlogDistance =
+        $('#hero-normal').outerHeight() + $('#blog-menu').outerHeight() + 40
+      if (st > navbarBlogDistance) {
+        $('#blog-menu').addClass('fixed')
+        // If scrolled down and past the navbar, add class .nav-up.
+        if (st > lastScrollTop) {
+          $('#blog-menu').removeClass('nav-up')
+          $('#site-header').css('box-shadow', '0 2px 10px rgba(0, 0, 0, 0.15)')
+        } else {
+          const header = document.getElementById('site-header')
+          $('#blog-menu')
+            .addClass('nav-up')
+            .css('top', header.offsetHeight + 'px')
+          header.style.boxShadow = 'none'
+        }
+      } else {
+        $('#blog-menu').removeClass('fixed').removeClass('nav-up')
+      }
+    }
+
     lastScrollTop = st
   }
-
-  // //Asignamos el alto al hero de carrera
-  // $('#hero-career').css('height', restHeight + 'px')
-  // //Controlamos el cambio de ancho de ventana
-  // $(window).resize(function () {
-  //   restHeight = $(window).height() - navbarHeight
-  //   viewportWidth = $(window).width()
-  //   // swipper_initializer(viewportWidth);
-  //   // swipper_initializer_alone(viewportWidth);
-  //   $('#hero-career').css('height', restHeight + 'px')
-  //   if (viewportWidth >= 1024) {
-  //     $('header#site-header').removeClass('opened')
-  //     $('header#site-header').addClass('closed')
-  //     // $('.home:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
-  //     // $('.white:not(.closed) #logo img').attr('src', 'images/logo_edix.svg');
-  //   }
-  // })
 }
 
 //Navegación de carreras
@@ -301,6 +304,37 @@ function sliders() {
       }
     }
   })
+  //Swipper letters
+  const swiperLetters = new Swiper('.swiper-container.swiper-letters', {
+    slidesPerView: 10,
+    speed: 1000,
+    loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: true
+    },
+    spaceBetween: 20,
+    allowTouchMove: true,
+    preventClicks: false,
+    breakpoints: {
+      1600: {
+        slidesPerView: 8,
+        loop: true
+      },
+      1024: {
+        slidesPerView: 6,
+        loop: true
+      },
+      468: {
+        slidesPerView: 5,
+        loop: true
+      },
+      350: {
+        slidesPerView: 4,
+        loop: true
+      }
+    }
+  })
 }
 
 //hoverCareers
@@ -403,7 +437,7 @@ function utilUiMethods() {
 
   //Replace  SVG images with inline SVG
   $(
-    '#footer .social img[src$=".svg"], .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img'
+    '#footer .social img[src$=".svg"],img.letter, .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img'
   ).each(function () {
     const $img = $(this)
     const imgID = $img.attr('id')
@@ -641,4 +675,11 @@ function sticky() {
 
 function paddingHero() {
   $('.minus .data-container').css('padding-top', $('#site-header').outerHeight())
+}
+
+//Function Blog navigation
+function blogThemesNavigation() {
+  $('.blog-menu .expander').on('click', function () {
+    $('.blog-menu').toggleClass('expanded')
+  })
 }
