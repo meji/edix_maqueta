@@ -21,10 +21,15 @@ $(document).ready(function () {
 /************CONTROLES DE CABECERAS CON SCROLLS********************************/
 // Hide header on scroll down, elemento fixed y medidas del hero en carrera / header fixed carrera
 function headersControl() {
-  let didScroll
+  let didScroll = true
   let lastScrollTop
+  let navbarBlogDistance
+  let header
   const delta = 5
   const navbarHeight = $('header#site-header.closed').outerHeight()
+  if ($('#blog-menu').length > 0) {
+    navbarBlogDistance = $('#blog-menu').offset().top - $('#blog-menu').outerHeight()
+  }
   if (typeof $('#career-nav').offset() !== 'undefined') {
     var navbarCareerHeight = $('#career-nav').offset().top - $('#career-nav').outerHeight() - 50
   }
@@ -34,6 +39,10 @@ function headersControl() {
   //Mido que se haya hecho scroll
   $(window).scroll(function (event) {
     didScroll = true
+  })
+  $(window).resize(function (event) {
+    didScroll = true
+    console.log(didScroll)
   })
   //activo la función si se hace scroll con delay
   setInterval(function () {
@@ -46,10 +55,12 @@ function headersControl() {
   //Función para controlar scroll
   function hasScrolled() {
     let st = $(window).scrollTop()
-    if (st > navbarHeight + navbarHeight) {
+    header = document.getElementById('site-header')
+    $('#blog-menu').css('top', header.offsetHeight + 'px')
+    if (st > navbarHeight) {
       $('header#site-header.closed').addClass('small').addClass('white')
       $(window).scrollTop()
-    } else if (st < navbarHeight + navbarHeight) {
+    } else if (st < navbarHeight) {
       $('header#site-header.closed').removeClass('small').removeClass('nav-up')
       $('.home header#site-header.closed').removeClass('small').removeClass('white')
       $('header#site-header.transparent').removeClass('small').removeClass('white')
@@ -103,16 +114,14 @@ function headersControl() {
 
     //Cabecera de blog
     if (typeof $('#blog-menu').offset() !== 'undefined') {
-      const navbarBlogDistance =
-        $('#hero-normal').outerHeight() + $('#blog-menu').outerHeight() + 40
       if (st > navbarBlogDistance) {
         $('#blog-menu').addClass('fixed')
+        header.style.boxShadow = 'none'
         // If scrolled down and past the navbar, add class .nav-up.
         if (st > lastScrollTop) {
           $('#blog-menu').removeClass('nav-up')
           $('#site-header').css('box-shadow', '0 2px 10px rgba(0, 0, 0, 0.15)')
         } else {
-          const header = document.getElementById('site-header')
           $('#blog-menu')
             .addClass('nav-up')
             .css('top', header.offsetHeight + 'px')
@@ -420,7 +429,7 @@ function utilUiMethods() {
   })
 
   //Expandimos el click al div en post
-  $('.post-module').click(function () {
+  $('.post-module, .blog-module').click(function () {
     window.location = $(this).find('a').attr('href')
     return false
   })

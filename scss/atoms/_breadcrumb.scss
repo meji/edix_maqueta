@@ -1,4 +1,13 @@
 //Breadcrumb
-.breadcrumb{background: transparent; padding: 0;
-  .breadcrumb-item.active{color: #fff;}
+.breadcrumb {
+  background: transparent;
+  padding: 48px 0;
+  a {
+    color: #000;
+    font-weight: normal;
+  }
+  .breadcrumb-item.active {
+    font-weight: bold;
+    color: #000;
+  }
 }

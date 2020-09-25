@@ -1,8 +1,20 @@
 //Pagination
-.pagination-nav{
+.pagination-nav {
   width: 100%;
-  .page-link{color: $c-morado; transition: $transition;
-    &:hover{color: $c-moradoclaro; background: $c-azulform;}
+  .page-link {
+    color: $c-text;
+    transition: $transition;
+    background: transparent;
+    border: 0 none;
+    font-weight: normal;
+    &:hover {
+      color: $c-moradoclaro;
+      background: transparent;
+    }
   }
-  .page-item.active .page-link{background: $c-morado;}
+  .page-item.active .page-link {
+    background: transparent;
+    font-weight: bold;
+    color: $c-text;
+  }
 }

@@ -85,7 +85,6 @@
       }
     }
   }
-
   &.fixed.nav-up {
     position: fixed;
     width: 100%;
@@ -100,7 +99,6 @@
 @include respond-above(md) {
   .blog-menu {
     .container {
-      padding: 24px 32px;
       p {
         display: inline-block;
       }
@@ -111,6 +109,9 @@
         display: inline-block;
         margin-right: 4px;
       }
+    }
+    &.blog-home {
+      padding: 0 20px;
     }
   }
 }

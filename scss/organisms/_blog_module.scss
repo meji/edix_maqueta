@@ -3,11 +3,14 @@
 .blog-module {
   margin-bottom: 24px;
   position: relative;
-
+  cursor: pointer;
   .title {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 16px;
+    a {
+      color: $c-text;
+    }
   }
   .date {
     margin-bottom: 0;
@@ -48,12 +51,32 @@
     .data .date {
       color: white;
     }
+    .title a {
+      color: #fff;
+    }
+    &:hover {
+      .img-container {
+        background: $c-morado;
+        img {
+          opacity: 0.2;
+        }
+      }
+    }
   }
   &.contained {
     border-radius: $border-radius-lg;
     overflow: hidden;
     .data {
       padding: 24px;
+    }
+    &:hover:not(.overlay) {
+      .data {
+        background: $c-morado;
+        color: #fff;
+        .title a {
+          color: #fff;
+        }
+      }
     }
   }
   &.normal-module {
@@ -66,10 +89,39 @@
         margin-top: 0;
       }
     }
+    &.shadowed {
+      padding: 48px 32px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+      border-radius: $border-radius-lg;
+      margin-bottom: 32px;
+    }
+    &:hover {
+      .title a {
+        color: $c-morado;
+      }
+    }
   }
 }
+
+.blog-category-row {
+  .blog-module {
+    margin-bottom: 72px;
+  }
+}
+
 @include respond-above(md) {
   .col-12 .blog-module.contained .data {
     padding: 64px;
+  }
+  .col-lg-6 .blog-module.overlay {
+    padding-top: 174px;
+  }
+}
+
+@include respond-above(xl) {
+  .blog-category-row {
+    .blog-module {
+      margin-bottom: 120px;
+    }
   }
 }
