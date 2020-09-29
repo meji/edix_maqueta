@@ -59,9 +59,54 @@
   .promo-module {
     margin: 74px 0;
   }
+  .pager-prev-next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .item {
+      background: $c-azulform;
+      padding: 24px 24px 24px 72px;
+      max-width: 48%;
+      color: $c-text;
+      font-weight: normal;
+      border-radius: $border-radius-lg;
+      &:before {
+        content: '';
+        background: url('img/rowleft.svg') no-repeat center;
+        width: 19px;
+        height: 33px;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        transform: translateY(-50%);
+      }
+      strong {
+        font-weight: bold;
+        display: none;
+      }
+      &.next {
+        padding: 24px 72px 24px 24px;
+        &:before {
+          left: auto;
+          right: 32px;
+          transform: rotate(180deg) translateY(50%);
+        }
+      }
+      &:hover {
+        background-color: $c-moradoclaro;
+        color: #fff;
+        cursor: pointer;
+        &:before {
+          filter: brightness(100);
+        }
+      }
+    }
+  }
 }
 
-#main.entry-content .col-lg-8 {
+.entry-content .col-lg-8 {
   figcaption {
     margin: 0;
   }
@@ -69,6 +114,35 @@
     display: block;
     margin-top: 36px;
     margin-bottom: 24px;
+  }
+  .blue-resume {
+    background: $c-azulform;
+    padding: 40px;
+    margin-top: 52px;
+    border-radius: $border-radius-lg;
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .post-author {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-top: 52px;
+    justify-content: flex-start;
+    flex-direction: column;
+    .title {
+      line-height: 1.2;
+    }
+    .img-container {
+      margin: 0 40px 0 0;
+      min-width: 110px;
+      img {
+        display: block;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+    }
   }
 }
 @include respond-above(sm) {
@@ -112,6 +186,18 @@
         margin: 48px 0 28px;
         background: url(img/quote.svg) no-repeat left top;
         background-size: 179px;
+      }
+      .post-author {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+    }
+    .pager-prev-next {
+      .item {
+        max-width: 400px;
+        strong {
+          display: block;
+        }
       }
     }
   }

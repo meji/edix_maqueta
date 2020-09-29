@@ -23,6 +23,12 @@
 //Secciones
 .section {
   padding-top: 56px;
+  &.pd40 {
+    padding: 40px;
+  }
+  &.m-section {
+    margin-top: 56px;
+  }
   &.coloured {
     padding-top: 54px;
     padding-bottom: 54px;
