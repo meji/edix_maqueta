@@ -13034,19 +13034,33 @@ body.with-notice header#site-header:not(.not-fixed) {
   background: transparent;
   border: 0 none;
   font-weight: normal;
+  padding: 0 0.75rem;
 }
 
-/* line 10, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_paginations.scss */
+/* line 11, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_paginations.scss */
 .pagination-nav .page-link:hover {
   color: #a049f8;
   background: transparent;
 }
 
-/* line 15, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_paginations.scss */
+/* line 16, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_paginations.scss */
 .pagination-nav .page-item.active .page-link {
   background: transparent;
   font-weight: bold;
   color: #333;
+}
+
+/* line 21, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_paginations.scss */
+.pagination-nav .page-search {
+  border-left: 1px solid #333;
+  margin-left: 16px;
+  padding-left: 16px;
+}
+
+/* line 25, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_paginations.scss */
+.pagination-nav .page-search input {
+  border: 1px solid #333;
+  width: 3em;
 }
 
 /* line 2, /Users/jesusmejias/Web/edix_maqueta/scss/atoms/_pills.scss */
