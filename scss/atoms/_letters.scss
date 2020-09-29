@@ -6,10 +6,20 @@
 }
 .letter {
   max-width: 100%;
+  fill: #fff;
   &:hover {
-    fill: #fff;
-    .hover-purple {
-      fill: $c-morado;
+    path {
+      &.hover-purple {
+        fill: $c-morado;
+      }
+      &:not(.hover-purple) {
+        fill: transparent;
+      }
+    }
+    path[fill="#A049F8"],
+    path[fill="#6A00C2"],
+    rect {
+      fill: $c-azulclaro;
     }
   }
 }

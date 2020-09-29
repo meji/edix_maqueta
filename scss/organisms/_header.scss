@@ -21,7 +21,7 @@ header#site-header {
   }
   #logo {
     display: inline-block;
-    width: 54px;
+    width: 97px;
     img {
       display: block;
       width: 100%;
@@ -97,42 +97,36 @@ header#site-header {
   header#site-header {
     padding-top: 46px;
     #logo {
-      width: 62px;
+      width: 123px;
     }
     &.white {
       padding-bottom: 44px;
     }
     &.small {
       padding-top: 13px;
-      #logo img {
-        width: 61px;
-      }
     }
   }
 }
 @include respond-above(md) {
   header#site-header {
     &.small {
-      #logo img {
-        width: 69px;
-      }
       &.white {
         padding-bottom: 28px;
       }
     }
-    //&.nav-down,
-    //&.white.small {
-    //  & + section {
-    //    margin-top: 113px;
-    //  }
-    //}
   }
 }
 @include respond-above(lg) {
   header#site-header {
+    &.small.white #logo {
+      width: 123px;
+    }
     .container {
       .container {
         max-width: none;
+        #logo {
+          width: 112px;
+        }
       }
     }
     nav {
@@ -140,7 +134,6 @@ header#site-header {
       ul {
         padding: 0;
         margin: 0;
-        //font-size: 14px;
         li {
           display: inline-block;
           margin-right: 24px;
@@ -236,7 +229,7 @@ header#site-header {
   header#site-header {
     padding-top: 53px;
     #logo {
-      width: 79px;
+      width: 141px;
     }
     &.white {
       padding-bottom: 47px;
@@ -253,7 +246,7 @@ header#site-header {
   header#site-header {
     padding-top: 60px;
     #logo {
-      width: 105px;
+      width: 188px;
     }
     nav {
       font-size: 18px;
