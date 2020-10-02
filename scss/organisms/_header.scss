@@ -91,7 +91,23 @@ header#site-header {
   //  }
   //}
 }
-
+.home header#site-header {
+  #logo {
+    .logo-home-small {
+      display: none;
+    }
+  }
+  &.small.white {
+    #logo {
+      .logo-home {
+        display: none;
+      }
+      .logo-home-small {
+        display: inline-block;
+      }
+    }
+  }
+}
 /*Header RWD*/
 @include respond-above(sm) {
   header#site-header {

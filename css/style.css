@@ -13107,6 +13107,16 @@ header#site-header.white.small:after {
   transition: 0.1s;
 }
 
+.home header#site-header #logo .logo-home-small {
+  display: none;
+}
+.home header#site-header.small.white #logo .logo-home {
+  display: none;
+}
+.home header#site-header.small.white #logo .logo-home-small {
+  display: inline-block;
+}
+
 /*Header RWD*/
 @media (min-width: 576px) {
   header#site-header {
