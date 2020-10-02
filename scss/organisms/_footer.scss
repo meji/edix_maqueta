@@ -44,6 +44,7 @@ footer#footer {
         border-color: #fff;
         width: auto;
         margin-left: 16px;
+        min-width: 200px;
       }
       ul.social {
         margin-top: 40px;
@@ -70,6 +71,7 @@ footer#footer {
         color: $c-grey-text;
         a {
           color: $c-grey-text;
+          margin-left: 16px;
           &:hover {
             color: $c-moradoclaro;
           }

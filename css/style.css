@@ -14380,24 +14380,25 @@ footer#footer .downer-footer .up-line select.form-control {
   border-color: #fff;
   width: auto;
   margin-left: 16px;
+  min-width: 200px;
 }
 
-/* line 48, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 49, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer .up-line ul.social {
   margin-top: 40px;
 }
 
-/* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 51, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer .up-line ul.social li {
   margin-right: 30px;
 }
 
-/* line 52, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 53, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer .up-line ul.social li img {
   max-width: 20px;
 }
 
-/* line 58, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 59, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer .up-line ul.social li a:hover path,
 footer#footer .downer-footer .up-line ul.social li .shoot-link:hover path,
 footer#footer .downer-footer .up-line ul.social li .shoot-link-blank:hover path {
@@ -14405,62 +14406,63 @@ footer#footer .downer-footer .up-line ul.social li .shoot-link-blank:hover path 
   transition: 0.3s;
 }
 
-/* line 66, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 67, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer p {
   margin: 40px 0;
   font-size: 0.875rem;
 }
 
-/* line 69, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 70, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer p.legal {
   color: #949494;
 }
 
-/* line 71, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 72, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer p.legal a {
   color: #949494;
+  margin-left: 16px;
 }
 
-/* line 73, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 75, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer p.legal a:hover {
   color: #a049f8;
 }
 
-/* line 79, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+/* line 81, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer .downer-footer .logo-footer {
   width: 120px;
 }
 
 @media (min-width: 1024px) {
-  /* line 86, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 88, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer {
     margin-top: 72px;
   }
-  /* line 89, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 91, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer .downer-footer .up-line {
     margin-bottom: 56px;
   }
-  /* line 91, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 93, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer .downer-footer .up-line ul.social {
     margin-top: 0;
   }
-  /* line 93, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 95, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer .downer-footer .up-line ul.social li {
     margin-left: 30px;
     margin-right: 0;
   }
-  /* line 99, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 101, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer .downer-footer p {
     margin: 0;
   }
 }
 
 @media (min-width: 1280px) {
-  /* line 107, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 109, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer {
     margin-top: 144px;
   }
-  /* line 110, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 112, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer .upper-footer .footer-title {
     margin-top: 0;
   }
