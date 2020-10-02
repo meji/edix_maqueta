@@ -35,6 +35,36 @@
     align-items: center;
     flex-direction: column;
   }
+  .images {
+    text-align: center;
+    img {
+      display: block;
+      margin: 0 auto;
+      &.unir {
+        width: 134px;
+      }
+      &.edix {
+        width: 103px;
+      }
+    }
+    .ampersand {
+      font-size: 25px;
+      font-weight: bold;
+      vertical-align: bottom;
+      margin: 0 8px 0;
+    }
+  }
+}
+
+@include respond-above(sm) {
+  .landing-counters {
+    .images {
+      text-align: left;
+      img {
+        display: inline-block;
+      }
+    }
+  }
 }
 
 @include respond-below(md) {
@@ -52,10 +82,12 @@
   }
 }
 @include respond-above(md) {
-  .landing-counters.fixed {
-    .btn-container {
-      width: auto;
-      right: 16px;
+  .landing-counters {
+    &.fixed {
+      .btn-container {
+        width: auto;
+        right: 16px;
+      }
     }
   }
 }

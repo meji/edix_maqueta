@@ -10832,29 +10832,31 @@ textarea.form-control {
 }
 
 /* line 7, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
-.blog-module .title {
+.blog-module .title,
+.blog-module .blog-title {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-/* line 11, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
-.blog-module .title a {
+/* line 12, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+.blog-module .title a,
+.blog-module .blog-title a {
   color: #333;
 }
 
-/* line 15, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 16, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module .date {
   margin-bottom: 0;
   color: #949494;
 }
 
-/* line 19, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 20, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module .img-container {
   margin: 0;
 }
 
-/* line 21, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 22, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module .img-container img {
   width: 100%;
   height: 100%;
@@ -10862,23 +10864,23 @@ textarea.form-control {
   display: block;
 }
 
-/* line 27, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 28, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module .img-container.rounded {
   border-radius: 0.3rem;
   overflow: hidden;
 }
 
-/* line 32, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 33, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module p:last-child {
   margin-bottom: 0;
 }
 
-/* line 35, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 36, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay {
   padding-top: 130px;
 }
 
-/* line 37, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 38, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay .img-container {
   border-radius: 8px;
   overflow: hidden;
@@ -10891,69 +10893,69 @@ textarea.form-control {
   background: #000;
 }
 
-/* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 48, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay .img-container img {
   opacity: 0.85;
 }
 
-/* line 51, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 52, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay .data .date {
   color: white;
 }
 
-/* line 54, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 55, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay .title a {
   color: #fff;
 }
 
-/* line 58, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 59, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay:hover .img-container {
   background: #6a00c2;
 }
 
-/* line 60, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 61, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.overlay:hover .img-container img {
   opacity: 0.2;
 }
 
-/* line 66, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 67, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.contained {
   border-radius: 0.3rem;
   overflow: hidden;
 }
 
-/* line 69, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 70, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.contained .data {
   padding: 24px;
 }
 
-/* line 73, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 74, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.contained:hover:not(.overlay) .data {
   background: #6a00c2;
   color: #fff;
 }
 
-/* line 76, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 77, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.contained:hover:not(.overlay) .data .title a {
   color: #fff;
 }
 
-/* line 83, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 84, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.normal-module p.date {
   margin: 8px 0;
 }
 
-/* line 86, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 87, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.normal-module.small {
   margin-top: 48px;
 }
 
-/* line 88, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 89, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.normal-module.small p.date {
   margin-top: 0;
 }
 
-/* line 92, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 93, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.normal-module.shadowed {
   padding: 48px 32px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -10961,29 +10963,29 @@ textarea.form-control {
   margin-bottom: 32px;
 }
 
-/* line 99, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 100, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-module.normal-module:hover .title a {
   color: #6a00c2;
 }
 
-/* line 107, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+/* line 108, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
 .blog-category-row .blog-module {
   margin-bottom: 72px;
 }
 
 @media (min-width: 768px) {
-  /* line 113, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+  /* line 114, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
   .col-12 .blog-module.contained .data {
     padding: 64px;
   }
-  /* line 116, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+  /* line 117, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
   .col-lg-6 .blog-module.overlay {
     padding-top: 174px;
   }
 }
 
 @media (min-width: 1280px) {
-  /* line 123, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
+  /* line 124, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_blog_module.scss */
   .blog-category-row .blog-module {
     margin-bottom: 120px;
   }
@@ -14318,180 +14320,149 @@ p.subtitle {
 
 /* line 1, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
 footer#footer {
-  margin-top: 0;
-}
-
-/* line 3, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer p {
-  font-size: 16px;
+  background: #000;
+  color: #fff;
+  padding: 72px 0;
+  margin-top: 64px;
 }
 
 /* line 6, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer {
-  padding: 48px 16px;
-  background: #000;
-  color: #fff;
+footer#footer .upper-footer {
+  font-size: 0.875rem;
+  padding-bottom: 104px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #fff;
 }
 
-/* line 10, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer .col-lg-4:first-child p.footer-title {
-  margin-top: 0;
-}
-
-/* line 13, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer a {
-  color: #fff;
+/* line 11, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .upper-footer .footer-title {
   font-weight: bold;
-  font-size: 87.5%;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
-/* line 17, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer a:hover {
-  color: #a049f8;
-  transition: 0.3s;
+/* line 15, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .upper-footer .footer-title img {
+  filter: brightness(100);
+}
+
+/* line 19, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .upper-footer ul {
+  font-size: 0.875rem;
+  list-style-type: none;
 }
 
 /* line 22, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer p {
-  max-width: 394px;
+footer#footer .upper-footer ul li {
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 16px;
+  line-height: 1;
 }
 
-/* line 24, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer p.footer-title {
-  font-size: 131%;
-  font-weight: bold;
-  margin-bottom: 10px;
+/* line 27, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .upper-footer ul li a {
+  color: #fff;
+  font-weight: 600;
 }
 
-/* line 29, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer p.footer-link {
-  margin-top: 24px;
-  margin-bottom: 64px;
+/* line 30, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .upper-footer ul li a:hover {
+  color: #a049f8;
 }
 
-/* line 33, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer p.mid-margin {
-  margin-bottom: 12px;
+/* line 39, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer .up-line select.form-control {
+  background: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  border-color: #fff;
+  width: auto;
+  margin-left: 16px;
 }
 
-/* line 36, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer p.small {
-  font-size: 81.25%;
+/* line 48, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer .up-line ul.social {
+  margin-top: 40px;
 }
 
-/* line 40, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer ul.social {
-  margin-top: 48px;
-}
-
-/* line 42, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer ul.social li {
+/* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer .up-line ul.social li {
   margin-right: 30px;
 }
 
-/* line 44, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer ul.social li img {
+/* line 52, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer .up-line ul.social li img {
   max-width: 20px;
 }
 
-/* line 47, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer ul.social li a:hover path {
+/* line 58, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer .up-line ul.social li a:hover path,
+footer#footer .downer-footer .up-line ul.social li .shoot-link:hover path,
+footer#footer .downer-footer .up-line ul.social li .shoot-link-blank:hover path {
   fill: #a049f8;
   transition: 0.3s;
 }
 
-/* line 54, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-black-footer.onecol p {
-  max-width: none;
-}
-
-/* line 59, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-white-footer {
-  padding: 24px 16px 72px;
-}
-
-/* line 61, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-white-footer p.legal {
-  margin-bottom: 24px;
-  font-weight: bold;
-  font-size: 87.5%;
-}
-
 /* line 66, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-white-footer p.copy {
-  font-size: 87.5%;
+footer#footer .downer-footer p {
+  margin: 40px 0;
+  font-size: 0.875rem;
 }
 
-/* line 70, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-footer#footer #site-white-footer .unir-footer img {
+/* line 69, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer p.legal {
+  color: #949494;
+}
+
+/* line 71, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer p.legal a {
+  color: #949494;
+}
+
+/* line 73, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer p.legal a:hover {
+  color: #a049f8;
+}
+
+/* line 79, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+footer#footer .downer-footer .logo-footer {
   width: 120px;
-  display: block;
-}
-
-@media (min-width: 576px) {
-  /* line 80, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-white-footer .unir-footer {
-    text-align: left;
-    float: right;
-    margin-top: -8px;
-  }
-  /* line 84, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-white-footer .unir-footer img {
-    width: 190px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 8px;
-    position: relative;
-    top: -5px;
-  }
-}
-
-@media (min-width: 768px) {
-  /* line 97, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-black-footer {
-    border-radius: 4px;
-  }
 }
 
 @media (min-width: 1024px) {
-  /* line 102, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 86, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer {
-    margin-top: 64px;
+    margin-top: 72px;
   }
-  /* line 104, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-black-footer {
-    padding: 64px 40px;
-    border-radius: 8px;
+  /* line 89, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  footer#footer .downer-footer .up-line {
+    margin-bottom: 56px;
   }
-  /* line 107, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-black-footer .col-lg-4 {
-    padding-right: 40px;
+  /* line 91, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  footer#footer .downer-footer .up-line ul.social {
+    margin-top: 0;
   }
-  /* line 111, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-black-footer p.footer-link {
-    margin-bottom: 0;
+  /* line 93, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  footer#footer .downer-footer .up-line ul.social li {
+    margin-left: 30px;
+    margin-right: 0;
   }
-  /* line 115, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-black-footer ul.social {
-    margin-top: 24px;
-  }
-  /* line 119, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer #site-white-footer {
-    padding: 24px 0 72px;
+  /* line 99, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  footer#footer .downer-footer p {
+    margin: 0;
   }
 }
 
 @media (min-width: 1280px) {
-  /* line 126, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
-  footer#footer {
-    margin-top: 80px;
-  }
-}
-
-@media (min-width: 1440px) {
-  /* line 132, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  /* line 107, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
   footer#footer {
     margin-top: 144px;
+  }
+  /* line 110, /Users/jesusmejias/Web/edix_maqueta/scss/organisms/_footer.scss */
+  footer#footer .upper-footer .footer-title {
+    margin-top: 0;
   }
 }
 
@@ -17349,24 +17320,64 @@ footer#footer.landing-footer #site-black-footer p:last-child {
   flex-direction: column;
 }
 
+/* line 38, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+.landing-counters .images {
+  text-align: center;
+}
+
+/* line 40, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+.landing-counters .images img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 43, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+.landing-counters .images img.unir {
+  width: 134px;
+}
+
+/* line 46, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+.landing-counters .images img.edix {
+  width: 103px;
+}
+
+/* line 50, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+.landing-counters .images .ampersand {
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: bottom;
+  margin: 0 8px 0;
+}
+
+@media (min-width: 576px) {
+  /* line 61, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  .landing-counters .images {
+    text-align: left;
+  }
+  /* line 63, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  .landing-counters .images img {
+    display: inline-block;
+  }
+}
+
 @media (max-width: 767px) {
-  /* line 42, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 72, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters.new-hero {
     text-align: center;
   }
-  /* line 45, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 75, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters .btn-container {
     display: block;
     margin-bottom: 32px;
   }
-  /* line 48, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 78, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters .btn-container.fixed .btn {
     width: calc(100% - 32px);
   }
 }
 
 @media (min-width: 768px) {
-  /* line 56, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 87, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters.fixed .btn-container {
     width: auto;
     right: 16px;
@@ -17374,22 +17385,22 @@ footer#footer.landing-footer #site-black-footer p:last-child {
 }
 
 @media (min-width: 1024px) {
-  /* line 65, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 97, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters .btn-container {
     display: none;
   }
-  /* line 68, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 100, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters .btn-container.fixed {
     display: block;
   }
-  /* line 70, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 102, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters .btn-container.fixed .btn {
     position: fixed;
     bottom: 16px;
     right: 16px;
     z-index: 10;
   }
-  /* line 77, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
+  /* line 109, /Users/jesusmejias/Web/edix_maqueta/scss/pages/landing/_counter-numbers.scss */
   .landing-counters p.secondary {
     margin-bottom: 0;
   }
