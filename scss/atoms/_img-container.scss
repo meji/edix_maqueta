@@ -1,7 +1,9 @@
-.img-container{
+.img-container {
   margin-bottom: 16px;
 }
 
-@include respond-above(lg){
-  margin-bottom: 0;
+@include respond-above(lg) {
+  .img-container {
+    margin-bottom: 0;
+  }
 }
