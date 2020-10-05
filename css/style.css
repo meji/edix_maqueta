@@ -12732,6 +12732,16 @@ footer#footer .upper-footer .footer-title {
   font-size: 1.2rem;
   margin-top: 2rem;
 }
+footer#footer .upper-footer .footer-title a,
+footer#footer .upper-footer .footer-title .shoot-link,
+footer#footer .upper-footer .footer-title .shoot-link-blank {
+  color: #fff;
+}
+footer#footer .upper-footer .footer-title a:hover,
+footer#footer .upper-footer .footer-title .shoot-link:hover,
+footer#footer .upper-footer .footer-title .shoot-link-blank:hover {
+  color: #a049f8;
+}
 footer#footer .upper-footer .footer-title img {
   filter: brightness(100);
 }
@@ -12786,7 +12796,7 @@ footer#footer .downer-footer p.legal {
 }
 footer#footer .downer-footer p.legal a {
   color: #949494;
-  margin-left: 16px;
+  margin: 0 16px;
 }
 footer#footer .downer-footer p.legal a:hover {
   color: #a049f8;

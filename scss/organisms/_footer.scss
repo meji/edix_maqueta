@@ -12,6 +12,14 @@ footer#footer {
       font-weight: bold;
       font-size: 1.2rem;
       margin-top: 2rem;
+      a,
+      .shoot-link,
+      .shoot-link-blank {
+        color: #fff;
+        &:hover {
+          color: $c-moradoclaro;
+        }
+      }
       img {
         filter: brightness(100);
       }
@@ -71,7 +79,7 @@ footer#footer {
         color: $c-grey-text;
         a {
           color: $c-grey-text;
-          margin-left: 16px;
+          margin: 0 16px;
           &:hover {
             color: $c-moradoclaro;
           }
