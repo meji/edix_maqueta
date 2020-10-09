@@ -211,3 +211,19 @@ form.border-radius.box-shadow {
     width: 100%;
   }
 }
+
+.blue-form-bg form {
+  .btn-secondary {
+    background: transparent;
+    width: 100%;
+  }
+  .form-control,
+  input.hs-input:not([type='submit']) {
+    background: #fff;
+    border: 0 none;
+  }
+  .check-button__control {
+    background: transparent;
+    border-color: $c-morado;
+  }
+}

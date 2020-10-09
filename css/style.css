@@ -11359,6 +11359,23 @@ ul.logos li img {
     width: 26%;
   }
 }
+.medios-module {
+  margin-bottom: 72px;
+}
+.medios-module .text-small {
+  color: #949494;
+}
+.medios-module .text-small img {
+  display: block;
+  margin: 8px 0;
+}
+.medios-module a {
+  color: #000;
+}
+.medios-module a:hover {
+  color: #6a00c2;
+}
+
 #notice-ext {
   position: fixed;
   top: 0;
@@ -12283,6 +12300,9 @@ form.sticky {
     position: -webkit-sticky;
     top: 100px;
   }
+  .sticky.up {
+    top: 0px;
+  }
 
   form.sticky {
     margin-bottom: 0;
@@ -12291,6 +12311,10 @@ form.sticky {
 img.rounded {
   border-radius: 0.3rem;
   overflow: hidden;
+}
+
+.right-col-module {
+  padding: 24px;
 }
 
 .text-center {
@@ -13035,6 +13059,20 @@ form input.hs-input:not([type=submit]):not([type=checkbox]):not([type=radiobutto
 }
 form.border-radius.box-shadow .btn {
   width: 100%;
+}
+
+.blue-form-bg form .btn-secondary {
+  background: transparent;
+  width: 100%;
+}
+.blue-form-bg form .form-control,
+.blue-form-bg form input.hs-input:not([type=submit]) {
+  background: #fff;
+  border: 0 none;
+}
+.blue-form-bg form .check-button__control {
+  background: transparent;
+  border-color: #6a00c2;
 }
 
 /** HEADERS

@@ -118,6 +118,9 @@ form.sticky {
     position: sticky;
     position: -webkit-sticky;
     top: 100px;
+    &.up {
+      top: 0;
+    }
   }
   form.sticky {
     margin-bottom: 0;
@@ -127,4 +130,7 @@ form.sticky {
 img.rounded {
   border-radius: $border-radius-lg;
   overflow: hidden;
+}
+.right-col-module {
+  padding: 24px;
 }
