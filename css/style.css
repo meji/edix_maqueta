@@ -12165,6 +12165,84 @@ body.with-notice header#site-header:not(.not-fixed) {
     margin-bottom: 0;
   }
 }
+.term-finder {
+  display: flex;
+  padding: 46px 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.term-finder p {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.term-finder form {
+  width: 100%;
+}
+.term-finder form input {
+  margin-bottom: 16px;
+  display: block;
+}
+.term-finder form .btn {
+  min-width: 0;
+  padding: 0 16px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.term-finder form .btn img,
+.term-finder form .btn svg {
+  width: 30px;
+}
+
+@media (min-width: 768px) {
+  .term-finder form {
+    display: inline-flex;
+    width: auto;
+    margin-left: 16px;
+    height: 72px;
+  }
+  .term-finder form input {
+    width: 550px;
+    height: 72px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+  }
+  .term-finder form .btn {
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    margin: 0;
+  }
+
+  .term-finder {
+    flex-direction: row;
+  }
+}
+#terms img,
+#terms svg {
+  max-width: 100px;
+}
+#terms ul.terms li {
+  list-style: none;
+  font-size: 30px;
+  line-height: 1.8;
+}
+#terms ul.terms li a {
+  color: #000;
+}
+#terms ul.terms li a:hover {
+  color: #6a00c2;
+}
+
 .hidden {
   display: none;
 }
@@ -12301,7 +12379,7 @@ form.sticky {
     top: 100px;
   }
   .sticky.up {
-    top: 0px;
+    top: 0;
   }
 
   form.sticky {

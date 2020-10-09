@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>En los medios</title>
+  <title>Tag Blog</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -65,92 +65,116 @@
     </div>
   </header>
 
-
-  <!-- HERO EN LOS MEDIOS
+  <!-- Menu temas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section id="hero-normal" class="hero hero-big text-white hero-normal">
+  <section id="blog-menu" class="blog-menu bg-blue-light rounded  b-radius mno">
+    <div class="container no-animation">
+      <p>Temas</p>
+      <nav>
+        <ul>
+          <li><a href="" title="Ir a la Revolución profesional">La revolución profesional</a></li>
+          <li><a href="" title="Ir a consejos">Consejos</a></li>
+          <li><a href="" title="Ir a glosario">Glosario</a></li>
+          <li><a href="" title="Ir a la Teletrabajo con éxito">Teletrabajo con éxito</a></li>
+          <li><a href="" title="Ir a espacios del futuro">Espacios del futuro</a></li>            <li><a href="" title="Ir a la Revolución profesional">La revolución profesional</a></li>
+          <li><a href="" title="Ir a consejos">Consejos</a></li>
+          <li><a href="" title="Ir a glosario">Glosario</a></li>
+          <li><a href="" title="Ir a la Teletrabajo con éxito">Teletrabajo con éxito</a></li>
+          <li><a href="" title="Ir a espacios del futuro">Espacios del futuro</a></li>            <li><a href="" title="Ir a la Revolución profesional">La revolución profesional</a></li>
+          <li><a href="" title="Ir a consejos">Consejos</a></li>
+          <li><a href="" title="Ir a glosario">Glosario</a></li>
+          <li><a href="" title="Ir a la Teletrabajo con éxito">Teletrabajo con éxito</a></li>
+          <li><a href="" title="Ir a espacios del futuro">Espacios del futuro</a></li>
+        </ul>
+      </nav>
+      <span class="link-primary expander"><span class="text">Ver <span class="mas-menos"></span> temas </span><i class="caret-down"></i></span>
+    </div>
+  </section>
+
+
+  <!-- HERO BLOG
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="hero-normal" class="hero hero-big text-white hero-short purple-bg category-bg">
     <picture class="hero-bg">
       <!-- tatamiento vertical -->
-      <source media="(orientation:portrait)" srcset="../images/carreras-mobile.jpg">
+      <source media="(orientation:portrait)" srcset="../images/tag-bg.svg">
       <!-- tatamiento version_horizontal -->
-      <img alt="alt de la imagen" title="title de la imagen" src="../images/carreras-horizontal.jpg">
+      <img alt="alt de la imagen" title="title de la imagen" src="../images/glosario-bg.svg">
       <noscript>
-        <img alt="alt de la imagen" title="title de la imagen" src="../images/carreras-horizontal.jpg">
+        <img alt="alt de la imagen" title="title de la imagen" src="../images/glosario-bg.svg">
       </noscript>
     </picture>
     <div class="data-container d-flex">
       <div class="container justify-content-center align-self-center">
         <div class="row">
-          <h1 class="h1 col-11 col-xl-8">En los medios</h1>
-        </div>
-        <div class="row">
-          <p class="col-11 col-xl-6">Phasellus ac massa vulputate, lobortis velit vitae, bibendum mauris. Proin congue porta mattis. Nulla non sollicitudin felis.</p>
+          <h1 class="h1 col-11 col-xl-8 col-xxl-6 col-xxxl-5">Glosario</h1>
+          <p class="col-11 col-xl-8 col-xxl-6  col-xxxl-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
         </div>
       </div>
     </div>
   </section>
+
   <!-- CONTENIDO
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <!--En este caso hay que dividir el main por dentro en dos containers dado que lleva en medio un módulo al 100%-->
   <main id="main">
     <div class="container">
-      <div class="row section">
-        <div class="col-xl-8 col-lg-7">
-          <div class="medios-module">
-            <p class="text-small">Leído en <img src="../images/logo-economista.png" alt="medio" title=""> 23 · 06 · 2020
-            </p>
-            <h2 class="h4 mb-2 mtno"><a href="url" title="Ir a">Reconversión industrial exprés: así reaccionan las empresas a la crisis sanitaria</a></h2>
-            <figure>
-              <img src="../images/imagen_ejemplo.jpg" title="" alt="">
-              <figcaption>De las fábricas de automóviles y ropa de moda salen, estos días, respiradores mecánicos, batas sanitarias y otros productos más necesarios que nunca. </figcaption>
-            </figure>
+      <!-- Buscador de términos -->
+      <div class="row">
+        <div class="col-12">
+          <div class="term-finder"><p class="h4">Buscador de términos</p><form><input class="form-control" name="term" type="text"/><span class="btn btn-primary"><img src="../images/magnify.svg" alt="Lupa" title="Buscar"/></span></form></div>
+        </div>
+      </div>
+      <div id="terms">
+        <div class="row" data-letter="a">
+          <div class="col-md-2 col-xxl-1">
+            <img src="../images/letters/A.svg" alt="A term" title="A"/>
           </div>
-          <div class="medios-module">
-            <p class="text-small">Leído en <img src="../images/logo-economista.png" alt="medio" title=""> 23 · 06 · 2020
-            </p>
-            <h2 class="h4 mb-2 mtno"><a href="url" title="Ir a">Reconversión industrial exprés: así reaccionan las empresas a la crisis sanitaria</a></h2>
-            <p>Ha sido inevitable. Vivimos un momento excepcional, en el que los retos laborales son mayores y las empresas necesitan, más que nunca, profesionales formados en habilidades prácticas. Por eso, no hemos querido esperar más y hemos adelantado al mes de junio la segunda promoción de todas nuestras carreras. ¿Te apuntas?</p>
-          </div>
-          <div class="medios-module">
-            <p class="text-small">Leído en <img src="../images/logo-economista.png" alt="medio" title=""> 23 · 06 · 2020
-            </p>
-            <h2 class="h4 mb-2 mtno"><a href="url" title="Ir a">Reconversión industrial exprés: así reaccionan las empresas a la crisis sanitaria</a></h2>
-            <figure>
-              <img src="../images/imagen_ejemplo.jpg" title="" alt="">
-              <figcaption>De las fábricas de automóviles y ropa de moda salen, estos días, respiradores mecánicos, batas sanitarias y otros productos más necesarios que nunca. </figcaption>
-            </figure>
+          <div class="col-md-10 col-xxl-11">
+            <ul class="terms">
+              <li><a href="#" title="A/B Testing">A/B testing</a></li>
+              <li><a href="#" title="Accionable (Métrica)">A/B testing</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-5 sticky-container">
-          <div class="sticky up">
-            <div class="blue-form-bg  right-col-module border-radius mb-4">
-              <p class="h5 mtno">Descarga nuestro kit de prensa</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <form>
-                <div class="form-group">
-                  <input class="form-control" placeholder="Escribe tu email" name="email"/>
-                </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <label class="custom-control-label" for="legal-check">
-                      <input type="checkbox" class="custom-control-input check-button__input" id="legal-check">
-                      <span class="check-button__control"></span>
-                      <span class="check-button__label">He leido y acepto las condiciones legales
-                              <a href="#" title="Ver las condiciones legales">Términos legales</a></span>
-                    </label>
-                  </div>
-                </div>
-                <div class="submit">
-                  <input type="submit" class="btn btn-secondary" value="Descargar kit de prensa">
-                </div>
-              </form>
-            </div>
-            <div class="border-radius purple-bg coloured text-white" style="display: flex; justify-content: center;align-items: center; min-height: 250px;">Promo Module</div>
+        <div class="row" data-letter="b">
+          <div class="col-md-2 col-xxl-1">
+            <img src="../images/letters/B.svg" alt="B term" title="B"/>
+          </div>
+          <div class="col-md-10 col-xxl-11">
+            <ul class="terms">
+              <li><a href="#" title="">Big Data</a></li>
+              <li><a href="#" title="">Blockchain</a></li>
+              <li><a href="#" title="">Bounce rate</a></li>
+              <li><a href="#" title="">Branded Content</a></li>
+              <li><a href="#" title="">Buyer’s Journey</a></li>
+              <li><a href="#" title="">Buyer personas</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" data-letter="c">
+          <div class="col-md-2 col-xxl-1">
+            <img src="../images/letters/C.svg" alt="C term" title="C"/>
+          </div>
+          <div class="col-md-10 col-xxl-11">
+            <ul class="terms">
+              <li><a href="#" title="">Call to Action (CTA) o llamada a la acción</a></li>
+              <li><a href="#" title="">Campaña drip</a></li>
+              <li><a href="#" title="">Chatbot</a></li>
+              <li><a href="#" title="">Churn</a></li>
+              <li><a href="#" title="">Ciclo de compra o buyer journey</a></li>
+              <li><a href="#" title="">Clickbait</a></li>
+              <li><a href="#" title="">Community Manager</a></li>
+              <li><a href="#" title="">Content Curation</a></li>
+              <li><a href="#" title="">Cookies</a></li>
+              <li><a href="#" title="">Copy</a></li>
+              <li><a href="#" title="">Coste de Adquisición de Cliente o CAC</a></li>
+              <li><a href="#" title="">CTR</a></li>
+            </ul>
           </div>
         </div>
       </div>
-
       <!-- Módulo  Newsletter
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <section id="newsletter" class="extended form-inside text-white with-head section triangles-bg blue-bg coloured b-radius">
@@ -191,7 +215,7 @@
   </main>
   <!-- FOOTER
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <footer id="footer">
+        <footer id="footer">
         <div class="container">
           <section class="upper-footer">
             <div class="row">
@@ -284,50 +308,50 @@
 <!-- modal container-->
 <div id="modal-profe" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
   <div class="modal-dialog modal-md modal-dialog-centered">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar"/>
-        </button>
-        <picture class="image-container">
-            <!-- tatamiento vertical -->
-            <source media="(max-width: 768px)" srcset="">
-            <!-- tatamiento version_horizontal -->
-            <img class="image" alt="" title="" src="">
-            <noscript>
-              <img class="image" alt="" title="" src="">
-            </noscript>
-        </picture>
-        <div class="content">
-          <div class="head">
-            <p class="job"></p>
-            <p class="name h4 mtno"></p>
-          </div>
-          <div class="text scroll-bar-visible"></div>
-          <a class="linkedin" href="" title="linkedin" target="_blank"><img src="../images/linkedin-icon.svg" alt="linkedin" title="linkedin"/></a>
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar"/>
+      </button>
+      <picture class="image-container">
+        <!-- tatamiento vertical -->
+        <source media="(max-width: 768px)" srcset="">
+        <!-- tatamiento version_horizontal -->
+        <img class="image" alt="" title="" src="">
+        <noscript>
+          <img class="image" alt="" title="" src="">
+        </noscript>
+      </picture>
+      <div class="content">
+        <div class="head">
+          <p class="job"></p>
+          <p class="name h4 mtno"></p>
         </div>
+        <div class="text scroll-bar-visible"></div>
+        <a class="linkedin" href="" title="linkedin" target="_blank"><img src="../images/linkedin-icon.svg" alt="linkedin" title="linkedin"/></a>
       </div>
+    </div>
   </div>
 </div>
 <!--Video modal container-->
 <div id="video_modal" class="modal fade video_lg" tabindex="-1" role="dialog" aria-labelledby="video_modal" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <img aria-hidden="true" src="../images/cross-white.svg" alt="cerrar" title="cerrar"/>
-        </button>
-          <iframe class="iframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" width="100%" height="100%"></iframe>
-      </div>
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img aria-hidden="true" src="../images/cross-white.svg" alt="cerrar" title="cerrar"/>
+      </button>
+      <iframe class="iframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" width="100%" height="100%"></iframe>
+    </div>
   </div>
 </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="../js/swiper.min.js?v12"></script>
-    <script src="../js/jquery.touchSwipe.min.js?v12"></script>
-    <script src="../js/wow.js"></script>
-    <script src="../js/js.js?v12"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../js/swiper.min.js?v12"></script>
+<script src="../js/jquery.touchSwipe.min.js?v12"></script>
+<script src="../js/wow.js"></script>
+<script src="../js/js.js?v12"></script>
 </body>
 
 </html>
