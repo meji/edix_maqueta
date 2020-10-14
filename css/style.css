@@ -12238,9 +12238,13 @@ body.with-notice header#site-header:not(.not-fixed) {
 }
 #terms ul.terms li a {
   color: #000;
+  font-weight: 400;
 }
 #terms ul.terms li a:hover {
   color: #6a00c2;
+}
+#terms .row:not(.searching) ul.terms li a {
+  font-weight: 600;
 }
 
 .hidden {

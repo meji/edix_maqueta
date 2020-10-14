@@ -10,10 +10,13 @@
 
     a {
       color: #000;
-
+      font-weight: 400;
       &:hover {
         color: $c-morado;
       }
     }
+  }
+  .row:not(.searching) ul.terms li a {
+    font-weight: 600;
   }
 }

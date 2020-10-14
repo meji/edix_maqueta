@@ -1,5 +1,4 @@
-$(document).ready(function () {
-  /************FIN CONTROLES DE CABECERAS CON SCROLLS********************************/
+$(document).ready(function() {
   headersControl()
   sliders()
   loadTeachers()
@@ -9,6 +8,9 @@ $(document).ready(function () {
   landing()
   showInfoBtn()
   blogThemesNavigation()
+  if ($('#glosary-search-box').length > 0) {
+    glosarioNav()
+  }
 
   if ($('.sticky').length > 0) {
     sticky()
@@ -37,33 +39,41 @@ function headersControl() {
   const thisIsfixedHeight = $('.this-is-fixed').outerHeight() - 50
   let thisIsfixedWidth
   //Mido que se haya hecho scroll
-  $(window).scroll(function (event) {
+  $(window).scroll(function(event) {
     didScroll = true
   })
-  $(window).resize(function (event) {
+  $(window).resize(function(event) {
     didScroll = true
     console.log(didScroll)
   })
   //activo la función si se hace scroll con delay
-  setInterval(function () {
+  setInterval(function() {
     if (didScroll) {
       hasScrolled()
       didScroll = false
     }
   }, 250)
 
-  //Función para controlar scroll
+  //Método para controlar scroll
   function hasScrolled() {
     let st = $(window).scrollTop()
     header = document.getElementById('site-header')
     $('#blog-menu').css('top', header.offsetHeight + 'px')
     if (st > navbarHeight) {
-      $('header#site-header.closed').addClass('small').addClass('white')
+      $('header#site-header.closed')
+        .addClass('small')
+        .addClass('white')
       $(window).scrollTop()
     } else if (st < navbarHeight) {
-      $('header#site-header.closed').removeClass('small').removeClass('nav-up')
-      $('.home header#site-header.closed').removeClass('small').removeClass('white')
-      $('header#site-header.transparent').removeClass('small').removeClass('white')
+      $('header#site-header.closed')
+        .removeClass('small')
+        .removeClass('nav-up')
+      $('.home header#site-header.closed')
+        .removeClass('small')
+        .removeClass('white')
+      $('header#site-header.transparent')
+        .removeClass('small')
+        .removeClass('white')
       $(window).scrollTop()
     }
     $('header#site-header.origin-white.opened').removeClass('white')
@@ -75,12 +85,16 @@ function headersControl() {
     // If scrolled down and past the navbar, add class .nav-up.
     if (st > lastScrollTop && st > navbarHeight) {
       // Scroll Down
-      $('header#site-header.closed:not(.nav-down-fixed)').removeClass('nav-up').addClass('nav-down')
+      $('header#site-header.closed:not(.nav-down-fixed)')
+        .removeClass('nav-up')
+        .addClass('nav-down')
       // .removeClass('white')
     } else {
       // Scroll Up
       if (st + $(window).height() < $(document).height()) {
-        $('header#site-header.closed').removeClass('nav-down').addClass('nav-up')
+        $('header#site-header.closed')
+          .removeClass('nav-down')
+          .addClass('nav-up')
       }
     }
     //Para elementos fixed:
@@ -90,7 +104,9 @@ function headersControl() {
         .addClass('is-fixed')
         .css('width', thisIsfixedWidth + 'px')
     } else {
-      $('.this-is-fixed').removeClass('is-fixed').css('width', 'auto')
+      $('.this-is-fixed')
+        .removeClass('is-fixed')
+        .css('width', 'auto')
     }
 
     //Cabecera de la carrera
@@ -128,7 +144,9 @@ function headersControl() {
           header.style.boxShadow = 'none'
         }
       } else {
-        $('#blog-menu').removeClass('fixed').removeClass('nav-up')
+        $('#blog-menu')
+          .removeClass('fixed')
+          .removeClass('nav-up')
       }
     }
 
@@ -146,31 +164,33 @@ function careerNavNavigation() {
   // All list items
   let menuItems = topMenu.find('span.smooths-scroll')
   // Anchors corresponding to menu items
-  scrollItems = menuItems.map(function () {
+  scrollItems = menuItems.map(function() {
     const item = $($(this).attr('data-href'))
     if (item.length) {
       return item
     }
   })
   //Smooth scroll
-  menuItems.click(function (e) {
+  menuItems.click(function(e) {
     const href = $(this).attr('data-href'),
       offsetTop = href === '#' ? 0 : $(href).offset().top - topMenuHeight + 1
-    $('html, body').stop().animate(
-      {
-        scrollTop: offsetTop
-      },
-      1500
-    )
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop: offsetTop
+        },
+        1500
+      )
     e.preventDefault()
   })
   // Bind to scroll
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     // Get container scroll position
     const fromTop = $(this).scrollTop() + topMenuHeight
 
     // Get id of current scroll item
-    let cur = scrollItems.map(function () {
+    let cur = scrollItems.map(function() {
       if ($(this).offset().top < fromTop) return this
     })
     // Get the id of the current element
@@ -192,8 +212,11 @@ function careerNavNavigation() {
   /********************************************/
   //Control de click menu carrera mobile
   $('#career-nav ul').on({
-    click: function () {
-      $(this).parent().parent().toggleClass('opened')
+    click: function() {
+      $(this)
+        .parent()
+        .parent()
+        .toggleClass('opened')
     }
   })
 }
@@ -275,10 +298,10 @@ function sliders() {
   })
   //Anulamos el autoplay en el hover
   $('.swiper-container.swiper4321').hover(
-    function () {
+    function() {
       swiper.autoplay.stop()
     },
-    function () {
+    function() {
       swiper.autoplay.start()
     }
   )
@@ -351,23 +374,29 @@ function hoverCareers() {
   let supportsTouch =
     'ontouchstart' in document.documentElement || navigator.msMaxTouchPoints ? true : false
   //Expandimos el click al div
-  $('.career-card.icon-left:not(.plain), .career-card-new:not(.modal-link)').click(function () {
-    window.location = $(this).find('a').attr('href')
+  $('.career-card.icon-left:not(.plain), .career-card-new:not(.modal-link)').click(function() {
+    window.location = $(this)
+      .find('a')
+      .attr('href')
     return false
   })
   if (supportsTouch == false) {
-    $('.career-card.icon-left:not(.plain), .career-card-new').on('mouseenter', function (event) {
+    $('.career-card.icon-left:not(.plain), .career-card-new').on('mouseenter', function(event) {
       var card = $(this) // Button that triggered the modal
-      var image_src = $(card).find('img').attr('src')
+      var image_src = $(card)
+        .find('img')
+        .attr('src')
       // console.log(image_src)
       var image_src_without_extension = image_src.split('.svg').shift()
       card.find('img').attr('src', image_src_without_extension + '-on.svg')
       card.addClass('hover')
     })
     //Quitamos el hover
-    $('.career-card.icon-left:not(.plain), .career-card-new').on('mouseleave', function (event) {
+    $('.career-card.icon-left:not(.plain), .career-card-new').on('mouseleave', function(event) {
       var card = $(this) // Button that triggered the modal
-      var image_src = $(card).find('img').attr('src')
+      var image_src = $(card)
+        .find('img')
+        .attr('src')
       var image_src_without_extension = image_src.split('-on').shift()
       card.find('img').attr('src', image_src_without_extension + '.svg')
       card.removeClass('hover')
@@ -375,11 +404,13 @@ function hoverCareers() {
   }
 }
 
-//Function cargar profes
+//Método para cargar profes
 function loadTeachers() {
-  $('#modal-profe').on('show.bs.modal', function (event) {
+  $('#modal-profe').on('show.bs.modal', function(event) {
     let button = $(event.relatedTarget) // Button that triggered the modal
-    let image_src = $(button).find('img').attr('src')
+    let image_src = $(button)
+      .find('img')
+      .attr('src')
     let image_mobile = $(button).data('src_mobile')
     let job = button.data('job') // Extract info from data-* attributes
     let name = button.data('name')
@@ -402,35 +433,45 @@ function loadTeachers() {
   })
 }
 
-//Utils
+//Métodos utilidades, como link fake, smooth scroll, enable button input, y otros efectos
 function utilUiMethods() {
   //False links
-  $('.shoot-link-blank').click(function () {
+  $('.shoot-link-blank').click(function() {
     let pageurl = this.dataset.href
     window.open(
       pageurl,
       '_blank' // <- This is what makes it open in a new window.
     )
   })
-  $('.shoot-link').click(function () {
+  $('.shoot-link').click(function() {
     location.href = this.dataset.href
   })
   //Quitamos contenedores dechecks de cf7
-  $('.wpcf7-form input[type="checkbox"]').unwrap().unwrap().unwrap()
+  $('.wpcf7-form input[type="checkbox"]')
+    .unwrap()
+    .unwrap()
+    .unwrap()
 
   //Ponemos en enable el botón
-  $('#legal').on('click', function () {
-    $(this).closest('form').find('.wpcf7-submit.btn').attr('disabled', !this.checked)
+  $('#legal').on('click', function() {
+    $(this)
+      .closest('form')
+      .find('.wpcf7-submit.btn')
+      .attr('disabled', !this.checked)
   })
 
   //Mostramos caja legal
-  $('.display-legal-text').click(function () {
-    $('.legal-text').fadeIn().css('visibility', 'visible')
+  $('.display-legal-text').click(function() {
+    $('.legal-text')
+      .fadeIn()
+      .css('visibility', 'visible')
   })
 
   //Expandimos el click al div en post
-  $('.post-module, .blog-module').click(function () {
-    window.location = $(this).find('a').attr('href')
+  $('.post-module, .blog-module').click(function() {
+    window.location = $(this)
+      .find('a')
+      .attr('href')
     return false
   })
 
@@ -447,7 +488,7 @@ function utilUiMethods() {
   //Replace  SVG images with inline SVG
   $(
     '#footer .social img[src$=".svg"],img.letter, .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img'
-  ).each(function () {
+  ).each(function() {
     const $img = $(this)
     const imgID = $img.attr('id')
     const imgClass = $img.attr('class')
@@ -457,7 +498,7 @@ function utilUiMethods() {
 
     jQuery.get(
       imgURL,
-      function (data) {
+      function(data) {
         // Get the SVG tag, ignore the rest
         let $svg = jQuery(data).find('svg')
 
@@ -508,7 +549,7 @@ function utilUiMethods() {
   })
 
   //Cargar video en los iframes
-  $('#video_modal').on('show.bs.modal', function (event) {
+  $('#video_modal').on('show.bs.modal', function(event) {
     const button = $(event.relatedTarget) // Button that triggered the modal
     const recipient = button.data('id') // Extract info from data-* attributes
     const modal = $(this)
@@ -518,19 +559,19 @@ function utilUiMethods() {
   })
 
   //stop videos on close button
-  $('#video_modal .close').click(function () {
+  $('#video_modal .close').click(function() {
     $('#video_modal iframe').attr('src', '')
   })
 
   //Control de formulario, zona residente
   $('form #resident_no').on({
-    focusin: function () {
+    focusin: function() {
       $('.no-resident').fadeIn()
       $('.resident').hide()
     }
   })
   $('form #resident_yes').on({
-    focusin: function () {
+    focusin: function() {
       $('.no-resident').hide()
       $('.resident').fadeIn()
     }
@@ -538,21 +579,23 @@ function utilUiMethods() {
   /********************************************/
   //Icono apertura
   $('#nav-icon').on({
-    click: function () {
+    click: function() {
       $('header#site-header').toggleClass('opened')
       $('header#site-header').toggleClass('closed')
     }
   })
   //Notice class to body
   //10 segundos para mostrarlo, esto solo tiene que pasar si se ejecuta el notice sino no
-  setTimeout(function () {
+  setTimeout(function() {
     if ($('#notice-ext').length) {
       $('#notice-ext').addClass('visible')
       $('body').addClass('with-notice')
     }
   }, 10000)
-  $('#notice-ext .close').on('click', function () {
-    $(this).parent('#notice-ext ').removeClass('visible')
+  $('#notice-ext .close').on('click', function() {
+    $(this)
+      .parent('#notice-ext ')
+      .removeClass('visible')
     $('body').removeClass('with-notice')
   })
   //Lanzamos modal de newsletter
@@ -560,7 +603,7 @@ function utilUiMethods() {
 
   /********************************************/
   /*smooth_scroll*/
-  $('.smooth-scroll').click(function (event) {
+  $('.smooth-scroll').click(function(event) {
     // On-page links
     // Figure out element to scroll to
     const target = $(this).attr('data-href')
@@ -580,7 +623,7 @@ function utilUiMethods() {
           scrollTop: pointToScroll
         },
         1000,
-        function () {
+        function() {
           // Callback after animation
           // Must change focus!
           let $target = $(target)
@@ -597,7 +640,7 @@ function utilUiMethods() {
     }
   })
 }
-//method for positioning the box fixed
+//Método para posicionar el box fixed
 let marginTop
 if ($('#fixed-outer-container').length > 0) {
   marginTop = $('#fixed-outer-container').offset().top
@@ -642,7 +685,9 @@ function landing() {
     } else {
       //Esto es cuando es mobile
       const buttonToFixed = $('#controller-scroll').offset().top //Alto en el que el boton pasa a fixed
-      $('#hero-form').css('width', 'auto').css('position', 'initial')
+      $('#hero-form')
+        .css('width', 'auto')
+        .css('position', 'initial')
       $('#controller-scroll').css('min-height', 'auto')
       //Controlamos el boton fixed cuando hacemos scroll
       if (window.scrollY > buttonToFixed - headerHeight + 20) {
@@ -672,7 +717,7 @@ function showInfoBtn() {
 
 $(window).scroll(showInfoBtn)
 
-//Función para sticky en Becas u en otro contenedor sticky
+//Método para sticky en Becas u en otro contenedor sticky
 function sticky() {
   const headerHeight = $('#site-header').outerHeight() //Alto del header
   const topStickyMargin = headerHeight + 40
@@ -686,9 +731,59 @@ function paddingHero() {
   $('.minus .data-container').css('padding-top', $('#site-header').outerHeight())
 }
 
-//Function Blog navigation
+//Método para Blog navigation
 function blogThemesNavigation() {
-  $('.blog-menu .expander').on('click', function () {
+  $('.blog-menu .expander').on('click', function() {
     $('.blog-menu').toggleClass('expanded')
+  })
+}
+
+//Método para buscador interactivo de glosario
+//Método para buscar texto y reemplazarlo por bold
+$.fn.wrapInTag = function(opts) {
+  const tag = opts.tag || 'strong',
+    words = opts.words || [],
+    regex = RegExp(words.join('|'), 'gi'), // case insensitive
+    replacement = '<' + tag + '>$&</' + tag + '>'
+
+  return this.html(function() {
+    return $(this)
+      .text()
+      .replace(regex, replacement)
+  })
+}
+//Método para buscar etiqueta y quitarla
+$.fn.deleteTag = function(opts) {
+  const tag = opts.tag || 'strong',
+    word = opts.word
+  return this.html(function() {
+    return $(this)
+      .text()
+      .replace('<' + tag + '>' + word + '</' + tag + '>', word)
+  })
+}
+//Método específico para glosario
+function glosarioNav() {
+  $('#glosary-search-box').keyup(function(e) {
+    const term = e.target.value
+    const firstLetter = term[0]
+    if (term === '') {
+      $('.row[data-letter]').removeClass('hidden searching')
+    } else {
+      $('.row[data-letter]').addClass('hidden searching')
+      $('.row[data-letter=' + firstLetter.toLowerCase() + ']')
+        .removeClass('hidden')
+        .addClass('visible')
+      $('.row[data-letter=' + firstLetter.toLowerCase() + '] ul.terms li a').deleteTag({
+        tag: 'strong',
+        word: term
+      })
+      $('.row[data-letter=' + firstLetter.toLowerCase() + '] ul.terms li a')
+        .wrapInTag({
+          tag: 'strong',
+          words: [term]
+        })
+        .addClass('estaeslarow')
+    }
   })
 }
