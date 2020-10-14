@@ -44,7 +44,6 @@ function headersControl() {
   })
   $(window).resize(function(event) {
     didScroll = true
-    console.log(didScroll)
   })
   //activo la función si se hace scroll con delay
   setInterval(function() {
@@ -386,7 +385,6 @@ function hoverCareers() {
       var image_src = $(card)
         .find('img')
         .attr('src')
-      // console.log(image_src)
       var image_src_without_extension = image_src.split('.svg').shift()
       card.find('img').attr('src', image_src_without_extension + '-on.svg')
       card.addClass('hover')
@@ -769,6 +767,7 @@ function glosarioNav() {
     const firstLetter = term[0]
     if (term === '') {
       $('.row[data-letter]').removeClass('hidden searching')
+      $('.row[data-letter] ul.terms li a').removeClass('hidden')
     } else {
       $('.row[data-letter]').addClass('hidden searching')
       $('.row[data-letter=' + firstLetter.toLowerCase() + ']')
@@ -779,11 +778,22 @@ function glosarioNav() {
         word: term
       })
       $('.row[data-letter=' + firstLetter.toLowerCase() + '] ul.terms li a')
-        .wrapInTag({
-          tag: 'strong',
-          words: [term]
+        .addClass('hidden')
+        .removeClass('visible')
+      $('.row[data-letter=' + firstLetter.toLowerCase() + '] ul.terms li a')
+        .filter(function() {
+          const reg = new RegExp(term, 'ig')
+          return reg.test($(this).text())
         })
-        .addClass('estaeslarow')
+        .each(function() {
+          $(this)
+            .addClass('visible')
+            .removeClass('hidden')
+        })
+      $('.row[data-letter=' + firstLetter.toLowerCase() + '] ul.terms li a').wrapInTag({
+        tag: 'strong',
+        words: [term]
+      })
     }
   })
 }
