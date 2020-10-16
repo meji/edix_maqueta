@@ -11738,6 +11738,9 @@ body.with-notice header#site-header:not(.not-fixed) {
   margin-left: 16px;
   padding-left: 16px;
 }
+.pagination-nav .page-search form {
+  display: in;
+}
 .pagination-nav .page-search input {
   border: 1px solid #333;
   width: 3em;
