@@ -10126,6 +10126,13 @@ textarea.form-control {
   .col-lg-6 .blog-module.overlay {
     padding-top: 174px;
   }
+
+  .align-items-stretch .blog-module.contained {
+    height: 100%;
+  }
+  .align-items-stretch .blog-module.contained .data {
+    height: 100%;
+  }
 }
 @media (min-width: 1280px) {
   .blog-category-row .blog-module {
