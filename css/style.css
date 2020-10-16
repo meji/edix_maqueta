@@ -12176,24 +12176,9 @@ body.with-notice header#site-header:not(.not-fixed) {
   margin-bottom: 16px;
   margin-top: 0;
 }
-.term-finder form {
-  width: 100%;
-}
-.term-finder form input {
+.term-finder input {
   margin-bottom: 16px;
   display: block;
-}
-.term-finder form .btn {
-  min-width: 0;
-  padding: 0 16px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.term-finder form .btn img,
-.term-finder form .btn svg {
-  width: 30px;
 }
 
 @media (min-width: 768px) {
@@ -12206,9 +12191,6 @@ body.with-notice header#site-header:not(.not-fixed) {
   .term-finder form input {
     width: 550px;
     height: 72px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: 0;
   }
   .term-finder form .btn {
     width: 72px;
