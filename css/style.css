@@ -11204,10 +11204,21 @@ hr {
 .img-container {
   margin-bottom: 16px;
 }
+.img-container img {
+  display: block;
+}
+.img-container.rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
 
 @media (min-width: 1024px) {
   .img-container {
     margin-bottom: 0;
+  }
+  .img-container.rounded {
+    border-radius: 0.3rem;
+    overflow: hidden;
   }
 }
 /** INVOICE
@@ -11739,7 +11750,7 @@ body.with-notice header#site-header:not(.not-fixed) {
   padding-left: 16px;
 }
 .pagination-nav .page-search form {
-  display: in;
+  display: inline;
 }
 .pagination-nav .page-search input {
   border: 1px solid #333;
@@ -14865,14 +14876,18 @@ body .modal .modal-sm p:not(.h3):not(.h4):not(.h5) {
   cursor: pointer;
 }
 .video-button-player:before {
-  content: "";
-  background: transparent url(img/player-icon.svg) no-repeat left center;
-  background-size: 32px;
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
+  min-height: 184px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) url(img/video-player.svg) no-repeat center center;
+  background-size: 48px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
 }
 .video-button-player:hover span {
   position: relative;
@@ -14887,6 +14902,31 @@ body .modal .modal-sm p:not(.h3):not(.h4):not(.h5) {
   position: absolute;
   animation: 0.5s in-out forwards;
   left: 0;
+}
+
+.video-button.video-module:hover {
+  cursor: pointer;
+}
+.video-button.video-module .img-container {
+  position: relative;
+}
+.video-button.video-module .img-container:before {
+  content: "";
+  min-height: 184px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) url(img/video-player.svg) no-repeat center center;
+  background-size: 48px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+.video-button.video-module .img-container:hover:before {
+  background-color: transparent;
 }
 
 #main.error-page .container {
