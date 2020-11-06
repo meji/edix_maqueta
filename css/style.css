@@ -11879,29 +11879,29 @@ body.with-notice header#site-header:not(.not-fixed) {
   filter: brightness(100);
 }
 
-.entry-content .col-lg-8 figcaption {
+.entry-content figcaption {
   margin: 0;
 }
-.entry-content .col-lg-8 img {
+.entry-content img {
   display: block;
   margin-top: 36px;
   margin-bottom: 24px;
 }
-.entry-content .col-lg-8 .blue-resume {
+.entry-content .blue-resume {
   background: #e6f1f4;
   padding: 40px;
   margin-top: 52px;
   border-radius: 0.3rem;
 }
-.entry-content .col-lg-8 .blue-resume *:last-child {
+.entry-content .blue-resume *:last-child {
   margin-bottom: 0;
 }
-.entry-content .col-lg-8 .blue-resume .label {
+.entry-content .blue-resume .label {
   position: initial;
   border-radius: none;
   margin: 0 5px;
 }
-.entry-content .col-lg-8 .post-author {
+.entry-content .post-author {
   display: flex;
   align-items: center;
   padding: 40px;
@@ -11909,14 +11909,14 @@ body.with-notice header#site-header:not(.not-fixed) {
   justify-content: flex-start;
   flex-direction: column;
 }
-.entry-content .col-lg-8 .post-author .title {
+.entry-content .post-author .title {
   line-height: 1.2;
 }
-.entry-content .col-lg-8 .post-author .img-container {
+.entry-content .post-author .img-container {
   margin: 0 40px 0 0;
   min-width: 110px;
 }
-.entry-content .col-lg-8 .post-author .img-container img {
+.entry-content .post-author .img-container img {
   display: block;
   border-radius: 100%;
   overflow: hidden;
@@ -11931,26 +11931,26 @@ body.with-notice header#site-header:not(.not-fixed) {
   .entry-content .promo-module {
     margin: 0;
   }
-  .entry-content .col-lg-8 h2,
-.entry-content .col-lg-8 h3,
-.entry-content .col-lg-8 h4 {
+  .entry-content h2,
+.entry-content h3,
+.entry-content h4 {
     margin-top: 72px;
     margin-bottom: 16px;
   }
-  .entry-content .col-lg-8 img {
+  .entry-content img {
     margin: 56px 0 72px;
   }
-  .entry-content .col-lg-8 .alignleft img,
-.entry-content .col-lg-8 img.alignleft {
+  .entry-content .alignleft img,
+.entry-content img.alignleft {
     margin: 24px 40px 32px 0;
     float: left;
   }
-  .entry-content .col-lg-8 .alignright img,
-.entry-content .col-lg-8 img.alignright {
+  .entry-content .alignright img,
+.entry-content img.alignright {
     margin: 24px 0 32px 40px;
     float: right;
   }
-  .entry-content .col-lg-8 blockquote {
+  .entry-content blockquote {
     font-size: 2rem;
     padding-left: 200px;
     padding-top: 48px;
@@ -11959,7 +11959,7 @@ body.with-notice header#site-header:not(.not-fixed) {
     background: url(img/quote.svg) no-repeat left top;
     background-size: 179px;
   }
-  .entry-content .col-lg-8 .post-author {
+  .entry-content .post-author {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -11971,7 +11971,7 @@ body.with-notice header#site-header:not(.not-fixed) {
   }
 }
 @media (min-width: 1700px) {
-  .entry-content .col-lg-8 blockquote {
+  .entry-content blockquote {
     font-size: 2.625rem;
     padding-left: 290px;
     padding-top: 64px;
@@ -11979,19 +11979,19 @@ body.with-notice header#site-header:not(.not-fixed) {
     margin: 56px 0 36px;
     background-size: 247px;
   }
-  .entry-content .col-lg-8 blockquote cite {
+  .entry-content blockquote cite {
     font-size: 40.476%;
   }
-  .entry-content .col-lg-8 ul:not(.breadcrumb) li,
-.entry-content .col-lg-8 ol li, .entry-content .col-lg-8 table td, .entry-content .col-lg-8 table th {
+  .entry-content ul:not(.breadcrumb) li,
+.entry-content ol li, .entry-content table td, .entry-content table th {
     font-size: 1.31rem;
   }
-  .entry-content .col-lg-8 ul:not(.breadcrumb) li ul,
-.entry-content .col-lg-8 ul:not(.breadcrumb) li ol,
-.entry-content .col-lg-8 ol li ul,
-.entry-content .col-lg-8 ol li ol, .entry-content .col-lg-8 table td ul,
-.entry-content .col-lg-8 table td ol, .entry-content .col-lg-8 table th ul,
-.entry-content .col-lg-8 table th ol {
+  .entry-content ul:not(.breadcrumb) li ul,
+.entry-content ul:not(.breadcrumb) li ol,
+.entry-content ol li ul,
+.entry-content ol li ol, .entry-content table td ul,
+.entry-content table td ol, .entry-content table th ul,
+.entry-content table th ol {
     font-size: 1rem;
   }
 }

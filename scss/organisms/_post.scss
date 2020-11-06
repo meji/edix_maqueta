@@ -109,7 +109,7 @@
   }
 }
 
-.entry-content .col-lg-8 {
+.entry-content {
   figcaption {
     margin: 0;
   }
@@ -165,40 +165,38 @@
     .promo-module {
       margin: 0;
     }
-    .col-lg-8 {
-      h2,
-      h3,
-      h4 {
-        margin-top: 72px;
-        margin-bottom: 16px;
-      }
-      img {
-        margin: 56px 0 72px;
-      }
-      .alignleft img,
-      img.alignleft {
-        margin: 24px 40px 32px 0;
-        float: left;
-      }
+    h2,
+    h3,
+    h4 {
+      margin-top: 72px;
+      margin-bottom: 16px;
+    }
+    img {
+      margin: 56px 0 72px;
+    }
+    .alignleft img,
+    img.alignleft {
+      margin: 24px 40px 32px 0;
+      float: left;
+    }
 
-      .alignright img,
-      img.alignright {
-        margin: 24px 0 32px 40px;
-        float: right;
-      }
-      blockquote {
-        font-size: 2rem;
-        padding-left: 200px;
-        padding-top: 48px;
-        padding-bottom: 20px;
-        margin: 48px 0 28px;
-        background: url(img/quote.svg) no-repeat left top;
-        background-size: 179px;
-      }
-      .post-author {
-        justify-content: space-between;
-        flex-direction: row;
-      }
+    .alignright img,
+    img.alignright {
+      margin: 24px 0 32px 40px;
+      float: right;
+    }
+    blockquote {
+      font-size: 2rem;
+      padding-left: 200px;
+      padding-top: 48px;
+      padding-bottom: 20px;
+      margin: 48px 0 28px;
+      background: url(img/quote.svg) no-repeat left top;
+      background-size: 179px;
+    }
+    .post-author {
+      justify-content: space-between;
+      flex-direction: row;
     }
     .pager-prev-next {
       .item {
@@ -213,25 +211,23 @@
 
 @include respond-above(xxxl) {
   .entry-content {
-    .col-lg-8 {
-      blockquote {
-        font-size: 2.625rem;
-        padding-left: 290px;
-        padding-top: 64px;
-        padding-bottom: 20px;
-        margin: 56px 0 36px;
-        background-size: 247px;
-        cite {
-          font-size: 40.476%;
-        }
+    blockquote {
+      font-size: 2.625rem;
+      padding-left: 290px;
+      padding-top: 64px;
+      padding-bottom: 20px;
+      margin: 56px 0 36px;
+      background-size: 247px;
+      cite {
+        font-size: 40.476%;
       }
-      ul:not(.breadcrumb) li,
-      ol li, table td, table th {
-        font-size: 1.31rem;
-        ul,
-        ol {
-          font-size: 1rem;
-        }
+    }
+    ul:not(.breadcrumb) li,
+    ol li, table td, table th {
+      font-size: 1.31rem;
+      ul,
+      ol {
+        font-size: 1rem;
       }
     }
   }
