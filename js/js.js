@@ -18,6 +18,9 @@ $(document).ready(function() {
   if ($('.minus').length > 0) {
     paddingHero()
   }
+  if ($('.text-shadowed').length > 0) {
+    textShadowedBox()
+  }
 })
 
 /************CONTROLES DE CABECERAS CON SCROLLS********************************/

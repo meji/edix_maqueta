@@ -1,4 +1,7 @@
 .entry-content {
+  img {
+    height: auto;
+  }
   h1 {
     line-height: 1.2;
     margin: 0 0 24px;
@@ -122,6 +125,11 @@
     border-radius: $border-radius-lg;
     *:last-child {
       margin-bottom: 0;
+    }
+    .label{
+      position: initial;
+      border-radius: none;
+      margin: 0 5px;
     }
   }
   .post-author {

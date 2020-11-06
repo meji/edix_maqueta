@@ -134,3 +134,21 @@ img.rounded {
 .right-col-module {
   padding: 24px;
 }
+
+.text-shadowed {
+  h1,
+  p,
+  li {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+}
+
+.text-boxed {
+  h1,
+  p,
+  li {
+    background-color: rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    padding: 8px 14px;
+  }
+}

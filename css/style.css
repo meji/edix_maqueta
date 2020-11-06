@@ -10148,15 +10148,15 @@ textarea.form-control {
 
 .breadcrumb {
   background: transparent;
-  padding: 48px 0;
+  padding: 0 0 24px;
 }
 .breadcrumb a {
-  color: #000;
+  color: #ccc;
   font-weight: normal;
 }
 .breadcrumb .breadcrumb-item.active {
   font-weight: bold;
-  color: #000;
+  color: #fff;
 }
 
 .btn {
@@ -11772,6 +11772,9 @@ body.with-notice header#site-header:not(.not-fixed) {
   border-radius: 0;
 }
 
+.entry-content img {
+  height: auto;
+}
 .entry-content h1 {
   line-height: 1.2;
   margin: 0 0 24px;
@@ -11892,6 +11895,11 @@ body.with-notice header#site-header:not(.not-fixed) {
 }
 .entry-content .col-lg-8 .blue-resume *:last-child {
   margin-bottom: 0;
+}
+.entry-content .col-lg-8 .blue-resume .label {
+  position: initial;
+  border-radius: none;
+  margin: 0 5px;
 }
 .entry-content .col-lg-8 .post-author {
   display: flex;
@@ -12402,6 +12410,20 @@ img.rounded {
   padding: 24px;
 }
 
+.text-shadowed h1,
+.text-shadowed p,
+.text-shadowed li {
+  text-shadow: 0 0 20px black;
+}
+
+.text-boxed h1,
+.text-boxed p,
+.text-boxed li {
+  background-color: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 8px 14px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -12564,6 +12586,7 @@ h6,
 .h6 {
     margin-top: 96px;
     margin-bottom: 16px;
+    word-break: break-word;
   }
 
   h1,
@@ -13688,7 +13711,7 @@ body header#site-header.opened nav:not(.buttons) ul li.active:after {
   left: 0;
   background: #000;
   width: 100%;
-  opacity: 0.25;
+  opacity: 0.3;
   z-index: 1;
   height: 100%;
   background: black;
