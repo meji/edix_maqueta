@@ -11982,11 +11982,16 @@ body.with-notice header#site-header:not(.not-fixed) {
   .entry-content .col-lg-8 blockquote cite {
     font-size: 40.476%;
   }
-  .entry-content .col-lg-8 ul:not(.breadcrumb) li {
+  .entry-content .col-lg-8 ul:not(.breadcrumb) li,
+.entry-content .col-lg-8 ol li, .entry-content .col-lg-8 table td, .entry-content .col-lg-8 table th {
     font-size: 1.31rem;
   }
   .entry-content .col-lg-8 ul:not(.breadcrumb) li ul,
-.entry-content .col-lg-8 ul:not(.breadcrumb) li ol {
+.entry-content .col-lg-8 ul:not(.breadcrumb) li ol,
+.entry-content .col-lg-8 ol li ul,
+.entry-content .col-lg-8 ol li ol, .entry-content .col-lg-8 table td ul,
+.entry-content .col-lg-8 table td ol, .entry-content .col-lg-8 table th ul,
+.entry-content .col-lg-8 table th ol {
     font-size: 1rem;
   }
 }

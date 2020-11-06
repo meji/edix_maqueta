@@ -126,7 +126,7 @@
     *:last-child {
       margin-bottom: 0;
     }
-    .label{
+    .label {
       position: initial;
       border-radius: none;
       margin: 0 5px;
@@ -225,7 +225,8 @@
           font-size: 40.476%;
         }
       }
-      ul:not(.breadcrumb) li {
+      ul:not(.breadcrumb) li,
+      ol li, table td, table th {
         font-size: 1.31rem;
         ul,
         ol {
