@@ -101,6 +101,22 @@
   &.transparent .data-container {
     background: none;
   }
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  }
+  .grey-bg-white {
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+      text-shadow: 0 0 0 transparent;
+    }
+  }
 }
 @supports (object-fit: cover) {
   .hero.hero-big .hero-bg img {

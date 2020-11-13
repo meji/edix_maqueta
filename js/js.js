@@ -139,7 +139,7 @@ function headersControl() {
         if (st > lastScrollTop) {
           $('#blog-menu').removeClass('nav-up')
           $('#site-header').css('box-shadow', '0 2px 10px rgba(0, 0, 0, 0.15)')
-        } else {
+        } else if (st < lastScrollTop) {
           $('#blog-menu')
             .addClass('nav-up')
             .css('top', header.offsetHeight + 'px')
@@ -479,7 +479,7 @@ function utilUiMethods() {
   /********************************************/
   //WOW
   $(
-    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div):not(.faq-body):not(.no-animation)'
+    'section div:not(.data-container):not(.data-container div):not(#career-nav):not(form div):not(.landing-counters):not(.landing-counters div):not(.form-landing-container div):not(.faq-body):not(.no-animation):not(.blog-menu-container):not(#blog-menu)'
   ).addClass('wow fadeInUp')
   const wow = new WOW({
     mobile: false
