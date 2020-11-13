@@ -28,6 +28,12 @@
       background: $c-morado;
       color: #fff;
     }
+    &.transparent{
+      background: transparent;
+      &:hover {
+        background: $c-morado;
+      }
+    }
   }
   &.btn-white {
     color: $c-morado;

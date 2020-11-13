@@ -1,5 +1,4 @@
 //La base es el promo module del matrix
-
 .blog-module {
   margin-bottom: 24px;
   position: relative;
@@ -35,6 +34,9 @@
   }
   &.overlay {
     padding-top: 130px;
+    p {
+      @include text-shadow-normal;
+    }
     .img-container {
       border-radius: $border-radius;
       overflow: hidden;
@@ -112,7 +114,7 @@
 
 @include respond-above(md) {
   .col-12 .blog-module.contained .data {
-    padding: 64px;
+    padding: 48px;
   }
   .col-lg-6 .blog-module.overlay {
     padding-top: 174px;
@@ -130,6 +132,14 @@
   .blog-category-row {
     .blog-module {
       margin-bottom: 120px;
+    }
+  }
+}
+
+@include respond-below(md) {
+  .blog-home-row {
+    .mb-4 {
+      margin-bottom: 0 !important;
     }
   }
 }

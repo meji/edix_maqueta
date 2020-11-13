@@ -126,3 +126,8 @@
     -moz-osx-font-smoothing: auto;
   }
 }
+
+//Mixin text shadow
+@mixin text-shadow-normal() {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}

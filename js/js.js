@@ -18,9 +18,6 @@ $(document).ready(function() {
   if ($('.minus').length > 0) {
     paddingHero()
   }
-  if ($('.text-shadowed').length > 0) {
-    textShadowedBox()
-  }
 })
 
 /************CONTROLES DE CABECERAS CON SCROLLS********************************/
@@ -350,11 +347,15 @@ function sliders() {
     loop: false,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: true
+      disableOnInteraction: false
     },
     spaceBetween: 20,
     allowTouchMove: true,
-    preventClicks: false,
+    preventClicks: true,
+    navigation: {
+      nextEl: '.swiper-button-next-5',
+      prevEl: '.swiper-button-prev-5'
+    },
     breakpoints: {
       1600: {
         slidesPerView: 8,
@@ -374,6 +375,14 @@ function sliders() {
       }
     }
   })
+  $('.swiper-container.swiper-letters').hover(
+    function() {
+      swiper.autoplay.stop()
+    },
+    function() {
+      swiper.autoplay.start()
+    }
+  )
 }
 
 //hoverCareers

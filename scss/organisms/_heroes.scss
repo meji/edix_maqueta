@@ -106,7 +106,7 @@
   h3,
   p,
   li {
-    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    @include text-shadow-normal;
   }
   .grey-bg-white {
     h1,
