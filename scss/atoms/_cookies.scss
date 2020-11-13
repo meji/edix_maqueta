@@ -28,3 +28,11 @@
   min-height: 0;
   background-color: rgba($c-morado, 0.7);
 }
+body #accept_all_button {
+  background-color: $c-morado;
+}
+body {
+  #decline_all_button, .prefPanel .cookiecat a.viewcookie, {
+    color: $c-morado;
+  }
+}

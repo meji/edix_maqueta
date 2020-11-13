@@ -10995,6 +10995,14 @@ input[type=submit] {
   background-color: rgba(106, 0, 194, 0.7);
 }
 
+body #accept_all_button {
+  background-color: #6a00c2;
+}
+
+body #decline_all_button {
+  color: #6a00c2;
+}
+
 #wrapper .counter-numbers {
   font-size: 130%;
 }
