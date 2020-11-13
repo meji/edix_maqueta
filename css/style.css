@@ -12741,7 +12741,7 @@ ul.text li ol {
 }
 .blog-menu-container {
   min-height: 82px;
-  margin-bottom: 24px;
+  margin: 40px 0;
 }
 
 .blog-menu:before {
@@ -12849,7 +12849,7 @@ ul.text li ol {
 
 @media (min-width: 768px) {
   .blog-menu-container {
-    min-height: 76px;
+    min-height: 70px;
   }
 
   .blog-menu:before {

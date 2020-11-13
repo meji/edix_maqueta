@@ -150,6 +150,11 @@ function headersControl() {
           .removeClass('fixed')
           .removeClass('nav-up')
       }
+      if (window.scrollY == 0) {
+        $('#blog-menu')
+          .removeClass('fixed')
+          .removeClass('nav-up')
+      }
     }
 
     lastScrollTop = st

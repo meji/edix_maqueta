@@ -1,6 +1,6 @@
 .blog-menu-container {
   min-height: 82px;
-  margin-bottom: 24px;
+  margin: 40px 0;
 }
 .blog-menu {
   &:before {
@@ -123,7 +123,7 @@
 
 @include respond-above(md) {
   .blog-menu-container {
-    min-height: 76px;
+    min-height: 70px;
   }
   .blog-menu {
     &:before {
@@ -147,7 +147,7 @@
     &.blog-home {
       padding: 0 20px;
     }
-    &.fixed.nav-up .container{
+    &.fixed.nav-up .container {
       padding-bottom: 24px;
     }
   }
