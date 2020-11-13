@@ -10970,10 +10970,13 @@ input[type=submit] {
   font-family: "Galano", Helvetica, sans-serif;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-#consent_blackbar #truste-consent-track.trustarc-banner #truste-consent-text, #consent_blackbar #truste-consent-track.trustarc-banner .truste-required, #consent_blackbar #truste-consent-track.trustarc-banner .truste-open {
+#consent_blackbar #truste-consent-track.trustarc-banner #truste-consent-text,
+#consent_blackbar #truste-consent-track.trustarc-banner .truste-required,
+#consent_blackbar #truste-consent-track.trustarc-banner .truste-open {
   font-family: "Galano", Helvetica, sans-serif;
 }
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-required, #consent_blackbar #truste-consent-track.trustarc-banner .truste-open {
+#consent_blackbar #truste-consent-track.trustarc-banner .truste-required,
+#consent_blackbar #truste-consent-track.trustarc-banner .truste-open {
   border-radius: 4px;
   padding: 12px 0;
   font-weight: bold;
@@ -10981,9 +10984,15 @@ input[type=submit] {
   font-size: 16px;
   min-width: 160px;
 }
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-required:hover, #consent_blackbar #truste-consent-track.trustarc-banner .truste-open:hover {
+#consent_blackbar #truste-consent-track.trustarc-banner .truste-required:hover,
+#consent_blackbar #truste-consent-track.trustarc-banner .truste-open:hover {
   borer-color: #6a00c2;
   background: #fff;
+}
+
+#consent_blackbar #truste-consent-content {
+  min-height: 0;
+  background-color: rgba(106, 0, 194, 0.7);
 }
 
 #wrapper .counter-numbers {
