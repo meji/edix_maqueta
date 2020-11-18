@@ -343,8 +343,9 @@ function sliders() {
   //Swipper letters
   const swiperLetters = new Swiper('.swiper-container.swiper-letters', {
     slidesPerView: 10,
+    slidesPerGroup: 3,
     speed: 1000,
-    loop: false,
+    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -359,18 +360,22 @@ function sliders() {
     breakpoints: {
       1600: {
         slidesPerView: 8,
+        slidesPerGroup: 3,
         loop: true
       },
       1024: {
         slidesPerView: 6,
+        slidesPerGroup: 2,
         loop: true
       },
       468: {
         slidesPerView: 5,
+        slidesPerGroup: 1,
         loop: true
       },
       350: {
         slidesPerView: 4,
+        slidesPerGroup: 1,
         loop: true
       }
     }
