@@ -12247,6 +12247,10 @@ img.rounded {
   text-shadow: 0 0 20px black;
 }
 
+.no-text-shadow {
+  text-shadow: none;
+}
+
 .text-center {
   text-align: center;
 }
