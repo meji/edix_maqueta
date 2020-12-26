@@ -11063,6 +11063,121 @@ body #decline_all_button, body .prefPanel .cookiecat a.viewcookie {
     flex: 1;
   }
 }
+.event-container {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.event-container .img-container {
+  height: 232px;
+  margin-bottom: 0;
+}
+.event-container .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.event-container .data {
+  background: #e6f1f4;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.event-container .data .metadata {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.event-container .data .metadata .time {
+  border-left: 1px solid #949494;
+  color: #949494;
+  padding-left: 8px;
+}
+.event-container .data .metadata a {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+.event-container .data .metadata img {
+  display: inline-block;
+}
+.event-container .data .metadata .event-type {
+  display: block;
+}
+.event-container .data .metadata *:not(a) {
+  margin-right: 8px;
+}
+.event-container .data .button-container {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.event-container .data .button-container .btn {
+  margin-right: 16px;
+}
+.event-container.past {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.event-container.past .data {
+  background: #fff;
+}
+.event-container.past p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .event-container .data .metadata .event-type {
+    display: inline-block;
+  }
+  .event-container .data .button-container .btn {
+    margin-right: 32px;
+    height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .event-container.featured {
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .event-container.featured .data {
+    flex: 1;
+    display: block;
+    order: 1;
+  }
+  .event-container.featured .data .button-container {
+    margin-top: 64px;
+  }
+  .event-container.featured .img-container {
+    order: 2;
+    display: block;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    height: auto;
+    width: 50%;
+  }
+  .event-container.featured .img-container img {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .event-container .data {
+    padding: 32px;
+  }
+}
+@media (min-width: 1700px) {
+  .event-container .data {
+    padding: 64px;
+  }
+}
 .faqs .faq-container {
   position: relative;
   border-radius: 4px;
