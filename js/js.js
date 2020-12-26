@@ -507,7 +507,7 @@ function utilUiMethods() {
 
   //Replace  SVG images with inline SVG
   $(
-    '#footer .social img[src$=".svg"],img.letter, .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img'
+    '#footer .social img[src$=".svg"],img.letter, .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img, img.svg-hover'
   ).each(function() {
     const $img = $(this)
     const imgID = $img.attr('id')

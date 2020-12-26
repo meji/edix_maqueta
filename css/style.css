@@ -11727,6 +11727,41 @@ body.with-notice header#site-header:not(.not-fixed) {
   margin-right: 16px;
 }
 
+.opinion {
+  background: #e6f1f4;
+  padding: 32px;
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: 0.2rem;
+}
+.opinion strong {
+  display: block;
+}
+.opinion p:last-child {
+  margin: 0;
+}
+.opinion .rrss {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  flex: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opinion .rrss .svg-hover {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.opinion .rrss .svg-hover path {
+  fill: #032258;
+}
+.opinion .rrss .svg-hover:hover path {
+  fill: #6a00c2;
+}
+
 .offer .pd64 {
   position: relative;
   margin-bottom: 24px;
@@ -11779,6 +11814,7 @@ body.with-notice header#site-header:not(.not-fixed) {
 .pagination-nav .page-link {
   color: #333;
   transition: 0.3s;
+  align-items: center;
   background: transparent;
   border: 0 none;
   font-weight: normal;
@@ -13650,7 +13686,7 @@ body header#site-header.opened nav:not(.buttons) ul li.active:after {
 .hero.hero-big.hero-normal .data-container, .hero.hero-big.hero-mobile-normal .data-container {
   max-height: 565px;
   background-position: right 0 top 287px;
-  background-image: url(img/purple-triangle-right.svg);
+  background-image: none;
 }
 .hero.hero-big.hero-short, .hero.hero-big.hero-mobile-short {
   max-height: 450px;
