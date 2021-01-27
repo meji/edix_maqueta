@@ -11848,6 +11848,7 @@ body.with-notice header#site-header:not(.not-fixed) {
   display: flex;
   margin-bottom: 24px;
   border-radius: 0.2rem;
+  height: calc(100% - 24px);
 }
 .opinion strong {
   display: block;
