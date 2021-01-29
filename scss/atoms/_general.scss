@@ -18,7 +18,8 @@ body {
   overflow: hidden;
   transition: $transition;
 }
-img {
+img,
+iframe {
   max-width: 100%;
 }
 hr {
