@@ -5,6 +5,7 @@
   margin-bottom: 24px;
   border-radius: $border-radius-sm;
   height: calc(100% - 24px);
+  flex-direction: column;
   strong {
     display: block;
   }
@@ -19,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 16px;
     .svg-hover {
       width: 100%;
       height: auto;
@@ -27,9 +29,28 @@
       path {
         fill: $c-azuloscuro;
       }
-      &:hover path {
-        fill: $c-morado;
-      }
+    }
+  }
+  .shoot-link-blank {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    svg path {
+      fill: $c-azuloscuro;
+      stroke: $c-azuloscuro;
+    }
+    &:hover svg path {
+      fill: $c-morado;
+      stroke: $c-morado;
+    }
+  }
+}
+
+@include respond-above(md) {
+  .opinion {
+    flex-direction: row;
+    .rrss {
+      margin-bottom: 0;
     }
   }
 }

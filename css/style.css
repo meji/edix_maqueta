@@ -11849,6 +11849,7 @@ body.with-notice header#site-header:not(.not-fixed) {
   margin-bottom: 24px;
   border-radius: 0.2rem;
   height: calc(100% - 24px);
+  flex-direction: column;
 }
 .opinion strong {
   display: block;
@@ -11864,6 +11865,7 @@ body.with-notice header#site-header:not(.not-fixed) {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 16px;
 }
 .opinion .rrss .svg-hover {
   width: 100%;
@@ -11874,10 +11876,28 @@ body.with-notice header#site-header:not(.not-fixed) {
 .opinion .rrss .svg-hover path {
   fill: #032258;
 }
-.opinion .rrss .svg-hover:hover path {
+.opinion .shoot-link-blank {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.opinion .shoot-link-blank svg path {
+  fill: #032258;
+  stroke: #032258;
+}
+.opinion .shoot-link-blank:hover svg path {
   fill: #6a00c2;
+  stroke: #6a00c2;
 }
 
+@media (min-width: 768px) {
+  .opinion {
+    flex-direction: row;
+  }
+  .opinion .rrss {
+    margin-bottom: 0;
+  }
+}
 .offer .pd64 {
   position: relative;
   margin-bottom: 24px;
