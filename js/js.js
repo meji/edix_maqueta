@@ -480,6 +480,14 @@ function utilUiMethods() {
       .attr('disabled', !this.checked)
   })
 
+  //clase para hacerlo en varios
+  $('.legal-check').on('click', function() {
+    $(this)
+      .closest('form')
+      .find('.wpcf7-submit.btn')
+      .attr('disabled', !this.checked)
+  })
+
   //Mostramos caja legal
   $('.display-legal-text').click(function() {
     $('.legal-text')
