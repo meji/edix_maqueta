@@ -286,7 +286,7 @@ function sliders() {
     allowTouchMove: true,
     preventClicks: false,
     breakpoints: {
-      1400: {
+      1700: {
         slidesPerView: 3,
         loop: true
       },
@@ -428,16 +428,17 @@ function hoverCareers() {
 function loadTeachers() {
   $('#modal-profe').on('show.bs.modal', function(event) {
     let button = $(event.relatedTarget) // Button that triggered the modal
-    let image_src = $(button)
-      .find('img')
-      .attr('src')
+    // let image_src = $(button)
+    //   .find('img')
+    //   .attr('src')
     let image_mobile = $(button).data('src_mobile')
+    let image_desktop = $(button).data('src_desktop')
     let job = button.data('job') // Extract info from data-* attributes
     let name = button.data('name')
     let content = button.data('content')
     let linkedin = button.data('linkedin')
     let modal = $(this)
-    modal.find('.image').attr('src', image_src)
+    modal.find('.image').attr('src', image_desktop)
     modal.find('.image').attr('alt', name)
     modal.find('.image').attr('title', name)
     modal.find('.linkedin').attr('href', linkedin)
