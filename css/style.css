@@ -11070,6 +11070,7 @@ body #decline_all_button, body .prefPanel .cookiecat a.viewcookie {
   padding: 0;
   display: flex;
   flex-direction: column;
+  height: calc(100% - 24px);
 }
 .event-container .img-container {
   height: 232px;
@@ -11084,6 +11085,7 @@ body #decline_all_button, body .prefPanel .cookiecat a.viewcookie {
   background: #e6f1f4;
   padding: 24px;
   box-sizing: border-box;
+  flex: 1;
 }
 .event-container .data .metadata {
   display: flex;
