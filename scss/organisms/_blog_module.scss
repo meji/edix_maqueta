@@ -126,6 +126,9 @@
       height: 100%;
     }
   }
+  .blog-module.contained{
+    height: calc(100% - 24px);
+  }
 }
 
 @include respond-above(xl) {
