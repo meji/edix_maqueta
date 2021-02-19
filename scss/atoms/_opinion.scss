@@ -44,6 +44,19 @@
       stroke: $c-morado;
     }
   }
+  &.autolinkable:hover {
+    background: $c-azuloscuroclaro;
+    color: #fff;
+    cursor: pointer;
+    * {
+      color: #fff;
+    }
+    .svg-hover {
+      path {
+        fill: #fff;
+      }
+    }
+  }
 }
 
 @include respond-above(md) {

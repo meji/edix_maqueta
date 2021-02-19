@@ -127,7 +127,13 @@
                 </div>
               </div>
               <div class="col-md-6 col-xl-4">
-                <div class="opinion">
+                <div class="opinion autolinkable data"
+                     data-target="#modal-opinion"
+                     data-toggle="modal"
+                     data-job="Directora · Profesora · Autora"
+                     data-name="Silvia Mayo"
+                     data-content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Etiam ligula diam, feugiat non sapien in, feugiat facilisis diam. Nam lobortis eleifend enim ac lobortis.</p><p>Vivamus tempus, arcu vitae tristique iaculis, metus lectus imperdiet purus, nec ultricies sapien lacus at enim. Vestibulum tincidunt, enim ac rutrum dictum, felis libero ultrices purus, nec tempus metus mauris a orci. Phasellus a faucibus orci. Maecenas consequat auctor odio, eget auctor enim consectetur sed.<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet iaculis erat vitae ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quam enim, semper ut erat sit amet, molestie viverra nunc. Phasellus magna dolor, convallis in nulla vitae, ultrices laoreet nulla.</p>"
+                >
                   <div class="rrss">
                     <img
                       class="svg-hover"
@@ -141,7 +147,6 @@
                       Front End Developer</p>
                     <p class="text-small"><span>“</span> maecenas nullam feugiat at turpis. Aenean nulla mattis posuere scelerisque senectus aliquet. Dictum duis eget<span>”</span></p>
                   </div>
-                  <span class="shoot-link-blank"  data-href="url" title="Ir a la opinión en [red]"><img src="../images/link.svg" alt="Link externo" title="Ir a la opinión en [red]"/></span>
                 </div>
               </div>
               <div class="col-md-6 col-xl-4">
@@ -502,6 +507,30 @@
         </button>
           <iframe class="iframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" width="100%" height="100%"></iframe>
       </div>
+  </div>
+</div>
+<!-- modal container opinion-->
+<div
+  id="modal-opinion"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img aria-hidden="true" src="../images/cross.svg" alt="cerrar" title="cerrar" />
+      </button>
+      <div class="content">
+        <div class="head">
+          <p class="job"></p>
+          <p class="name h4 mtno"></p>
+        </div>
+        <div class="text"></div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- End Document

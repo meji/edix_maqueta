@@ -2,6 +2,7 @@ $(document).ready(function() {
   headersControl()
   sliders()
   loadTeachers()
+  loadOpinion()
   hoverCareers()
   careerNavNavigation()
   utilUiMethods()
@@ -452,6 +453,19 @@ function loadTeachers() {
   })
 }
 
+function loadOpinion() {
+  $('#modal-opinion').on('show.bs.modal', function(event) {
+    let button = $(event.relatedTarget)
+    let job = button.data('job')
+    let name = button.data('name')
+    let content = button.data('content')
+    let modal = $(this)
+    modal.find('.job').html(job)
+    modal.find('.name').html(name)
+    modal.find('.text').html(content)
+  })
+}
+
 //Métodos utilidades, como link fake, smooth scroll, enable button input, y otros efectos
 function utilUiMethods() {
   //False links
@@ -514,7 +528,7 @@ function utilUiMethods() {
 
   //Replace  SVG images with inline SVG
   $(
-    '#footer .social img[src$=".svg"],img.letter, .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img, img.svg-hover, .opinion .shoot-link-blank img'
+    '#footer .social img[src$=".svg"],img.letter, .career-card.icon-left.plain .icon-container img, .modal button img, .modal .linkedin img, #site-header .buttons img, img.svg-hover, .opinion .shoot-link-blank img, .opinion.autolinkable .rss img'
   ).each(function() {
     const $img = $(this)
     const imgID = $img.attr('id')

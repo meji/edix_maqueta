@@ -11892,6 +11892,17 @@ body.with-notice header#site-header:not(.not-fixed) {
   fill: #6a00c2;
   stroke: #6a00c2;
 }
+.opinion.autolinkable:hover {
+  background: #0d3781;
+  color: #fff;
+  cursor: pointer;
+}
+.opinion.autolinkable:hover * {
+  color: #fff;
+}
+.opinion.autolinkable:hover .svg-hover path {
+  fill: #fff;
+}
 
 @media (min-width: 768px) {
   .opinion {
