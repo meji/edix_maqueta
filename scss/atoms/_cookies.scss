@@ -1,38 +1,29 @@
-/** COOKIES
------------------------------------------------------ */
-#consent_blackbar #truste-consent-track.trustarc-banner {
-  background-color: rgba($c-morado, 0.7);
-  font-family: $font-family;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  #truste-consent-text,
-  .truste-required,
-  .truste-open {
-    font-family: $font-family;
-  }
-  .truste-required,
-  .truste-open {
-    border-radius: 4px;
-    padding: 12px 0;
-    font-weight: bold;
-    text-transform: none;
-    font-size: $font-base;
-    min-width: 160px;
-    &:hover {
-      border-color: $c-morado;
-      background: #fff;
+body #onetrust-consent-sdk {
+  #onetrust-banner-sdk {
+    background-color: rgba(106, 0, 194, 0.8);
+    #onetrust-policy-text {
+      color: #fff;
+    }
+    a[href] {
+      color: #fff;
+      &:hover {
+        color: $c-moradoclaro;
+      }
     }
   }
 }
-
-#consent_blackbar #truste-consent-content {
-  min-height: 0;
-  background-color: rgba($c-morado, 0.7);
-}
-body #accept_all_button {
-  background-color: $c-morado;
-}
-body {
-  #decline_all_button, .prefPanel .cookiecat a.viewcookie, {
+body #onetrust-pc-sdk {
+  .ot-cat-grp .ot-always-active {
     color: $c-morado;
+  }
+  .ot-cat-item > button:focus,
+  .ot-acc-cntr > button:focus,
+  li > button:focus {
+    outline: $c-morado solid 2px;
+  }
+}
+@include respond-above(md) {
+  #onetrust-consent-sdk #onetrust-banner-sdk #onetrust-button-group-parent {
+    text-align: right;
   }
 }

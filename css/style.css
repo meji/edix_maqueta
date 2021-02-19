@@ -10967,46 +10967,31 @@ input[type=submit] {
     background-image: url(img/newsletter-bg-horizontal.png);
   }
 }
-/** COOKIES
------------------------------------------------------ */
-#consent_blackbar #truste-consent-track.trustarc-banner {
-  background-color: rgba(106, 0, 194, 0.7);
-  font-family: "Galano", Helvetica, sans-serif;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+body #onetrust-consent-sdk #onetrust-banner-sdk {
+  background-color: rgba(106, 0, 194, 0.8);
 }
-#consent_blackbar #truste-consent-track.trustarc-banner #truste-consent-text,
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-required,
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-open {
-  font-family: "Galano", Helvetica, sans-serif;
+body #onetrust-consent-sdk #onetrust-banner-sdk #onetrust-policy-text {
+  color: #fff;
 }
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-required,
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-open {
-  border-radius: 4px;
-  padding: 12px 0;
-  font-weight: bold;
-  text-transform: none;
-  font-size: 16px;
-  min-width: 160px;
+body #onetrust-consent-sdk #onetrust-banner-sdk a[href] {
+  color: #fff;
 }
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-required:hover,
-#consent_blackbar #truste-consent-track.trustarc-banner .truste-open:hover {
-  border-color: #6a00c2;
-  background: #fff;
+body #onetrust-consent-sdk #onetrust-banner-sdk a[href]:hover {
+  color: #a049f8;
 }
 
-#consent_blackbar #truste-consent-content {
-  min-height: 0;
-  background-color: rgba(106, 0, 194, 0.7);
-}
-
-body #accept_all_button {
-  background-color: #6a00c2;
-}
-
-body #decline_all_button, body .prefPanel .cookiecat a.viewcookie {
+body #onetrust-pc-sdk .ot-cat-grp .ot-always-active {
   color: #6a00c2;
 }
+body #onetrust-pc-sdk .ot-cat-item > button:focus, body #onetrust-pc-sdk .ot-acc-cntr > button:focus, body #onetrust-pc-sdk li > button:focus {
+  outline: #6a00c2 solid 2px;
+}
 
+@media (min-width: 768px) {
+  #onetrust-consent-sdk #onetrust-banner-sdk #onetrust-button-group-parent {
+    text-align: right;
+  }
+}
 #wrapper .counter-numbers {
   font-size: 130%;
 }
