@@ -71,7 +71,7 @@
   }
 }
 
-#modal-profe {
+#modal-profe:not(.old) {
   .image-container {
     min-width: 300px;
     width: 300px;
@@ -87,7 +87,7 @@
   }
 }
 @include respond-below(sm) {
-  #modal-profe {
+  #modal-profe:not(.old) {
     .image-container {
       margin: 23px auto;
     }

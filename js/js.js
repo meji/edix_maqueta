@@ -2,6 +2,7 @@ $(document).ready(function() {
   headersControl()
   sliders()
   loadTeachers()
+  loadTeachersOld()
   loadOpinion()
   hoverCareers()
   careerNavNavigation()
@@ -442,6 +443,34 @@ function loadTeachers() {
     modal.find('.image').attr('alt', name)
     modal.find('.image').attr('title', name)
     modal.find('.linkedin').attr('href', linkedin)
+    modal.find('.job').html(job)
+    modal.find('.name').html(name)
+    modal.find('.text').html(content)
+    if (linkedin.length <= 0) {
+      modal.find('.linkedin').hide()
+    } else {
+      modal.find('.linkedin').show()
+    }
+  })
+}
+//Método para cargar profes
+function loadTeachersOld() {
+  $('#modal-profe.old').on('show.bs.modal', function(event) {
+    let button = $(event.relatedTarget) // Button that triggered the modal
+    let image_src = $(button)
+      .find('img')
+      .attr('src')
+    let image_mobile = $(button).data('src_mobile')
+    let job = button.data('job') // Extract info from data-* attributes
+    let name = button.data('name')
+    let content = button.data('content')
+    let linkedin = button.data('linkedin')
+    let modal = $(this)
+    modal.find('.image').attr('src', image_src)
+    modal.find('.image').attr('alt', name)
+    modal.find('.image').attr('title', name)
+    modal.find('.linkedin').attr('href', linkedin)
+    modal.find('.image-container source').attr('srcset', image_mobile)
     modal.find('.job').html(job)
     modal.find('.name').html(name)
     modal.find('.text').html(content)

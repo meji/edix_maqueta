@@ -10112,6 +10112,7 @@ textarea.form-control {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   border-radius: 0.3rem;
   margin-bottom: 32px;
+  height: calc(100% - 32px);
 }
 .blog-module.normal-module:hover .title a {
   color: #6a00c2;
@@ -10139,6 +10140,10 @@ textarea.form-control {
 
   .blog-module.contained {
     height: calc(100% - 24px);
+  }
+
+  .blog-module.normal-module.small .img-container {
+    height: 100%;
   }
 }
 @media (min-width: 1280px) {
@@ -10983,7 +10988,9 @@ body #onetrust-consent-sdk #onetrust-banner-sdk a[href]:hover {
 body #onetrust-pc-sdk .ot-cat-grp .ot-always-active {
   color: #6a00c2;
 }
-body #onetrust-pc-sdk .ot-cat-item > button:focus, body #onetrust-pc-sdk .ot-acc-cntr > button:focus, body #onetrust-pc-sdk li > button:focus {
+body #onetrust-pc-sdk .ot-cat-item > button:focus,
+body #onetrust-pc-sdk .ot-acc-cntr > button:focus,
+body #onetrust-pc-sdk li > button:focus {
   outline: #6a00c2 solid 2px;
 }
 
@@ -12068,7 +12075,7 @@ body.with-notice header#site-header:not(.not-fixed) {
     border-radius: 8px;
   }
 }
-#modal-profe .image-container {
+#modal-profe:not(.old) .image-container {
   min-width: 300px;
   width: 300px;
   height: 300px;
@@ -12076,15 +12083,105 @@ body.with-notice header#site-header:not(.not-fixed) {
   margin: 32px;
   overflow: hidden;
 }
-#modal-profe .image-container img {
+#modal-profe:not(.old) .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media (max-width: 575px) {
-  #modal-profe .image-container {
+  #modal-profe:not(.old) .image-container {
     margin: 23px auto;
+  }
+}
+.profe-item-old {
+  margin-bottom: 32px;
+  cursor: pointer;
+  position: relative;
+}
+.profe-item-old figure {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0;
+}
+.profe-item-old figure img {
+  display: block;
+  min-width: 100%;
+}
+.profe-item-old figure:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.profe-item-old figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: left;
+  padding: 16px;
+  margin: 0;
+  color: #fff;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+.profe-item-old figure figcaption p {
+  margin: 0 0 8px;
+  line-height: 1;
+  font-weight: 600;
+}
+.profe-item-old figure figcaption p.position {
+  display: none;
+  font-weight: normal;
+}
+.profe-item-old figure figcaption .name {
+  margin: 0 0 8px;
+  line-height: 1;
+}
+.profe-item-old figure figcaption button {
+  display: none;
+  width: 100%;
+}
+.profe-item-old figure:before {
+  content: "";
+  position: absolute;
+  background: #6a00c2;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+.profe-item-old figure:hover:before {
+  transition: 0.3s;
+  opacity: 0.6;
+}
+.profe-item-old figure:hover figcaption {
+  justify-content: space-between;
+}
+.profe-item-old figure:hover figcaption p.position,
+.profe-item-old figure:hover figcaption button {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .profe-item-old figure {
+    border-radius: 8px;
   }
 }
 .scroll-bar-visible::-webkit-scrollbar {
