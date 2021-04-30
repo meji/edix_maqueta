@@ -176,6 +176,20 @@
       margin-top: 72px;
       margin-bottom: 16px;
     }
+    h2,
+    h3,
+    h4,
+    h5,
+    .h2,
+    .h3,
+    .h4,
+    .h5 {
+      &.mid-margin {
+        margin-top: 32px;
+        margin-bottom: 16px;
+      }
+    }
+
     img {
       margin: 56px 0 72px;
     }

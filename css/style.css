@@ -14789,6 +14789,12 @@ body .modal .modal-sm p:not(.h3):not(.h4):not(.h5) {
     margin-top: 72px;
     margin-bottom: 16px;
   }
+  .entry-content h2.mid-margin,
+.entry-content h3.mid-margin,
+.entry-content h4.mid-margin, .entry-content h5.mid-margin, .entry-content .h2.mid-margin, .entry-content .h3.mid-margin, .entry-content .h4.mid-margin, .entry-content .h5.mid-margin {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
   .entry-content img {
     margin: 56px 0 72px;
   }
